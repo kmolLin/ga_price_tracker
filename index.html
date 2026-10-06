@@ -219,6 +219,8 @@
   <script>
     let ALL_CARDS = [];
     let FILTERED_CARDS = [];
+	let PAGE_SIZE = 36;       // 每次只載入 36 張卡片
+	let CURRENT_PAGE = 1;     // 當前頁數
     let ALL_AVAILABLE_SETS = []; // 實際抓到的所有系列 { name, count }
     let currentSetFilter = "ALL";
     let currentSearchTerm = "";
@@ -392,62 +394,74 @@
         if (sortType === 'name-asc') return a.name.localeCompare(b.name);
         return 0;
       });
+	  CURRENT_PAGE = 1;         // 每次搜尋或換系列時，重設為第 1 頁
+      renderCardGrid(false);
 
-      renderCardGrid();
     }
 
     // 渲染卡牌卡片網格
-    function renderCardGrid() {
-      const grid = document.getElementById('cardsGrid');
-      const countEl = document.getElementById('currentDisplayCount');
-      const noResults = document.getElementById('noResults');
+	function renderCardGrid(append = false) {
+	const grid = document.getElementById('cardsGrid');
+	const countEl = document.getElementById('currentDisplayCount');
+	const noResults = document.getElementById('noResults');
 
-      countEl.textContent = FILTERED_CARDS.length;
+	countEl.textContent = FILTERED_CARDS.length;
 
-      if (FILTERED_CARDS.length === 0) {
-        grid.innerHTML = "";
-        noResults.classList.remove('hidden');
-        return;
-      }
+	if (FILTERED_CARDS.length === 0) {
+		grid.innerHTML = "";
+		noResults.classList.remove('hidden');
+		return;
+	  }
+	  noResults.classList.add('hidden');
 
-      noResults.classList.add('hidden');
+	  // 計算這次要渲染的切片 (Slice)
+	const startIndex = (CURRENT_PAGE - 1) * PAGE_SIZE;
+	const endIndex = CURRENT_PAGE * PAGE_SIZE;
+	const pageCards = FILTERED_CARDS.slice(startIndex, endIndex);
 
-      grid.innerHTML = FILTERED_CARDS.map(card => {
-        const defaultVer = card.versions[0] || {};
-        const maxPrice = Math.max(...card.versions.map(v => v.marketPrice || 0));
-        const img = defaultVer.image || "https://placehold.co/300x420/1e293b/94a3b8?text=No+Image";
+	const cardsHtml = pageCards.map(card => {
+	const defaultVer = card.versions[0] || {};
+	const maxPrice = Math.max(...card.versions.map(v => v.marketPrice || 0));
+	const img = defaultVer.image || "https://placehold.co/300x420/1e293b/94a3b8?text=No+Image";
 
-        return `
-          <div
-            onclick="openDetailModal('${card.id}')"
-            class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-indigo-500/80 hover:shadow-xl hover:shadow-indigo-950/40 cursor-pointer transition-all duration-200 flex flex-col"
-          >
-            <div class="aspect-[7/10] bg-slate-950 overflow-hidden relative">
-              <img
-                src="${img}"
-                alt="${card.name}"
-                loading="lazy"
-                onerror="this.src='https://placehold.co/300x420/1e293b/94a3b8?text=GA+Card'"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <span class="absolute top-2 right-2 text-[10px] px-1.5 py-0.5 rounded font-bold bg-slate-900/90 text-amber-300 border border-amber-800/80 backdrop-blur">
-                ${card.rarity || 'Common'}
-              </span>
-            </div>
-            <div class="p-3 flex flex-col justify-between flex-1">
-              <div>
-                <div class="text-[11px] text-slate-500 truncate">${card.classType || 'Class'} • ${card.versions.length} 個版本</div>
-                <h3 class="font-bold text-sm text-slate-200 group-hover:text-indigo-400 transition-colors line-clamp-1 mt-0.5">${card.name}</h3>
-              </div>
-              <div class="mt-2.5 pt-2 border-t border-slate-800/60 flex items-center justify-between">
-                <span class="text-[11px] text-slate-400">市場價</span>
-                <span class="text-sm font-black text-indigo-400">$${maxPrice > 0 ? maxPrice.toFixed(2) : '--'}</span>
-              </div>
-            </div>
-          </div>
-        `;
-      }).join("");
-    }
+		return `
+		  <div
+			onclick="openDetailModal('${card.id}')"
+			class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-indigo-500/80 hover:shadow-xl hover:shadow-indigo-950/40 cursor-pointer transition-all duration-200 flex flex-col"
+		  >
+			<div class="aspect-[7/10] bg-slate-950 overflow-hidden relative">
+			  <img
+				src="${img}"
+				alt="${card.name}"
+				loading="lazy"
+				decoding="async"
+				onerror="this.src='https://placehold.co/300x420/1e293b/94a3b8?text=GA+Card'"
+				class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+			  />
+			  <span class="absolute top-2 right-2 text-[10px] px-1.5 py-0.5 rounded font-bold bg-slate-900/90 text-amber-300 border border-amber-800/80 backdrop-blur">
+				${card.rarity || 'Common'}
+			  </span>
+			</div>
+			<div class="p-3 flex flex-col justify-between flex-1">
+			  <div>
+				<div class="text-[11px] text-slate-500 truncate">${card.classType || 'Class'} • ${card.versions.length} 個版本</div>
+				<h3 class="font-bold text-sm text-slate-200 group-hover:text-indigo-400 transition-colors line-clamp-1 mt-0.5">${card.name}</h3>
+			  </div>
+			  <div class="mt-2.5 pt-2 border-t border-slate-800/60 flex items-center justify-between">
+				<span class="text-[11px] text-slate-400">市場價</span>
+				<span class="text-sm font-black text-indigo-400">$${maxPrice > 0 ? maxPrice.toFixed(2) : '--'}</span>
+			  </div>
+			</div>
+		  </div>
+		`;
+	  }).join("");
+
+	  if (append) {
+		grid.insertAdjacentHTML('beforeend', cardsHtml);
+	  } else {
+		grid.innerHTML = cardsHtml;
+	  }
+	}
 
     // 打開詳情彈窗
     window.openDetailModal = (cardId, verIndex = 0) => {
@@ -565,6 +579,15 @@
     document.getElementById('sortSelect').addEventListener('change', () => {
       applyFilters();
     });
+	
+	window.addEventListener('scroll', () => {
+	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
+		if (CURRENT_PAGE * PAGE_SIZE < FILTERED_CARDS.length) {
+		  CURRENT_PAGE++;
+		  renderCardGrid(true); // true 代表追加在後面
+		}
+	  }
+	});
 
     window.onload = loadData;
   </script>

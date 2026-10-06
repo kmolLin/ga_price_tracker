@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grand Archive 卡價查詢中心</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* 自訂捲軸樣式 */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white flex flex-col">
+
+  <!-- 頂部導航 -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
+      
+      <!-- 左側：系列選單漢堡按鈕 + LOGO -->
+      <div class="flex items-center space-x-3 shrink-0">
+        <button
+          id="openSidebarBtn"
+          class="flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-2 rounded-xl border border-slate-700 transition active:scale-95"
+          title="開啟系列選擇選單"
+        >
+          <i class="fa-solid fa-bars-staggered text-indigo-400"></i>
+          <span class="text-xs font-semibold hidden sm:inline">系列選單</span>
+        </button>
+
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-gem text-indigo-400 text-lg"></i>
+          <span class="font-extrabold text-base sm:text-lg tracking-wider text-slate-100">GA TRACKER</span>
+        </div>
+      </div>
+
+      <!-- 中間：關鍵字搜尋 -->
+      <div class="relative flex-1 max-w-md">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="搜尋卡牌名稱 (支援模糊搜尋)..."
+          class="w-full bg-slate-800/90 text-sm text-slate-200 pl-10 pr-4 py-2 rounded-xl border border-slate-700 focus:outline-none focus:border-indigo-500 transition-all placeholder:text-slate-500"
+        />
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-slate-400 text-xs"></i>
+      </div>
+
+      <!-- 右側：當前選擇系列標籤 + 統計 -->
+      <div class="flex items-center space-x-2 shrink-0">
+        <div class="text-xs text-slate-400 bg-slate-900 border border-slate-800 px-2.5 py-1.5 rounded-lg flex items-center space-x-1.5">
+          <span class="text-slate-500">目前:</span>
+          <span id="activeSetBadge" class="font-bold text-indigo-400 truncate max-w-[120px] sm:max-w-[200px]">全部系列</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 左側滑出抽屜選單 (Drawer Sidebar) -->
+  <div id="sidebarOverlay" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    <div
+      id="sidebarDrawer"
+      class="fixed top-0 left-0 bottom-0 w-80 sm:w-96 bg-slate-900 border-r border-slate-800 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col z-50"
+    >
+      <!-- 抽屜頂部 -->
+      <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/50">
+        <div class="flex items-center space-x-2 text-indigo-400">
+          <i class="fa-solid fa-layer-group"></i>
+          <h2 class="font-bold text-sm tracking-wide text-white">選擇系列擴充包 (Sets)</h2>
+        </div>
+        <button id="closeSidebarBtn" class="text-slate-400 hover:text-white p-1 rounded-lg">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <!-- 側邊欄內系列搜尋框 -->
+      <div class="p-3 border-b border-slate-800/80 bg-slate-900">
+        <div class="relative">
+          <input
+            id="setSearchInput"
+            type="text"
+            placeholder="搜尋系列 (如: DOA, ALC, Promo)..."
+            class="w-full bg-slate-950 text-xs text-slate-200 pl-8 pr-3 py-2 rounded-lg border border-slate-800 focus:outline-none focus:border-indigo-500"
+          />
+          <i class="fa-solid fa-filter absolute left-2.5 top-2.5 text-slate-500 text-xs"></i>
+        </div>
+      </div>
+
+      <!-- 系列列表選單 (垂直滾動) -->
+      <div id="setMenuList" class="flex-1 overflow-y-auto p-3 space-y-1">
+        <!-- 動態渲染系列選項 -->
+      </div>
+
+      <!-- 側邊欄底部統計 -->
+      <div class="p-3 border-t border-slate-800 bg-slate-950/60 text-xs text-slate-500 flex justify-between items-center">
+        <span>全資料庫收錄</span>
+        <span class="text-slate-300 font-semibold"><span id="sidebarTotalCards">0</span> 張卡牌</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主內容區：卡牌網格陳列 -->
+  <main class="max-w-7xl mx-auto px-4 py-6 flex-1 w-full">
+    <!-- 頂部資訊列與排序 -->
+    <div class="flex items-center justify-between mb-4">
+      <div class="text-xs text-slate-400 flex items-center space-x-2">
+        <span>顯示 <b id="currentDisplayCount" class="text-slate-200">0</b> 筆結果</span>
+        <span class="text-slate-600">|</span>
+        <button onclick="selectSetFilter('ALL')" class="text-indigo-400 hover:underline">重設篩選</button>
+      </div>
+      <div class="flex items-center space-x-2 text-xs">
+        <label class="text-slate-400">排序:</label>
+        <select id="sortSelect" class="bg-slate-800 border border-slate-700 text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-indigo-500">
+          <option value="price-desc">價格由高到低</option>
+          <option value="price-asc">價格由低到高</option>
+          <option value="name-asc">卡牌名稱 (A-Z)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- 卡牌卡片網格 (滾動瀏覽) -->
+    <div id="cardsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+      <!-- 動態載入卡牌卡片 -->
+    </div>
+
+    <!-- 空結果提示 -->
+    <div id="noResults" class="hidden text-center py-20 text-slate-500">
+      <i class="fa-solid fa-box-open text-4xl mb-3"></i>
+      <p class="text-sm">沒有符合條件的卡牌，請嘗試更換系列或搜尋關鍵字。</p>
+    </div>
+  </main>
+
+  <!-- 點擊卡牌後彈出的詳細資訊 Modal (含版本選擇與走勢圖) -->
+  <div id="detailModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-4xl overflow-hidden shadow-2xl relative my-auto">
+      <button id="closeDetailModalBtn" class="absolute top-4 right-4 z-10 text-slate-400 hover:text-white bg-slate-800/80 p-2 rounded-full leading-none transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="p-6 grid grid-cols-1 md:grid-cols-12 gap-6">
+        <!-- 左側卡圖 -->
+        <div class="md:col-span-5 flex flex-col items-center justify-center">
+          <div class="w-full max-w-[280px] rounded-xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-950 p-2">
+            <img id="modalCardImage" src="" alt="Card" class="w-full h-auto rounded-lg object-contain" />
+          </div>
+          <p id="modalCardCode" class="text-xs text-slate-400 mt-3 font-mono">--</p>
+        </div>
+
+        <!-- 右側資訊與走勢 -->
+        <div class="md:col-span-7 flex flex-col space-y-4">
+          <div>
+            <div class="flex items-center space-x-2 mb-2">
+              <span id="modalRarityBadge" class="text-[11px] px-2.5 py-0.5 rounded-full font-medium bg-amber-950 text-amber-300 border border-amber-800">Rare</span>
+              <span id="modalClassBadge" class="text-[11px] px-2.5 py-0.5 rounded-full font-medium bg-slate-800 text-slate-300">Class</span>
+            </div>
+            <h2 id="modalCardName" class="text-2xl font-black text-white">--</h2>
+          </div>
+
+          <!-- 版本切換區 -->
+          <div class="bg-slate-950/60 border border-slate-800/80 p-3 rounded-xl">
+            <div class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-2">可選版本與工藝 (點擊切換)</div>
+            <div id="modalVersionButtons" class="flex flex-wrap gap-2 max-h-32 overflow-y-auto pr-1"></div>
+          </div>
+
+          <!-- 價格卡片 -->
+          <div class="grid grid-cols-3 gap-2.5 text-center">
+            <div class="bg-slate-950/80 border border-slate-800 p-2.5 rounded-xl">
+              <div class="text-[11px] text-slate-400">市場參考價</div>
+              <div id="modalMarketPrice" class="text-lg font-black text-indigo-400 mt-1">$0.00</div>
+            </div>
+            <div class="bg-slate-950/80 border border-slate-800 p-2.5 rounded-xl">
+              <div class="text-[11px] text-slate-400">最低掛單</div>
+              <div id="modalLowPrice" class="text-lg font-black text-emerald-400 mt-1">$0.00</div>
+            </div>
+            <div class="bg-slate-950/80 border border-slate-800 p-2.5 rounded-xl">
+              <div class="text-[11px] text-slate-400">最高價格</div>
+              <div id="modalHighPrice" class="text-lg font-black text-slate-300 mt-1">$0.00</div>
+            </div>
+          </div>
+
+          <!-- 歷史走勢圖 -->
+          <div class="bg-slate-950/60 border border-slate-800 p-3.5 rounded-xl">
+            <div class="text-xs font-semibold text-slate-300 mb-2 flex items-center">
+              <i class="fa-solid fa-chart-line text-indigo-400 mr-1.5"></i> 歷史走勢紀錄
+            </div>
+            <div class="relative h-44 w-full">
+              <canvas id="modalPriceChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 近日異動較大彈窗 -->
+  <div id="volatileModal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl">
+      <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-800/40">
+        <div class="flex items-center space-x-2 text-rose-400">
+          <i class="fa-solid fa-arrow-trend-up"></i>
+          <h3 class="font-bold text-sm tracking-wide text-white">近日價格異動較大卡牌</h3>
+        </div>
+        <button id="closeVolatileBtn" class="text-slate-400 hover:text-white text-sm">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div id="volatileList" class="p-4 divide-y divide-slate-800/80 max-h-80 overflow-y-auto text-sm"></div>
+      <div class="p-3 bg-slate-950 text-right">
+        <button id="dismissVolatileBtn" class="px-4 py-1.5 text-xs bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition font-medium">了解，進入目錄</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let ALL_CARDS = [];
+    let FILTERED_CARDS = [];
+    let ALL_AVAILABLE_SETS = []; // 實際抓到的所有系列 { name, count }
+    let currentSetFilter = "ALL";
+    let currentSearchTerm = "";
+    let activeCard = null;
+    let activeVersionIdx = 0;
+    let chartInstance = null;
+
+    // 常見縮寫映射
+    const SET_CODE_MAP = {
+      "Dawn of Ashes": "DOA",
+      "Fractured Crown": "FTC",
+      "Alchemical Revolution": "ALC",
+      "Mercurial Heart": "MRC",
+      "Mortal Ambition": "AMB",
+      "Abyssal Heaven": "HVN",
+      "Distorted Reflections": "DTR",
+      "asphodel/paradise": "PRD",
+      "Promotional": "PROMO"
+    };
+
+    function getFriendlySetLabel(setName) {
+      for (const [key, code] of Object.entries(SET_CODE_MAP)) {
+        if (setName.toLowerCase().includes(key.toLowerCase())) {
+          return `<span class="font-bold text-indigo-400 mr-1.5">[${code}]</span> ${setName}`;
+        }
+      }
+      return setName;
+    }
+
+    // 初始化資料載入
+    async function loadData() {
+      try {
+        const [cardsRes, volRes] = await Promise.all([
+          fetch('./data/cards_db.json'),
+          fetch('./data/volatile.json').catch(() => null)
+        ]);
+
+        if (!cardsRes.ok) throw new Error("尚未找到 cards_db.json");
+        ALL_CARDS = await cardsRes.json();
+        
+        document.getElementById('sidebarTotalCards').textContent = ALL_CARDS.length;
+
+        // 計算各系列的卡牌數量
+        const setCounts = {};
+        ALL_CARDS.forEach(card => {
+          const setsInCard = new Set(card.versions.map(v => v.edition ? v.edition.trim() : "").filter(Boolean));
+          setsInCard.forEach(s => {
+            setCounts[s] = (setCounts[s] || 0) + 1;
+          });
+        });
+
+        ALL_AVAILABLE_SETS = Object.keys(setCounts).sort().map(s => ({
+          name: s,
+          count: setCounts[s]
+        }));
+
+        renderSetMenuList();
+        applyFilters();
+
+        if (volRes && volRes.ok) {
+          const volData = await volRes.json();
+          checkVolatileModal(volData);
+        }
+      } catch (err) {
+        console.error("資料載入失敗:", err);
+        document.getElementById('cardsGrid').innerHTML = `
+          <div class="col-span-full text-center py-20 text-rose-400">
+            <i class="fa-solid fa-triangle-exclamation text-3xl mb-2"></i>
+            <p>無法載入本地資料，請確認已執行 <code>python fetch_prices.py</code> 且正在執行 <code>python -m http.server</code>。</p>
+          </div>
+        `;
+      }
+    }
+
+    // 渲染抽屜側邊欄內的系列選單
+    function renderSetMenuList(filterKeyword = "") {
+      const container = document.getElementById('setMenuList');
+      const kw = filterKeyword.toLowerCase().trim();
+
+      let html = `
+        <button
+          onclick="selectSetFilter('ALL')"
+          class="w-full text-left px-3.5 py-2.5 rounded-xl text-xs font-medium transition flex items-center justify-between ${
+            currentSetFilter === 'ALL'
+              ? 'bg-indigo-600 text-white font-bold shadow-md shadow-indigo-900/30'
+              : 'text-slate-300 hover:bg-slate-800'
+          }"
+        >
+          <span class="flex items-center"><i class="fa-solid fa-asterisk mr-2 text-[10px]"></i> 全部系列</span>
+          <span class="text-[11px] px-2 py-0.5 rounded-full ${currentSetFilter === 'ALL' ? 'bg-indigo-700 text-white' : 'bg-slate-800 text-slate-400'}">${ALL_CARDS.length}</span>
+        </button>
+      `;
+
+      ALL_AVAILABLE_SETS.forEach(setObj => {
+        if (kw && !setObj.name.toLowerCase().includes(kw)) return;
+
+        const isSelected = currentSetFilter === setObj.name;
+        html += `
+          <button
+            onclick="selectSetFilter('${setObj.name.replace(/'/g, "\\'")}')"
+            class="w-full text-left px-3.5 py-2.5 rounded-xl text-xs font-medium transition flex items-center justify-between ${
+              isSelected
+                ? 'bg-indigo-600 text-white font-bold shadow-md shadow-indigo-900/30'
+                : 'text-slate-300 hover:bg-slate-800'
+            }"
+          >
+            <span class="truncate pr-2">${getFriendlySetLabel(setObj.name)}</span>
+            <span class="text-[11px] px-2 py-0.5 rounded-full shrink-0 ${isSelected ? 'bg-indigo-700 text-white' : 'bg-slate-800 text-slate-400'}">${setObj.count}</span>
+          </button>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    // 選擇系列過濾器
+    window.selectSetFilter = (setName) => {
+      currentSetFilter = setName;
+      document.getElementById('activeSetBadge').textContent = setName === 'ALL' ? '全部系列' : setName;
+      renderSetMenuList(document.getElementById('setSearchInput').value);
+      applyFilters();
+      closeSidebar();
+    };
+
+    // 側邊欄抽屜開關
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const sidebarDrawer = document.getElementById('sidebarDrawer');
+
+    function openSidebar() {
+      sidebarOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      sidebarDrawer.classList.remove('-translate-x-full');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeSidebar() {
+      sidebarOverlay.classList.add('opacity-0', 'pointer-events-none');
+      sidebarDrawer.classList.add('-translate-x-full');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    document.getElementById('openSidebarBtn').onclick = openSidebar;
+    document.getElementById('closeSidebarBtn').onclick = closeSidebar;
+    sidebarOverlay.onclick = (e) => {
+      if (e.target === sidebarOverlay) closeSidebar();
+    };
+
+    // 側邊欄搜尋系列關鍵字
+    document.getElementById('setSearchInput').addEventListener('input', (e) => {
+      renderSetMenuList(e.target.value);
+    });
+
+    // 篩選與排序邏輯
+    function applyFilters() {
+      const q = currentSearchTerm.toLowerCase();
+      
+      FILTERED_CARDS = ALL_CARDS.filter(card => {
+        const matchName = card.name.toLowerCase().includes(q);
+        let matchSet = true;
+        if (currentSetFilter !== "ALL") {
+          matchSet = card.versions.some(v => v.edition.trim() === currentSetFilter);
+        }
+        return matchName && matchSet;
+      });
+
+      const sortType = document.getElementById('sortSelect').value;
+      FILTERED_CARDS.sort((a, b) => {
+        const pA = Math.max(...a.versions.map(v => v.marketPrice || 0));
+        const pB = Math.max(...b.versions.map(v => v.marketPrice || 0));
+        if (sortType === 'price-desc') return pB - pA;
+        if (sortType === 'price-asc') return pA - pB;
+        if (sortType === 'name-asc') return a.name.localeCompare(b.name);
+        return 0;
+      });
+
+      renderCardGrid();
+    }
+
+    // 渲染卡牌卡片網格
+    function renderCardGrid() {
+      const grid = document.getElementById('cardsGrid');
+      const countEl = document.getElementById('currentDisplayCount');
+      const noResults = document.getElementById('noResults');
+
+      countEl.textContent = FILTERED_CARDS.length;
+
+      if (FILTERED_CARDS.length === 0) {
+        grid.innerHTML = "";
+        noResults.classList.remove('hidden');
+        return;
+      }
+
+      noResults.classList.add('hidden');
+
+      grid.innerHTML = FILTERED_CARDS.map(card => {
+        const defaultVer = card.versions[0] || {};
+        const maxPrice = Math.max(...card.versions.map(v => v.marketPrice || 0));
+        const img = defaultVer.image || "https://placehold.co/300x420/1e293b/94a3b8?text=No+Image";
+
+        return `
+          <div
+            onclick="openDetailModal('${card.id}')"
+            class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-indigo-500/80 hover:shadow-xl hover:shadow-indigo-950/40 cursor-pointer transition-all duration-200 flex flex-col"
+          >
+            <div class="aspect-[7/10] bg-slate-950 overflow-hidden relative">
+              <img
+                src="${img}"
+                alt="${card.name}"
+                loading="lazy"
+                onerror="this.src='https://placehold.co/300x420/1e293b/94a3b8?text=GA+Card'"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <span class="absolute top-2 right-2 text-[10px] px-1.5 py-0.5 rounded font-bold bg-slate-900/90 text-amber-300 border border-amber-800/80 backdrop-blur">
+                ${card.rarity || 'Common'}
+              </span>
+            </div>
+            <div class="p-3 flex flex-col justify-between flex-1">
+              <div>
+                <div class="text-[11px] text-slate-500 truncate">${card.classType || 'Class'} • ${card.versions.length} 個版本</div>
+                <h3 class="font-bold text-sm text-slate-200 group-hover:text-indigo-400 transition-colors line-clamp-1 mt-0.5">${card.name}</h3>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-800/60 flex items-center justify-between">
+                <span class="text-[11px] text-slate-400">市場價</span>
+                <span class="text-sm font-black text-indigo-400">$${maxPrice > 0 ? maxPrice.toFixed(2) : '--'}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // 打開詳情彈窗
+    window.openDetailModal = (cardId, verIndex = 0) => {
+      const card = ALL_CARDS.find(c => c.id === cardId);
+      if (!card) return;
+
+      activeCard = card;
+      activeVersionIdx = verIndex;
+      const ver = card.versions[verIndex] || card.versions[0];
+
+      document.getElementById('modalCardName').textContent = card.name;
+      document.getElementById('modalRarityBadge').textContent = card.rarity;
+      document.getElementById('modalClassBadge').textContent = card.classType;
+      document.getElementById('modalCardCode').textContent = `${ver.edition} • ${ver.code || ''}`;
+      
+      const imgEl = document.getElementById('modalCardImage');
+      imgEl.src = ver.image || "https://placehold.co/400x560/1e293b/94a3b8?text=Image+Unavailable";
+      imgEl.onerror = () => { imgEl.src = "https://placehold.co/400x560/1e293b/94a3b8?text=Image+Unavailable"; };
+
+      document.getElementById('modalMarketPrice').textContent = ver.marketPrice ? `$${ver.marketPrice.toFixed(2)}` : '$0.00';
+      document.getElementById('modalLowPrice').textContent = ver.lowPrice ? `$${ver.lowPrice.toFixed(2)}` : '$0.00';
+      document.getElementById('modalHighPrice').textContent = ver.highPrice ? `$${ver.highPrice.toFixed(2)}` : '$0.00';
+
+      const verBtnContainer = document.getElementById('modalVersionButtons');
+      verBtnContainer.innerHTML = card.versions.map((v, idx) => `
+        <button
+          onclick="openDetailModal('${card.id}', ${idx})"
+          class="px-2.5 py-1 text-xs rounded-lg border transition ${
+            idx === verIndex
+              ? 'bg-indigo-600 text-white border-indigo-500 shadow-sm'
+              : 'bg-slate-900 text-slate-300 border-slate-700 hover:bg-slate-800'
+          }"
+        >
+          ${v.edition} [${v.finish || 'Regular'}]
+        </button>
+      `).join("");
+
+      renderModalChart(ver.history || []);
+      document.getElementById('detailModal').classList.remove('hidden');
+    };
+
+    function renderModalChart(historyData) {
+      const ctx = document.getElementById('modalPriceChart').getContext('2d');
+      if (chartInstance) chartInstance.destroy();
+
+      const labels = historyData.length ? historyData.map(h => h.date) : ["今日"];
+      const dataPoints = historyData.length ? historyData.map(h => h.price) : [activeCard.versions[activeVersionIdx].marketPrice || 0];
+
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Market Price ($)',
+            data: dataPoints,
+            borderColor: '#6366f1',
+            backgroundColor: 'rgba(99, 102, 241, 0.1)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 4,
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: 'rgba(51, 65, 85, 0.3)' }, ticks: { color: '#94a3b8', font: { size: 10 } } },
+            y: { grid: { color: 'rgba(51, 65, 85, 0.3)' }, ticks: { color: '#94a3b8', font: { size: 10 }, callback: v => `$${v}` } }
+          }
+        }
+      });
+    }
+
+    document.getElementById('closeDetailModalBtn').onclick = () => {
+      document.getElementById('detailModal').classList.add('hidden');
+    };
+
+    // 異動提醒 Modal
+    function checkVolatileModal(volData) {
+      if (!volData || volData.length === 0) return;
+      const today = new Date().toISOString().slice(0, 10);
+      if (localStorage.getItem('ga_volatile_seen') === today) return;
+
+      const listEl = document.getElementById('volatileList');
+      listEl.innerHTML = volData.map(item => `
+        <div class="py-2 flex items-center justify-between">
+          <div>
+            <div class="font-medium text-slate-200 text-xs sm:text-sm">${item.name}</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">原: ${item.oldPrice} ➔ 現: ${item.newPrice}</div>
+          </div>
+          <span class="text-xs px-2 py-0.5 rounded font-bold ${item.up ? 'bg-rose-950 text-rose-300 border border-rose-800' : 'bg-emerald-950 text-emerald-300 border border-emerald-800'}">
+            ${item.change}
+          </span>
+        </div>
+      `).join("");
+
+      document.getElementById('volatileModal').classList.remove('hidden');
+    }
+
+    const closeVol = () => {
+      document.getElementById('volatileModal').classList.add('hidden');
+      localStorage.setItem('ga_volatile_seen', new Date().toISOString().slice(0, 10));
+    };
+    document.getElementById('closeVolatileBtn').onclick = closeVol;
+    document.getElementById('dismissVolatileBtn').onclick = closeVol;
+
+    // 監聽主搜尋框與排序
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      currentSearchTerm = e.target.value.trim();
+      applyFilters();
+    });
+
+    document.getElementById('sortSelect').addEventListener('change', () => {
+      applyFilters();
+    });
+
+    window.onload = loadData;
+  </script>
+</body>
+</html>

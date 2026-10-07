@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content" />
   <title>Grand Archive 卡價查詢中心</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,47 +15,66 @@
     ::-webkit-scrollbar-track { background: #0f172a; }
     ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+    /* 防止 iOS 在點擊輸入框時自動放大 (字體小於 16px 會觸發強制縮放，導致選字框位移或被遮擋) */
+    @media screen and (max-width: 640px) {
+      input, select, textarea {
+        font-size: 16px !important;
+      }
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white flex flex-col">
 
   <!-- 頂部導航 -->
   <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
+    <div class="max-w-7xl mx-auto px-2.5 sm:px-4 h-16 flex items-center justify-between gap-2 sm:gap-3">
       
       <!-- 左側：系列選單漢堡按鈕 + LOGO -->
-      <div class="flex items-center space-x-3 shrink-0">
+      <div class="flex items-center space-x-1.5 sm:space-x-3 shrink-0">
         <button
           id="openSidebarBtn"
-          class="flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-2 rounded-xl border border-slate-700 transition active:scale-95"
+          class="flex items-center space-x-1 sm:space-x-2 bg-slate-800 hover:bg-slate-700 text-slate-200 px-2.5 sm:px-3 py-2 rounded-xl border border-slate-700 transition active:scale-95"
           title="開啟系列選擇選單"
         >
           <i class="fa-solid fa-bars-staggered text-indigo-400"></i>
-          <span class="text-xs font-semibold hidden sm:inline">系列選單</span>
+          <span class="text-xs font-semibold hidden md:inline">系列選單</span>
         </button>
 
-        <div class="flex items-center space-x-2">
-          <i class="fa-solid fa-gem text-indigo-400 text-lg"></i>
-          <span class="font-extrabold text-base sm:text-lg tracking-wider text-slate-100">GA TRACKER</span>
+        <div class="flex items-center space-x-1.5">
+          <i class="fa-solid fa-gem text-indigo-400 text-base sm:text-lg"></i>
+          <span class="font-extrabold text-sm sm:text-lg tracking-wider text-slate-100 hidden sm:inline">GA TRACKER</span>
         </div>
       </div>
 
-      <!-- 中間：關鍵字搜尋 -->
+      <!-- 中間：關鍵字搜尋 (手機版享有更大寬度，字體>=16px避免iOS放大) -->
       <div class="relative flex-1 max-w-md">
         <input
           id="searchInput"
-          type="text"
+          type="search"
+          enterkeyhint="search"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
           placeholder="搜尋卡牌名稱 (支援模糊搜尋)..."
-          class="w-full bg-slate-800/90 text-sm text-slate-200 pl-10 pr-4 py-2 rounded-xl border border-slate-700 focus:outline-none focus:border-indigo-500 transition-all placeholder:text-slate-500"
+          class="w-full bg-slate-800/90 text-base sm:text-sm text-slate-100 pl-9 sm:pl-10 pr-8 sm:pr-9 py-2 rounded-xl border border-slate-700 focus:outline-none focus:border-indigo-500 transition-all placeholder:text-slate-500"
         />
-        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-slate-400 text-xs"></i>
+        <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
+        <button
+          id="clearSearchBtn"
+          class="hidden absolute right-2.5 top-2.5 text-slate-400 hover:text-slate-200 text-sm p-0.5 rounded-full"
+          title="清除搜尋"
+        >
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
       </div>
 
       <!-- 右側：當前選擇系列標籤 + 統計 -->
       <div class="flex items-center space-x-2 shrink-0">
-        <div class="text-xs text-slate-400 bg-slate-900 border border-slate-800 px-2.5 py-1.5 rounded-lg flex items-center space-x-1.5">
-          <span class="text-slate-500">目前:</span>
-          <span id="activeSetBadge" class="font-bold text-indigo-400 truncate max-w-[120px] sm:max-w-[200px]">全部系列</span>
+        <div onclick="openSidebar()" class="cursor-pointer text-xs text-slate-400 bg-slate-900 border border-slate-800 px-2 sm:px-2.5 py-1.5 rounded-lg flex items-center space-x-1 hover:border-slate-700 transition">
+          <span class="text-slate-500 hidden sm:inline">目前:</span>
+          <span id="activeSetBadge" class="font-bold text-indigo-400 truncate max-w-[80px] sm:max-w-[200px]">全部系列</span>
         </div>
       </div>
     </div>
@@ -83,9 +102,14 @@
         <div class="relative">
           <input
             id="setSearchInput"
-            type="text"
+            type="search"
+            enterkeyhint="search"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
             placeholder="搜尋系列 (如: DOA, ALC, Promo)..."
-            class="w-full bg-slate-950 text-xs text-slate-200 pl-8 pr-3 py-2 rounded-lg border border-slate-800 focus:outline-none focus:border-indigo-500"
+            class="w-full bg-slate-950 text-base sm:text-xs text-slate-200 pl-8 pr-3 py-2 rounded-lg border border-slate-800 focus:outline-none focus:border-indigo-500"
           />
           <i class="fa-solid fa-filter absolute left-2.5 top-2.5 text-slate-500 text-xs"></i>
         </div>
@@ -369,8 +393,18 @@
       if (e.target === sidebarOverlay) closeSidebar();
     };
 
-    // 側邊欄搜尋系列關鍵字
-    document.getElementById('setSearchInput').addEventListener('input', (e) => {
+    // 側邊欄搜尋系列關鍵字 (支援注音/拼音中文輸入法組字不中斷)
+    let isSetComposing = false;
+    const setSearchInputEl = document.getElementById('setSearchInput');
+    setSearchInputEl.addEventListener('compositionstart', () => {
+      isSetComposing = true;
+    });
+    setSearchInputEl.addEventListener('compositionend', () => {
+      isSetComposing = false;
+      renderSetMenuList(setSearchInputEl.value);
+    });
+    setSearchInputEl.addEventListener('input', (e) => {
+      if (isSetComposing || e.isComposing) return;
       renderSetMenuList(e.target.value);
     });
 
@@ -674,11 +708,53 @@
     document.getElementById('closeVolatileBtn').onclick = closeVol;
     document.getElementById('dismissVolatileBtn').onclick = closeVol;
 
-    // 監聽主搜尋框與排序
-    document.getElementById('searchInput').addEventListener('input', (e) => {
-      currentSearchTerm = e.target.value.trim();
+    // 監聽主搜尋框與排序 (支援中文注音/拼音輸入法，避免選字框被 DOM 重繪打斷或看不到)
+    let isSearchComposing = false;
+    let searchDebounceTimer = null;
+    const searchInputEl = document.getElementById('searchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+
+    function updateClearButtonState() {
+      if (!clearSearchBtn) return;
+      if (searchInputEl.value.trim().length > 0) {
+        clearSearchBtn.classList.remove('hidden');
+      } else {
+        clearSearchBtn.classList.add('hidden');
+      }
+    }
+
+    function doSearch() {
+      currentSearchTerm = searchInputEl.value.trim();
+      updateClearButtonState();
       applyFilters();
+    }
+
+    searchInputEl.addEventListener('compositionstart', () => {
+      isSearchComposing = true;
     });
+
+    searchInputEl.addEventListener('compositionend', () => {
+      isSearchComposing = false;
+      doSearch();
+    });
+
+    searchInputEl.addEventListener('input', (e) => {
+      updateClearButtonState();
+      // 如果正在注音/拼音組字或選字中，絕對不要觸發重新渲染，保護手機選字框！
+      if (isSearchComposing || e.isComposing) return;
+
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(doSearch, 150);
+    });
+
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener('click', () => {
+        searchInputEl.value = "";
+        updateClearButtonState();
+        searchInputEl.focus();
+        doSearch();
+      });
+    }
 
     document.getElementById('sortSelect').addEventListener('change', () => {
       applyFilters();

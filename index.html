@@ -70,11 +70,18 @@
         </button>
       </div>
 
-      <!-- 右側：當前選擇系列標籤 + 統計 -->
-      <div class="flex items-center space-x-2 shrink-0">
+      <!-- 右側：手機頂部幣別快速切換 + 當前選擇系列標籤 + 統計 -->
+      <div class="flex items-center space-x-1.5 sm:space-x-2 shrink-0">
+        <!-- 手機頂部快速切換 -->
+        <div class="inline-flex sm:hidden items-center bg-slate-800/90 border border-slate-700/80 rounded-xl p-0.5 text-xs">
+          <button type="button" onclick="setCurrency('TWD')" id="headerCurrBtn-TWD" class="px-1.5 py-0.5 rounded-lg font-bold transition">NT$</button>
+          <button type="button" onclick="setCurrency('USD')" id="headerCurrBtn-USD" class="px-1.5 py-0.5 rounded-lg font-bold transition">$</button>
+          <button type="button" onclick="setCurrency('JPY')" id="headerCurrBtn-JPY" class="px-1.5 py-0.5 rounded-lg font-bold transition">¥</button>
+        </div>
+
         <div onclick="openSidebar()" class="cursor-pointer text-xs text-slate-400 bg-slate-900 border border-slate-800 px-2 sm:px-2.5 py-1.5 rounded-lg flex items-center space-x-1 hover:border-slate-700 transition">
           <span class="text-slate-500 hidden sm:inline">目前:</span>
-          <span id="activeSetBadge" class="font-bold text-indigo-400 truncate max-w-[80px] sm:max-w-[200px]">全部系列</span>
+          <span id="activeSetBadge" class="font-bold text-indigo-400 truncate max-w-[70px] sm:max-w-[200px]">全部系列</span>
         </div>
       </div>
     </div>
@@ -130,22 +137,64 @@
 
   <!-- 主內容區：卡牌網格陳列 -->
   <main class="max-w-7xl mx-auto px-4 py-6 flex-1 w-full">
-    <!-- 頂部資訊列與排序 -->
-    <div class="flex items-center justify-between mb-4">
-      <div class="text-xs text-slate-400 flex items-center space-x-2">
-        <span>顯示 <b id="currentDisplayCount" class="text-slate-200">0</b> 筆結果</span>
-        <span class="text-slate-600">|</span>
-        <button onclick="selectSetFilter('ALL')" class="text-indigo-400 hover:underline">重設篩選</button>
+    <!-- 頂部資訊列、幣別切換與排序 -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 bg-slate-900/60 border border-slate-800/80 p-3 rounded-2xl">
+      <div class="text-xs text-slate-400 flex items-center justify-between sm:justify-start space-x-2">
+        <div class="flex items-center space-x-2">
+          <span>顯示 <b id="currentDisplayCount" class="text-slate-200">0</b> 筆結果</span>
+          <span class="text-slate-600">|</span>
+          <button onclick="selectSetFilter('ALL')" class="text-indigo-400 hover:underline">重設篩選</button>
+        </div>
+        <!-- 匯率提示 (在較大螢幕上顯示) -->
+        <span id="exchangeRateNote" class="text-[11px] text-slate-500 hidden lg:inline pl-2"></span>
       </div>
-      <div class="flex items-center space-x-2 text-xs">
-        <label class="text-slate-400">排序:</label>
-        <select id="sortSelect" class="bg-slate-800 border border-slate-700 text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-indigo-500">
-          <option value="price-normal-desc">普卡價格 (由高到低)</option>
-          <option value="price-normal-asc">普卡價格 (由低到高)</option>
-          <option value="price-max-desc">最高版本價格 (由高到低)</option>
-          <option value="price-max-asc">最高版本價格 (由低到高)</option>
-          <option value="name-asc">卡牌名稱 (A-Z)</option>
-        </select>
+
+      <div class="flex items-center space-x-3 text-xs justify-between sm:justify-end flex-wrap gap-y-2">
+        <!-- 幣別切換按鈕組 -->
+        <div class="flex items-center space-x-1.5">
+          <label class="text-slate-400 flex items-center gap-1 font-medium">
+            <i class="fa-solid fa-coins text-amber-400"></i>
+            <span>幣別:</span>
+          </label>
+          <div class="inline-flex items-center bg-slate-800 border border-slate-700/80 rounded-xl p-0.5 shadow-inner">
+            <button
+              type="button"
+              onclick="setCurrency('TWD')"
+              id="currBtn-TWD"
+              class="px-2.5 py-1 rounded-lg text-xs font-bold transition"
+            >
+              NT$ 台幣
+            </button>
+            <button
+              type="button"
+              onclick="setCurrency('USD')"
+              id="currBtn-USD"
+              class="px-2.5 py-1 rounded-lg text-xs font-bold transition"
+            >
+              $ 美金
+            </button>
+            <button
+              type="button"
+              onclick="setCurrency('JPY')"
+              id="currBtn-JPY"
+              class="px-2.5 py-1 rounded-lg text-xs font-bold transition"
+            >
+              ¥ 日幣
+            </button>
+          </div>
+        </div>
+
+        <!-- 排序選單 -->
+        <div class="flex items-center space-x-1.5">
+          <label class="text-slate-400">排序:</label>
+          <select id="sortSelect" class="bg-slate-800 border border-slate-700 text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-indigo-500">
+            <option value="price-normal-desc">普卡價格 (由高到低)</option>
+            <option value="price-normal-asc">普卡價格 (由低到高)</option>
+            <option value="price-max-desc">最高版本價格 (由高到低)</option>
+            <option value="price-max-asc">最高版本價格 (由低到高)</option>
+            <option value="name-asc">卡牌名稱 (A-Z)</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -197,15 +246,15 @@
           <div class="grid grid-cols-3 gap-2.5 text-center">
             <div class="bg-slate-950/80 border border-slate-800 p-2.5 rounded-xl">
               <div class="text-[11px] text-slate-400">市場參考價</div>
-              <div id="modalMarketPrice" class="text-lg font-black text-indigo-400 mt-1">$0.00</div>
+              <div id="modalMarketPrice" class="text-lg font-black text-indigo-400 mt-1">--</div>
             </div>
             <div class="bg-slate-950/80 border border-slate-800 p-2.5 rounded-xl">
               <div class="text-[11px] text-slate-400">最低掛單</div>
-              <div id="modalLowPrice" class="text-lg font-black text-emerald-400 mt-1">$0.00</div>
+              <div id="modalLowPrice" class="text-lg font-black text-emerald-400 mt-1">--</div>
             </div>
             <div class="bg-slate-950/80 border border-slate-800 p-2.5 rounded-xl">
               <div class="text-[11px] text-slate-400">最高價格</div>
-              <div id="modalHighPrice" class="text-lg font-black text-slate-300 mt-1">$0.00</div>
+              <div id="modalHighPrice" class="text-lg font-black text-slate-300 mt-1">--</div>
             </div>
           </div>
 
@@ -254,6 +303,96 @@
     let activeVersionIdx = 0;
     let chartInstance = null;
 
+    // 幣別與匯率管理 (支援 TWD 台幣、USD 美金、JPY 日幣)
+    let currentCurrency = localStorage.getItem('ga_currency') || 'TWD';
+    let exchangeRates = {
+      USD: 1,
+      TWD: 32.0,
+      JPY: 155.0
+    };
+
+    function getCurrencySymbol(curr = currentCurrency) {
+      switch (curr) {
+        case 'TWD': return 'NT$';
+        case 'JPY': return '¥';
+        case 'USD': default: return '$';
+      }
+    }
+
+    function formatCurrency(usdAmount, curr = currentCurrency) {
+      if (usdAmount === null || usdAmount === undefined || isNaN(usdAmount) || usdAmount <= 0) {
+        return '--';
+      }
+      const rate = exchangeRates[curr] || 1;
+      const converted = usdAmount * rate;
+
+      if (curr === 'TWD') {
+        return `NT$ ${(converted < 10 ? converted.toFixed(1) : Math.round(converted).toLocaleString('zh-TW'))}`;
+      } else if (curr === 'JPY') {
+        return `¥${Math.round(converted).toLocaleString('ja-JP')}`;
+      } else {
+        return `$${converted.toFixed(2)}`;
+      }
+    }
+
+    function updateCurrencyUI() {
+      ['TWD', 'USD', 'JPY'].forEach(c => {
+        const isSel = c === currentCurrency;
+        // 更新主控制列按鈕樣式
+        const btn = document.getElementById(`currBtn-${c}`);
+        if (btn) {
+          btn.className = `px-2.5 py-1 rounded-lg text-xs font-bold transition ${
+            isSel ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-200'
+          }`;
+        }
+        // 更新手機頂部按鈕樣式
+        const hBtn = document.getElementById(`headerCurrBtn-${c}`);
+        if (hBtn) {
+          hBtn.className = `px-1.5 py-0.5 rounded-lg text-xs font-bold transition ${
+            isSel ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-200'
+          }`;
+        }
+      });
+      updateExchangeRateNote();
+    }
+
+    function updateExchangeRateNote() {
+      const el = document.getElementById('exchangeRateNote');
+      if (el) {
+        el.textContent = `匯率參考: 1 USD ≈ ${exchangeRates.TWD.toFixed(1)} TWD / ${exchangeRates.JPY.toFixed(1)} JPY`;
+      }
+    }
+
+    window.setCurrency = (curr) => {
+      if (!['TWD', 'USD', 'JPY'].includes(curr)) return;
+      currentCurrency = curr;
+      localStorage.setItem('ga_currency', curr);
+      updateCurrencyUI();
+      renderCardGrid(false);
+      if (activeCard && !document.getElementById('detailModal').classList.contains('hidden')) {
+        openDetailModal(activeCard.id, activeVersionIdx);
+      }
+    };
+
+    async function fetchLiveExchangeRates() {
+      try {
+        const res = await fetch('https://open.er-api.com/v6/latest/USD');
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.rates) {
+            exchangeRates.TWD = data.rates.TWD || exchangeRates.TWD;
+            exchangeRates.JPY = data.rates.JPY || exchangeRates.JPY;
+            updateExchangeRateNote();
+            if (currentCurrency !== 'USD') {
+              renderCardGrid(false);
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("使用預設匯率 (無法取得即時匯率):", e);
+      }
+    }
+
     // 常見縮寫映射
     const SET_CODE_MAP = {
       "Dawn of Ashes": "DOA",
@@ -287,6 +426,9 @@
         if (!cardsRes.ok) throw new Error("尚未找到 cards_db.json");
         ALL_CARDS = await cardsRes.json();
         
+        updateCurrencyUI();
+        fetchLiveExchangeRates();
+
         document.getElementById('sidebarTotalCards').textContent = ALL_CARDS.length;
 
         // 計算各系列的卡牌數量
@@ -500,18 +642,18 @@
 		priceDisplayHtml = `
 		  <div class="flex items-center justify-between text-xs">
 		    <span class="text-slate-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>普卡</span>
-		    <span class="font-bold text-slate-100">$${normal.price.toFixed(2)}</span>
+		    <span class="font-bold text-slate-100">${formatCurrency(normal.price)}</span>
 		  </div>
 		  <div class="flex items-center justify-between text-xs">
 		    <span class="text-amber-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>閃卡</span>
-		    <span class="font-bold text-amber-300">$${foil.price.toFixed(2)}</span>
+		    <span class="font-bold text-amber-300">${formatCurrency(foil.price)}</span>
 		  </div>
 		`;
 	} else if (normal) {
 		priceDisplayHtml = `
 		  <div class="flex items-center justify-between text-xs">
 		    <span class="text-slate-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>普卡</span>
-		    <span class="font-bold text-slate-100">$${normal.price.toFixed(2)}</span>
+		    <span class="font-bold text-slate-100">${formatCurrency(normal.price)}</span>
 		  </div>
 		  <div class="flex items-center justify-between text-xs text-slate-600">
 		    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>閃卡</span>
@@ -526,14 +668,14 @@
 		  </div>
 		  <div class="flex items-center justify-between text-xs">
 		    <span class="text-amber-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>閃卡</span>
-		    <span class="font-bold text-amber-300">$${foil.price.toFixed(2)}</span>
+		    <span class="font-bold text-amber-300">${formatCurrency(foil.price)}</span>
 		  </div>
 		`;
 	} else if (special) {
 		priceDisplayHtml = `
 		  <div class="flex items-center justify-between text-xs">
 		    <span class="text-purple-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>特卡</span>
-		    <span class="font-bold text-purple-300">$${special.price.toFixed(2)}</span>
+		    <span class="font-bold text-purple-300">${formatCurrency(special.price)}</span>
 		  </div>
 		  <div class="flex items-center justify-between text-xs text-slate-600">
 		    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>普卡</span>
@@ -605,9 +747,9 @@
       imgEl.src = ver.image || "https://placehold.co/400x560/1e293b/94a3b8?text=Image+Unavailable";
       imgEl.onerror = () => { imgEl.src = "https://placehold.co/400x560/1e293b/94a3b8?text=Image+Unavailable"; };
 
-      document.getElementById('modalMarketPrice').textContent = ver.marketPrice ? `$${ver.marketPrice.toFixed(2)}` : '$0.00';
-      document.getElementById('modalLowPrice').textContent = ver.lowPrice ? `$${ver.lowPrice.toFixed(2)}` : '$0.00';
-      document.getElementById('modalHighPrice').textContent = ver.highPrice ? `$${ver.highPrice.toFixed(2)}` : '$0.00';
+      document.getElementById('modalMarketPrice').textContent = formatCurrency(ver.marketPrice);
+      document.getElementById('modalLowPrice').textContent = formatCurrency(ver.lowPrice);
+      document.getElementById('modalHighPrice').textContent = formatCurrency(ver.highPrice);
 
       const verBtnContainer = document.getElementById('modalVersionButtons');
       verBtnContainer.innerHTML = card.versions.map((v, idx) => {
@@ -645,15 +787,21 @@
       const ctx = document.getElementById('modalPriceChart').getContext('2d');
       if (chartInstance) chartInstance.destroy();
 
+      const rate = exchangeRates[currentCurrency] || 1;
+      const isUSD = currentCurrency === 'USD';
       const labels = historyData.length ? historyData.map(h => h.date) : ["今日"];
-      const dataPoints = historyData.length ? historyData.map(h => h.price) : [activeCard.versions[activeVersionIdx].marketPrice || 0];
+      const rawPoints = historyData.length
+        ? historyData.map(h => h.price)
+        : [activeCard.versions[activeVersionIdx].marketPrice || 0];
+
+      const dataPoints = rawPoints.map(p => Number((p * rate).toFixed(isUSD ? 2 : 1)));
 
       chartInstance = new Chart(ctx, {
         type: 'line',
         data: {
           labels: labels,
           datasets: [{
-            label: 'Market Price ($)',
+            label: `市場參考價 (${getCurrencySymbol()})`,
             data: dataPoints,
             borderColor: '#6366f1',
             backgroundColor: 'rgba(99, 102, 241, 0.1)',
@@ -666,10 +814,24 @@
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          plugins: { legend: { display: false } },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: ctx => `市場價: ${getCurrencySymbol()} ${ctx.parsed.y.toLocaleString()}`
+              }
+            }
+          },
           scales: {
             x: { grid: { color: 'rgba(51, 65, 85, 0.3)' }, ticks: { color: '#94a3b8', font: { size: 10 } } },
-            y: { grid: { color: 'rgba(51, 65, 85, 0.3)' }, ticks: { color: '#94a3b8', font: { size: 10 }, callback: v => `$${v}` } }
+            y: {
+              grid: { color: 'rgba(51, 65, 85, 0.3)' },
+              ticks: {
+                color: '#94a3b8',
+                font: { size: 10 },
+                callback: v => `${getCurrencySymbol()}${v.toLocaleString()}`
+              }
+            }
           }
         }
       });
@@ -685,12 +847,14 @@
       const today = new Date().toISOString().slice(0, 10);
       if (localStorage.getItem('ga_volatile_seen') === today) return;
 
+      const parsePrice = str => parseFloat(String(str).replace(/[^0-9.]/g, '')) || 0;
+
       const listEl = document.getElementById('volatileList');
       listEl.innerHTML = volData.map(item => `
         <div class="py-2 flex items-center justify-between">
           <div>
             <div class="font-medium text-slate-200 text-xs sm:text-sm">${item.name}</div>
-            <div class="text-[11px] text-slate-500 mt-0.5">原: ${item.oldPrice} ➔ 現: ${item.newPrice}</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">原: ${formatCurrency(parsePrice(item.oldPrice))} ➔ 現: ${formatCurrency(parsePrice(item.newPrice))}</div>
           </div>
           <span class="text-xs px-2 py-0.5 rounded font-bold ${item.up ? 'bg-rose-950 text-rose-300 border border-rose-800' : 'bg-emerald-950 text-emerald-300 border border-emerald-800'}">
             ${item.change}

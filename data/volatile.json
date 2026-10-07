@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "name": "Lorraine Wandering Warrior [Normal] (Dawn of Ashes 1st Edition)",
+    "oldPrice": "$599.99",
+    "newPrice": "$0.40",
+    "change": "-99.9%",
+    "up": false,
+    "absDiff": 599.59
+  },
+  {
+    "name": "Nullifying Lantern [Normal] (Promotional Cards)",
+    "oldPrice": "$599.99",
+    "newPrice": "$90.95",
+    "change": "-84.8%",
+    "up": false,
+    "absDiff": 509.04
+  },
+  {
+    "name": "Grand Crusaders Ring [Normal] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$247.50",
+    "newPrice": "$20.79",
+    "change": "-91.6%",
+    "up": false,
+    "absDiff": 226.71
+  },
+  {
+    "name": "Haniel Archangel of Spectra [Normal] (Radiant Origins)",
+    "oldPrice": "$222.50",
+    "newPrice": "$8.27",
+    "change": "-96.3%",
+    "up": false,
+    "absDiff": 214.23
+  },
+  {
+    "name": "Cheshire Cat Impish Grin [Normal] (Distorted Reflections)",
+    "oldPrice": "$250.00",
+    "newPrice": "$66.28",
+    "change": "-73.5%",
+    "up": false,
+    "absDiff": 183.72
+  },
+  {
+    "name": "Freezing Hail [Normal] (Promotional Cards)",
+    "oldPrice": "$200.00",
+    "newPrice": "$33.66",
+    "change": "-83.2%",
+    "up": false,
+    "absDiff": 166.34
+  },
+  {
+    "name": "Silvie With the Pack [Normal] (Dawn of Ashes 1st Edition)",
+    "oldPrice": "$150.00",
+    "newPrice": "$0.49",
+    "change": "-99.7%",
+    "up": false,
+    "absDiff": 149.51
+  },
+  {
+    "name": "Raziel Archangel of Libra [Normal] (Radiant Origins)",
+    "oldPrice": "$168.09",
+    "newPrice": "$19.71",
+    "change": "-88.3%",
+    "up": false,
+    "absDiff": 148.38
+  },
+  {
+    "name": "Ariel Archangel of Natura [Normal] (Radiant Origins)",
+    "oldPrice": "$127.29",
+    "newPrice": "$9.52",
+    "change": "-92.5%",
+    "up": false,
+    "absDiff": 117.77000000000001
+  },
+  {
+    "name": "Break Apart [Normal] (Promotional Cards)",
+    "oldPrice": "$126.66",
+    "newPrice": "$10.53",
+    "change": "-91.7%",
+    "up": false,
+    "absDiff": 116.13
+  },
+  {
+    "name": "Huaji of Heavens Rise Huaji of Abyssal Fall [Normal] (Abyssal Heaven)",
+    "oldPrice": "$149.99",
+    "newPrice": "$35.10",
+    "change": "-76.6%",
+    "up": false,
+    "absDiff": 114.89000000000001
+  },
+  {
+    "name": "Topsy Decree [Normal] (Phantom Monarchs)",
+    "oldPrice": "$143.37",
+    "newPrice": "$39.41",
+    "change": "-72.5%",
+    "up": false,
+    "absDiff": 103.96000000000001
+  },
+  {
+    "name": "Vorpal Sword [Normal] (Phantom Monarchs)",
+    "oldPrice": "$139.99",
+    "newPrice": "$38.56",
+    "change": "-72.5%",
+    "up": false,
+    "absDiff": 101.43
+  },
+  {
+    "name": "Song of Frost [Normal] (Supporter Pack 2)",
+    "oldPrice": "$99.99",
+    "newPrice": "$4.86",
+    "change": "-95.1%",
+    "up": false,
+    "absDiff": 95.13
+  },
+  {
+    "name": "Frozen Dismissal [Normal] (Alchemical Revolution Alter Edition)",
+    "oldPrice": "$99.99",
+    "newPrice": "$6.58",
+    "change": "-93.4%",
+    "up": false,
+    "absDiff": 93.41
+  }
+]

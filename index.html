@@ -116,8 +116,10 @@
       <div class="flex items-center space-x-2 text-xs">
         <label class="text-slate-400">排序:</label>
         <select id="sortSelect" class="bg-slate-800 border border-slate-700 text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-indigo-500">
-          <option value="price-desc">價格由高到低</option>
-          <option value="price-asc">價格由低到高</option>
+          <option value="price-normal-desc">普卡價格 (由高到低)</option>
+          <option value="price-normal-asc">普卡價格 (由低到高)</option>
+          <option value="price-max-desc">最高版本價格 (由高到低)</option>
+          <option value="price-max-asc">最高版本價格 (由低到高)</option>
           <option value="name-asc">卡牌名稱 (A-Z)</option>
         </select>
       </div>
@@ -372,6 +374,40 @@
       renderSetMenuList(e.target.value);
     });
 
+    // 計算卡牌的普卡與閃卡價格指標
+    function getCardPriceStats(card) {
+      const normalVers = card.versions.filter(v => (v.finish || '').toLowerCase() === 'normal' || (v.finish || '').toLowerCase() === 'regular');
+      const foilVers = card.versions.filter(v => (v.finish || '').toLowerCase().includes('foil'));
+      const specialVers = card.versions.filter(v => ['csr', 'cur', 'cpr', 'cr'].some(k => (v.finish || '').toLowerCase().includes(k)));
+
+      const getPrice = (vers) => {
+        for (const v of vers) {
+          if (v.marketPrice > 0) return { price: v.marketPrice, isMarket: true, ver: v };
+        }
+        for (const v of vers) {
+          if (v.lowPrice > 0) return { price: v.lowPrice, isMarket: false, ver: v };
+        }
+        return null;
+      };
+
+      const normal = getPrice(normalVers);
+      const foil = getPrice(foilVers);
+      const special = getPrice(specialVers);
+
+      // 普卡基準價：優先普卡價格，若無則取非零最低版本價格
+      let basePrice = normal ? normal.price : 0;
+      if (!basePrice) {
+        const allNonZero = card.versions.map(v => v.marketPrice || v.lowPrice || 0).filter(p => p > 0);
+        basePrice = allNonZero.length > 0 ? Math.min(...allNonZero) : 0;
+      }
+
+      // 最高版本價：所有版本中的最高價格
+      const allPrices = card.versions.map(v => v.marketPrice || v.lowPrice || 0);
+      const maxPrice = allPrices.length > 0 ? Math.max(...allPrices) : 0;
+
+      return { normal, foil, special, basePrice, maxPrice };
+    }
+
     // 篩選與排序邏輯
     function applyFilters() {
       const q = currentSearchTerm.toLowerCase();
@@ -387,16 +423,17 @@
 
       const sortType = document.getElementById('sortSelect').value;
       FILTERED_CARDS.sort((a, b) => {
-        const pA = Math.max(...a.versions.map(v => v.marketPrice || 0));
-        const pB = Math.max(...b.versions.map(v => v.marketPrice || 0));
-        if (sortType === 'price-desc') return pB - pA;
-        if (sortType === 'price-asc') return pA - pB;
+        const statsA = getCardPriceStats(a);
+        const statsB = getCardPriceStats(b);
+        if (sortType === 'price-normal-desc') return statsB.basePrice - statsA.basePrice;
+        if (sortType === 'price-normal-asc') return statsA.basePrice - statsB.basePrice;
+        if (sortType === 'price-max-desc' || sortType === 'price-desc') return statsB.maxPrice - statsA.maxPrice;
+        if (sortType === 'price-max-asc' || sortType === 'price-asc') return statsA.maxPrice - statsB.maxPrice;
         if (sortType === 'name-asc') return a.name.localeCompare(b.name);
         return 0;
       });
 	  CURRENT_PAGE = 1;         // 每次搜尋或換系列時，重設為第 1 頁
       renderCardGrid(false);
-
     }
 
     // 渲染卡牌卡片網格
@@ -421,8 +458,62 @@
 
 	const cardsHtml = pageCards.map(card => {
 	const defaultVer = card.versions[0] || {};
-	const maxPrice = Math.max(...card.versions.map(v => v.marketPrice || 0));
 	const img = defaultVer.image || "https://placehold.co/300x420/1e293b/94a3b8?text=No+Image";
+	const { normal, foil, special } = getCardPriceStats(card);
+
+	let priceDisplayHtml = "";
+	if (normal && foil) {
+		priceDisplayHtml = `
+		  <div class="flex items-center justify-between text-xs">
+		    <span class="text-slate-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>普卡</span>
+		    <span class="font-bold text-slate-100">$${normal.price.toFixed(2)}</span>
+		  </div>
+		  <div class="flex items-center justify-between text-xs">
+		    <span class="text-amber-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>閃卡</span>
+		    <span class="font-bold text-amber-300">$${foil.price.toFixed(2)}</span>
+		  </div>
+		`;
+	} else if (normal) {
+		priceDisplayHtml = `
+		  <div class="flex items-center justify-between text-xs">
+		    <span class="text-slate-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>普卡</span>
+		    <span class="font-bold text-slate-100">$${normal.price.toFixed(2)}</span>
+		  </div>
+		  <div class="flex items-center justify-between text-xs text-slate-600">
+		    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>閃卡</span>
+		    <span>--</span>
+		  </div>
+		`;
+	} else if (foil) {
+		priceDisplayHtml = `
+		  <div class="flex items-center justify-between text-xs text-slate-600">
+		    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>普卡</span>
+		    <span>--</span>
+		  </div>
+		  <div class="flex items-center justify-between text-xs">
+		    <span class="text-amber-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>閃卡</span>
+		    <span class="font-bold text-amber-300">$${foil.price.toFixed(2)}</span>
+		  </div>
+		`;
+	} else if (special) {
+		priceDisplayHtml = `
+		  <div class="flex items-center justify-between text-xs">
+		    <span class="text-purple-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>特卡</span>
+		    <span class="font-bold text-purple-300">$${special.price.toFixed(2)}</span>
+		  </div>
+		  <div class="flex items-center justify-between text-xs text-slate-600">
+		    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>普卡</span>
+		    <span>--</span>
+		  </div>
+		`;
+	} else {
+		priceDisplayHtml = `
+		  <div class="flex items-center justify-between text-xs text-slate-500">
+		    <span>參考價</span>
+		    <span>--</span>
+		  </div>
+		`;
+	}
 
 		return `
 		  <div
@@ -447,9 +538,8 @@
 				<div class="text-[11px] text-slate-500 truncate">${card.classType || 'Class'} • ${card.versions.length} 個版本</div>
 				<h3 class="font-bold text-sm text-slate-200 group-hover:text-indigo-400 transition-colors line-clamp-1 mt-0.5">${card.name}</h3>
 			  </div>
-			  <div class="mt-2.5 pt-2 border-t border-slate-800/60 flex items-center justify-between">
-				<span class="text-[11px] text-slate-400">市場價</span>
-				<span class="text-sm font-black text-indigo-400">$${maxPrice > 0 ? maxPrice.toFixed(2) : '--'}</span>
+			  <div class="mt-2.5 pt-2 border-t border-slate-800/60 space-y-1">
+				${priceDisplayHtml}
 			  </div>
 			</div>
 		  </div>
@@ -475,7 +565,7 @@
       document.getElementById('modalCardName').textContent = card.name;
       document.getElementById('modalRarityBadge').textContent = card.rarity;
       document.getElementById('modalClassBadge').textContent = card.classType;
-      document.getElementById('modalCardCode').textContent = `${ver.edition} • ${ver.code || ''}`;
+      document.getElementById('modalCardCode').textContent = `${ver.edition} • ${ver.code || ''} [${ver.finish || 'Normal'}]`;
       
       const imgEl = document.getElementById('modalCardImage');
       imgEl.src = ver.image || "https://placehold.co/400x560/1e293b/94a3b8?text=Image+Unavailable";
@@ -486,18 +576,32 @@
       document.getElementById('modalHighPrice').textContent = ver.highPrice ? `$${ver.highPrice.toFixed(2)}` : '$0.00';
 
       const verBtnContainer = document.getElementById('modalVersionButtons');
-      verBtnContainer.innerHTML = card.versions.map((v, idx) => `
-        <button
-          onclick="openDetailModal('${card.id}', ${idx})"
-          class="px-2.5 py-1 text-xs rounded-lg border transition ${
-            idx === verIndex
-              ? 'bg-indigo-600 text-white border-indigo-500 shadow-sm'
-              : 'bg-slate-900 text-slate-300 border-slate-700 hover:bg-slate-800'
-          }"
-        >
-          ${v.edition} [${v.finish || 'Regular'}]
-        </button>
-      `).join("");
+      verBtnContainer.innerHTML = card.versions.map((v, idx) => {
+        const isSelected = idx === verIndex;
+        const isFoil = (v.finish || '').toLowerCase().includes('foil');
+        const isSpecial = ['csr', 'cur', 'cpr', 'cr'].some(k => (v.finish || '').toLowerCase().includes(k));
+
+        let styleClass = isSelected
+          ? 'bg-indigo-600 text-white border-indigo-500 shadow-md font-bold'
+          : isSpecial
+            ? 'bg-purple-950/60 text-purple-300 border-purple-800 hover:bg-purple-900/50'
+            : isFoil
+              ? 'bg-amber-950/40 text-amber-300 border-amber-800/80 hover:bg-amber-900/30'
+              : 'bg-slate-900 text-slate-300 border-slate-700 hover:bg-slate-800';
+
+        let finishLabel = v.finish || (v.subType === 'Foil' ? 'Foil' : 'Normal');
+
+        return `
+          <button
+            onclick="openDetailModal('${card.id}', ${idx})"
+            class="px-2.5 py-1 text-xs rounded-lg border transition flex items-center space-x-1.5 ${styleClass}"
+          >
+            ${isSpecial ? '<i class="fa-solid fa-crown text-[10px] text-purple-400"></i>' : isFoil ? '<i class="fa-solid fa-sparkles text-[10px] text-amber-400"></i>' : ''}
+            <span>${v.edition}</span>
+            <span class="text-[10px] opacity-80 font-mono">[${finishLabel}]</span>
+          </button>
+        `;
+      }).join("");
 
       renderModalChart(ver.history || []);
       document.getElementById('detailModal').classList.remove('hidden');

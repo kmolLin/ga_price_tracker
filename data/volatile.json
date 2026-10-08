@@ -1,122 +1,114 @@
 [
   {
-    "name": "Lorraine Wandering Warrior [Normal] (Dawn of Ashes 1st Edition)",
-    "oldPrice": "$599.99",
-    "newPrice": "$0.40",
-    "change": "-99.9%",
+    "name": "Mercurial Heart [Normal] (Mercurial Heart Alter Edition)",
+    "oldPrice": "$79.99",
+    "newPrice": "$6.37",
+    "change": "-92.0%",
     "up": false,
-    "absDiff": 599.59
+    "absDiff": 73.61999999999999
   },
   {
-    "name": "Nullifying Lantern [Normal] (Promotional Cards)",
-    "oldPrice": "$599.99",
-    "newPrice": "$90.95",
-    "change": "-84.8%",
+    "name": "Blood Dragons Pact Curio Foil [Foil] (Radiant Origins)",
+    "oldPrice": "$54.99",
+    "newPrice": "$34.99",
+    "change": "-36.4%",
     "up": false,
-    "absDiff": 509.04
+    "absDiff": 20.0
   },
   {
-    "name": "Grand Crusaders Ring [Normal] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$247.50",
-    "newPrice": "$20.79",
-    "change": "-91.6%",
+    "name": "Volnia Curio Foil [Foil] (Radiant Origins)",
+    "oldPrice": "$49.99",
+    "newPrice": "$30.49",
+    "change": "-39.0%",
     "up": false,
-    "absDiff": 226.71
+    "absDiff": 19.500000000000004
   },
   {
-    "name": "Haniel Archangel of Spectra [Normal] (Radiant Origins)",
-    "oldPrice": "$222.50",
-    "newPrice": "$8.27",
-    "change": "-96.3%",
+    "name": "Divining Streams [Foil] (Radiant Origins)",
+    "oldPrice": "$19.40",
+    "newPrice": "$9.01",
+    "change": "-53.6%",
     "up": false,
-    "absDiff": 214.23
+    "absDiff": 10.389999999999999
   },
   {
-    "name": "Cheshire Cat Impish Grin [Normal] (Distorted Reflections)",
-    "oldPrice": "$250.00",
-    "newPrice": "$66.28",
-    "change": "-73.5%",
+    "name": "Dwarf Stars Glow [Foil] (Radiant Origins)",
+    "oldPrice": "$31.47",
+    "newPrice": "$25.29",
+    "change": "-19.6%",
     "up": false,
-    "absDiff": 183.72
+    "absDiff": 6.18
   },
   {
-    "name": "Freezing Hail [Normal] (Promotional Cards)",
-    "oldPrice": "$200.00",
-    "newPrice": "$33.66",
-    "change": "-83.2%",
+    "name": "Horn of Beastcalling [Foil] (Radiant Origins)",
+    "oldPrice": "$20.97",
+    "newPrice": "$17.22",
+    "change": "-17.9%",
     "up": false,
-    "absDiff": 166.34
+    "absDiff": 3.75
   },
   {
-    "name": "Silvie With the Pack [Normal] (Dawn of Ashes 1st Edition)",
-    "oldPrice": "$150.00",
-    "newPrice": "$0.49",
-    "change": "-99.7%",
-    "up": false,
-    "absDiff": 149.51
+    "name": "Eye of Argus [Foil] (Radiant Origins)",
+    "oldPrice": "$9.74",
+    "newPrice": "$12.62",
+    "change": "+29.6%",
+    "up": true,
+    "absDiff": 2.879999999999999
   },
   {
-    "name": "Raziel Archangel of Libra [Normal] (Radiant Origins)",
-    "oldPrice": "$168.09",
-    "newPrice": "$19.71",
-    "change": "-88.3%",
-    "up": false,
-    "absDiff": 148.38
+    "name": "Dredging Streams [Foil] (Supporter Pack 4)",
+    "oldPrice": "$9.64",
+    "newPrice": "$11.97",
+    "change": "+24.2%",
+    "up": true,
+    "absDiff": 2.33
   },
   {
-    "name": "Ariel Archangel of Natura [Normal] (Radiant Origins)",
-    "oldPrice": "$127.29",
-    "newPrice": "$9.52",
-    "change": "-92.5%",
-    "up": false,
-    "absDiff": 117.77000000000001
+    "name": "Imperial Panzer [Foil] (Alchemical Revolution Alter Edition)",
+    "oldPrice": "$14.45",
+    "newPrice": "$16.68",
+    "change": "+15.4%",
+    "up": true,
+    "absDiff": 2.2300000000000004
   },
   {
-    "name": "Break Apart [Normal] (Promotional Cards)",
-    "oldPrice": "$126.66",
-    "newPrice": "$10.53",
-    "change": "-91.7%",
+    "name": "Stellar Bloom [Foil] (Radiant Origins)",
+    "oldPrice": "$5.98",
+    "newPrice": "$3.99",
+    "change": "-33.3%",
     "up": false,
-    "absDiff": 116.13
+    "absDiff": 1.9900000000000002
   },
   {
-    "name": "Huaji of Heavens Rise Huaji of Abyssal Fall [Normal] (Abyssal Heaven)",
-    "oldPrice": "$149.99",
-    "newPrice": "$35.10",
-    "change": "-76.6%",
+    "name": "Thanatotic Hemosynth [Foil] (.asphodel/paradise)",
+    "oldPrice": "$12.00",
+    "newPrice": "$10.14",
+    "change": "-15.5%",
     "up": false,
-    "absDiff": 114.89000000000001
+    "absDiff": 1.8599999999999994
   },
   {
-    "name": "Topsy Decree [Normal] (Phantom Monarchs)",
-    "oldPrice": "$143.37",
-    "newPrice": "$39.41",
-    "change": "-72.5%",
+    "name": "Nascent Barrier [Foil] (Radiant Origins)",
+    "oldPrice": "$5.22",
+    "newPrice": "$3.96",
+    "change": "-24.1%",
     "up": false,
-    "absDiff": 103.96000000000001
+    "absDiff": 1.2599999999999998
   },
   {
-    "name": "Vorpal Sword [Normal] (Phantom Monarchs)",
-    "oldPrice": "$139.99",
-    "newPrice": "$38.56",
-    "change": "-72.5%",
+    "name": "Dazzling Courtesan [Foil] (Radiant Origins)",
+    "oldPrice": "$5.16",
+    "newPrice": "$3.97",
+    "change": "-23.1%",
     "up": false,
-    "absDiff": 101.43
+    "absDiff": 1.19
   },
   {
-    "name": "Song of Frost [Normal] (Supporter Pack 2)",
-    "oldPrice": "$99.99",
-    "newPrice": "$4.86",
-    "change": "-95.1%",
-    "up": false,
-    "absDiff": 95.13
-  },
-  {
-    "name": "Frozen Dismissal [Normal] (Alchemical Revolution Alter Edition)",
-    "oldPrice": "$99.99",
-    "newPrice": "$6.58",
-    "change": "-93.4%",
-    "up": false,
-    "absDiff": 93.41
+    "name": "Shaded Doppelganger [Foil] (Radiant Origins)",
+    "oldPrice": "$5.12",
+    "newPrice": "$6.17",
+    "change": "+20.5%",
+    "up": true,
+    "absDiff": 1.0499999999999998
   }
 ]

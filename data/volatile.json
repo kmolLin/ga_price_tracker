@@ -1,114 +1,114 @@
 [
   {
-    "name": "Mercurial Heart [Normal] (Mercurial Heart Alter Edition)",
-    "oldPrice": "$79.99",
-    "newPrice": "$6.37",
-    "change": "-92.0%",
+    "name": "Flagrant Guide [Foil] (Radiant Origins)",
+    "oldPrice": "$42.18",
+    "newPrice": "$33.97",
+    "change": "-19.5%",
     "up": false,
-    "absDiff": 73.61999999999999
+    "absDiff": 8.21
   },
   {
-    "name": "Blood Dragons Pact Curio Foil [Foil] (Radiant Origins)",
-    "oldPrice": "$54.99",
-    "newPrice": "$34.99",
-    "change": "-36.4%",
+    "name": "Portly Raccoon Curio Foil [Foil] (Radiant Origins)",
+    "oldPrice": "$35.20",
+    "newPrice": "$27.80",
+    "change": "-21.0%",
     "up": false,
-    "absDiff": 20.0
+    "absDiff": 7.400000000000002
   },
   {
-    "name": "Volnia Curio Foil [Foil] (Radiant Origins)",
-    "oldPrice": "$49.99",
-    "newPrice": "$30.49",
-    "change": "-39.0%",
+    "name": "Focusing Gem [Foil] (Radiant Origins)",
+    "oldPrice": "$26.13",
+    "newPrice": "$20.66",
+    "change": "-20.9%",
     "up": false,
-    "absDiff": 19.500000000000004
+    "absDiff": 5.469999999999999
   },
   {
-    "name": "Divining Streams [Foil] (Radiant Origins)",
-    "oldPrice": "$19.40",
-    "newPrice": "$9.01",
-    "change": "-53.6%",
+    "name": "Stellar Cosmos [Foil] (Radiant Origins)",
+    "oldPrice": "$16.31",
+    "newPrice": "$11.99",
+    "change": "-26.5%",
     "up": false,
-    "absDiff": 10.389999999999999
+    "absDiff": 4.3199999999999985
   },
   {
-    "name": "Dwarf Stars Glow [Foil] (Radiant Origins)",
-    "oldPrice": "$31.47",
-    "newPrice": "$25.29",
-    "change": "-19.6%",
-    "up": false,
-    "absDiff": 6.18
-  },
-  {
-    "name": "Horn of Beastcalling [Foil] (Radiant Origins)",
-    "oldPrice": "$20.97",
-    "newPrice": "$17.22",
-    "change": "-17.9%",
-    "up": false,
-    "absDiff": 3.75
-  },
-  {
-    "name": "Eye of Argus [Foil] (Radiant Origins)",
-    "oldPrice": "$9.74",
-    "newPrice": "$12.62",
-    "change": "+29.6%",
+    "name": "Inundating Clash [Foil] (Mortal Ambition)",
+    "oldPrice": "$11.50",
+    "newPrice": "$15.00",
+    "change": "+30.4%",
     "up": true,
-    "absDiff": 2.879999999999999
+    "absDiff": 3.5
   },
   {
-    "name": "Dredging Streams [Foil] (Supporter Pack 4)",
-    "oldPrice": "$9.64",
-    "newPrice": "$11.97",
-    "change": "+24.2%",
-    "up": true,
-    "absDiff": 2.33
-  },
-  {
-    "name": "Imperial Panzer [Foil] (Alchemical Revolution Alter Edition)",
-    "oldPrice": "$14.45",
-    "newPrice": "$16.68",
-    "change": "+15.4%",
-    "up": true,
-    "absDiff": 2.2300000000000004
-  },
-  {
-    "name": "Stellar Bloom [Foil] (Radiant Origins)",
-    "oldPrice": "$5.98",
-    "newPrice": "$3.99",
-    "change": "-33.3%",
+    "name": "Journeys Beginning 017 [Foil] (Promotional Cards)",
+    "oldPrice": "$10.31",
+    "newPrice": "$7.64",
+    "change": "-25.9%",
     "up": false,
-    "absDiff": 1.9900000000000002
+    "absDiff": 2.670000000000001
   },
   {
-    "name": "Thanatotic Hemosynth [Foil] (.asphodel/paradise)",
-    "oldPrice": "$12.00",
-    "newPrice": "$10.14",
-    "change": "-15.5%",
+    "name": "Stalwart Shieldmate [Foil] (Promotional Cards)",
+    "oldPrice": "$6.74",
+    "newPrice": "$4.32",
+    "change": "-35.9%",
     "up": false,
-    "absDiff": 1.8599999999999994
+    "absDiff": 2.42
   },
   {
-    "name": "Nascent Barrier [Foil] (Radiant Origins)",
-    "oldPrice": "$5.22",
-    "newPrice": "$3.96",
-    "change": "-24.1%",
+    "name": "Raze the Land [Normal] (Radiant Origins Event Pack)",
+    "oldPrice": "$2.50",
+    "newPrice": "$0.15",
+    "change": "-94.0%",
     "up": false,
-    "absDiff": 1.2599999999999998
+    "absDiff": 2.35
   },
   {
     "name": "Dazzling Courtesan [Foil] (Radiant Origins)",
-    "oldPrice": "$5.16",
-    "newPrice": "$3.97",
-    "change": "-23.1%",
+    "oldPrice": "$3.97",
+    "newPrice": "$1.96",
+    "change": "-50.6%",
     "up": false,
-    "absDiff": 1.19
+    "absDiff": 2.0100000000000002
   },
   {
-    "name": "Shaded Doppelganger [Foil] (Radiant Origins)",
-    "oldPrice": "$5.12",
-    "newPrice": "$6.17",
-    "change": "+20.5%",
-    "up": true,
-    "absDiff": 1.0499999999999998
+    "name": "Five of Diamonds [Foil] (Radiant Origins)",
+    "oldPrice": "$7.87",
+    "newPrice": "$5.91",
+    "change": "-24.9%",
+    "up": false,
+    "absDiff": 1.96
+  },
+  {
+    "name": "Classical Opening [Foil] (Radiant Origins)",
+    "oldPrice": "$9.24",
+    "newPrice": "$7.32",
+    "change": "-20.8%",
+    "up": false,
+    "absDiff": 1.92
+  },
+  {
+    "name": "Table Straight [Foil] (Radiant Origins)",
+    "oldPrice": "$3.25",
+    "newPrice": "$1.90",
+    "change": "-41.5%",
+    "up": false,
+    "absDiff": 1.35
+  },
+  {
+    "name": "Schwartz Castler [Foil] (Radiant Origins)",
+    "oldPrice": "$2.18",
+    "newPrice": "$0.98",
+    "change": "-55.0%",
+    "up": false,
+    "absDiff": 1.2000000000000002
+  },
+  {
+    "name": "Shard of Empowerment [Foil] (Promotional Cards)",
+    "oldPrice": "$4.99",
+    "newPrice": "$3.99",
+    "change": "-20.0%",
+    "up": false,
+    "absDiff": 1.0
   }
 ]

@@ -1,122 +1,74 @@
 [
   {
-    "name": "Eventide Spear [Foil] (Mortal Ambition)",
-    "oldPrice": "$14.95",
-    "newPrice": "$10.99",
-    "change": "-26.5%",
+    "name": "Lunar Conduit [Foil] (Radiant Origins)",
+    "oldPrice": "$35.45",
+    "newPrice": "$13.94",
+    "change": "-60.7%",
     "up": false,
-    "absDiff": 3.959999999999999
+    "absDiff": 21.510000000000005
   },
   {
-    "name": "Meteoric Slime [Foil] (Radiant Origins)",
-    "oldPrice": "$13.63",
-    "newPrice": "$9.75",
-    "change": "-28.5%",
+    "name": "Vermilion Decree [Foil] (Mercurial Heart)",
+    "oldPrice": "$32.49",
+    "newPrice": "$24.99",
+    "change": "-23.1%",
     "up": false,
-    "absDiff": 3.880000000000001
+    "absDiff": 7.5000000000000036
   },
   {
-    "name": "Fracturing Slash [Foil] (Phantom Monarchs)",
-    "oldPrice": "$1.67",
-    "newPrice": "$5.23",
-    "change": "+213.2%",
-    "up": true,
-    "absDiff": 3.5600000000000005
-  },
-  {
-    "name": "Guo Jia Heavens Favored [Foil] (Abyssal Heaven)",
-    "oldPrice": "$15.26",
-    "newPrice": "$18.21",
-    "change": "+19.3%",
-    "up": true,
-    "absDiff": 2.950000000000001
-  },
-  {
-    "name": "Leeching Bolt [Foil] (Mortal Ambition)",
-    "oldPrice": "$12.39",
-    "newPrice": "$15.25",
-    "change": "+23.1%",
-    "up": true,
-    "absDiff": 2.8599999999999994
-  },
-  {
-    "name": "Slime Swarm [Foil] (Radiant Origins)",
-    "oldPrice": "$10.49",
-    "newPrice": "$7.66",
-    "change": "-27.0%",
+    "name": "Mercenarys Blade [Foil] (Radiant Origins)",
+    "oldPrice": "$30.78",
+    "newPrice": "$24.73",
+    "change": "-19.7%",
     "up": false,
-    "absDiff": 2.83
+    "absDiff": 6.050000000000001
   },
   {
-    "name": "Scout the Land [Foil] (Radiant Origins Event Pack)",
-    "oldPrice": "$7.00",
-    "newPrice": "$4.75",
-    "change": "-32.1%",
+    "name": "fertile grounds [Foil] (Alchemical Revolution)",
+    "oldPrice": "$5.99",
+    "newPrice": "$2.99",
+    "change": "-50.1%",
     "up": false,
-    "absDiff": 2.25
-  },
-  {
-    "name": "Miasmic Fog Curio Foil [Foil] (Radiant Origins)",
-    "oldPrice": "$6.88",
-    "newPrice": "$4.83",
-    "change": "-29.8%",
-    "up": false,
-    "absDiff": 2.05
-  },
-  {
-    "name": "Nascent Barrier [Foil] (Radiant Origins)",
-    "oldPrice": "$3.96",
-    "newPrice": "$1.95",
-    "change": "-50.8%",
-    "up": false,
-    "absDiff": 2.01
-  },
-  {
-    "name": "Fabricator Slime [Foil] (Radiant Origins)",
-    "oldPrice": "$8.99",
-    "newPrice": "$6.99",
-    "change": "-22.2%",
-    "up": false,
-    "absDiff": 2.0
-  },
-  {
-    "name": "Distilled Water [Foil] (Radiant Origins)",
-    "oldPrice": "$7.49",
-    "newPrice": "$5.55",
-    "change": "-25.9%",
-    "up": false,
-    "absDiff": 1.9400000000000004
+    "absDiff": 3.0
   },
   {
     "name": "Slimecall Cyclone [Foil] (Radiant Origins)",
-    "oldPrice": "$10.61",
-    "newPrice": "$8.70",
-    "change": "-18.0%",
+    "oldPrice": "$8.70",
+    "newPrice": "$6.27",
+    "change": "-27.9%",
     "up": false,
-    "absDiff": 1.9100000000000001
+    "absDiff": 2.4299999999999997
   },
   {
-    "name": "Classical Opening [Foil] (Radiant Origins)",
-    "oldPrice": "$7.32",
-    "newPrice": "$5.49",
-    "change": "-25.0%",
+    "name": "Slime Swarm [Foil] (Radiant Origins)",
+    "oldPrice": "$7.66",
+    "newPrice": "$5.99",
+    "change": "-21.8%",
     "up": false,
-    "absDiff": 1.83
+    "absDiff": 1.67
   },
   {
-    "name": "Creative Shock [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$8.50",
-    "newPrice": "$10.33",
-    "change": "+21.5%",
-    "up": true,
-    "absDiff": 1.83
+    "name": "Sinister Composure [Foil] (Radiant Origins)",
+    "oldPrice": "$9.34",
+    "newPrice": "$7.68",
+    "change": "-17.8%",
+    "up": false,
+    "absDiff": 1.6600000000000001
   },
   {
-    "name": "Proto Archive Scout [Foil] (Radiant Origins)",
-    "oldPrice": "$2.49",
+    "name": "Bloodshroud Temper [Foil] (Abyssal Heaven)",
+    "oldPrice": "$5.78",
+    "newPrice": "$4.52",
+    "change": "-21.8%",
+    "up": false,
+    "absDiff": 1.2600000000000007
+  },
+  {
+    "name": "Simple Slime [Foil] (Radiant Origins)",
+    "oldPrice": "$1.99",
     "newPrice": "$0.99",
-    "change": "-60.2%",
+    "change": "-50.3%",
     "up": false,
-    "absDiff": 1.5000000000000002
+    "absDiff": 1.0
   }
 ]

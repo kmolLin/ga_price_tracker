@@ -1,122 +1,50 @@
 [
   {
-    "name": "Angel Attendant Curio Foil [Foil] (Radiant Origins)",
-    "oldPrice": "$180.00",
-    "newPrice": "$139.99",
-    "change": "-22.2%",
+    "name": "arisanna astral zenith [Foil] (Alchemical Revolution)",
+    "oldPrice": "$39.99",
+    "newPrice": "$29.99",
+    "change": "-25.0%",
     "up": false,
-    "absDiff": 40.00999999999999
+    "absDiff": 10.000000000000004
   },
   {
-    "name": "Volnia Curio Foil [Foil] (Radiant Origins)",
-    "oldPrice": "$30.49",
-    "newPrice": "$10.99",
-    "change": "-64.0%",
-    "up": false,
-    "absDiff": 19.5
-  },
-  {
-    "name": "Photic Blade [Foil] (Radiant Origins)",
-    "oldPrice": "$30.97",
-    "newPrice": "$11.99",
-    "change": "-61.3%",
-    "up": false,
-    "absDiff": 18.979999999999997
-  },
-  {
-    "name": "Spirit of Chess [Foil] (Radiant Origins)",
-    "oldPrice": "$52.49",
-    "newPrice": "$39.99",
-    "change": "-23.8%",
-    "up": false,
-    "absDiff": 12.5
-  },
-  {
-    "name": "Cauterizing Seraphim [Foil] (Radiant Origins)",
-    "oldPrice": "$34.99",
-    "newPrice": "$26.49",
-    "change": "-24.3%",
-    "up": false,
-    "absDiff": 8.500000000000004
-  },
-  {
-    "name": "Crossroads Specter [Foil] (Distorted Reflections)",
-    "oldPrice": "$6.99",
-    "newPrice": "$2.99",
-    "change": "-57.2%",
-    "up": false,
-    "absDiff": 4.0
-  },
-  {
-    "name": "Gleaming Cut [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$7.49",
-    "newPrice": "$3.99",
-    "change": "-46.7%",
-    "up": false,
-    "absDiff": 3.5
-  },
-  {
-    "name": "Dissipation [Foil] (Radiant Origins)",
-    "oldPrice": "$13.49",
-    "newPrice": "$10.74",
-    "change": "-20.4%",
-    "up": false,
-    "absDiff": 2.75
-  },
-  {
-    "name": "Spalling Cleanse [Foil] (Phantom Monarchs)",
-    "oldPrice": "$12.07",
-    "newPrice": "$14.10",
-    "change": "+16.8%",
+    "name": "Guo Jia Heavens Favored [Foil] (Abyssal Heaven)",
+    "oldPrice": "$18.21",
+    "newPrice": "$22.96",
+    "change": "+26.1%",
     "up": true,
-    "absDiff": 2.0299999999999994
+    "absDiff": 4.75
   },
   {
-    "name": "Iridescent Resurgence [Foil] (Radiant Origins)",
-    "oldPrice": "$2.66",
-    "newPrice": "$0.99",
-    "change": "-62.8%",
+    "name": "Trine Recursion [Foil] (Radiant Origins)",
+    "oldPrice": "$7.35",
+    "newPrice": "$3.84",
+    "change": "-47.8%",
     "up": false,
-    "absDiff": 1.6700000000000002
+    "absDiff": 3.51
   },
   {
-    "name": "Poisoned Dagger [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$2.49",
-    "newPrice": "$0.99",
-    "change": "-60.2%",
+    "name": "Greater Boon of Rosen [Normal] (.asphodel/paradise: Pantheon)",
+    "oldPrice": "$3.99",
+    "newPrice": "$2.90",
+    "change": "-27.3%",
     "up": false,
-    "absDiff": 1.5000000000000002
+    "absDiff": 1.0900000000000003
   },
   {
-    "name": "Liquidation [Foil] (Radiant Origins)",
-    "oldPrice": "$6.99",
-    "newPrice": "$5.49",
-    "change": "-21.5%",
+    "name": "Seraphic Legions Descent 139B [Normal] (Radiant Origins)",
+    "oldPrice": "$4.28",
+    "newPrice": "$3.25",
+    "change": "-24.1%",
     "up": false,
-    "absDiff": 1.5
+    "absDiff": 1.0300000000000002
   },
   {
     "name": "Spirit Blade Infusion [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$4.49",
-    "newPrice": "$2.99",
-    "change": "-33.4%",
-    "up": false,
-    "absDiff": 1.5
-  },
-  {
-    "name": "spellshield astra [Foil] (Alchemical Revolution)",
-    "oldPrice": "$8.22",
-    "newPrice": "$6.73",
-    "change": "-18.1%",
-    "up": false,
-    "absDiff": 1.4900000000000002
-  },
-  {
-    "name": "Slime Swarm [Foil] (Radiant Origins)",
-    "oldPrice": "$5.99",
-    "newPrice": "$4.66",
-    "change": "-22.2%",
-    "up": false,
-    "absDiff": 1.33
+    "oldPrice": "$2.99",
+    "newPrice": "$3.99",
+    "change": "+33.4%",
+    "up": true,
+    "absDiff": 1.0
   }
 ]

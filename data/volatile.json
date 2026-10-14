@@ -1,50 +1,42 @@
 [
   {
-    "name": "arisanna astral zenith [Foil] (Alchemical Revolution)",
-    "oldPrice": "$39.99",
-    "newPrice": "$29.99",
-    "change": "-25.0%",
+    "name": "Blood Dragons Pact Curio Foil [Foil] (Radiant Origins)",
+    "oldPrice": "$34.99",
+    "newPrice": "$14.99",
+    "change": "-57.2%",
     "up": false,
-    "absDiff": 10.000000000000004
+    "absDiff": 20.0
   },
   {
-    "name": "Guo Jia Heavens Favored [Foil] (Abyssal Heaven)",
-    "oldPrice": "$18.21",
-    "newPrice": "$22.96",
-    "change": "+26.1%",
+    "name": "Sword Saints Vow [Foil] (Radiant Origins)",
+    "oldPrice": "$22.08",
+    "newPrice": "$17.35",
+    "change": "-21.4%",
+    "up": false,
+    "absDiff": 4.729999999999997
+  },
+  {
+    "name": "Triskit Guidance Angel [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$11.12",
+    "newPrice": "$6.49",
+    "change": "-41.6%",
+    "up": false,
+    "absDiff": 4.629999999999999
+  },
+  {
+    "name": "Devils Lifeline [Foil] (.asphodel/paradise)",
+    "oldPrice": "$18.80",
+    "newPrice": "$21.97",
+    "change": "+16.9%",
     "up": true,
-    "absDiff": 4.75
+    "absDiff": 3.169999999999998
   },
   {
-    "name": "Trine Recursion [Foil] (Radiant Origins)",
-    "oldPrice": "$7.35",
-    "newPrice": "$3.84",
-    "change": "-47.8%",
-    "up": false,
-    "absDiff": 3.51
-  },
-  {
-    "name": "Greater Boon of Rosen [Normal] (.asphodel/paradise: Pantheon)",
-    "oldPrice": "$3.99",
-    "newPrice": "$2.90",
-    "change": "-27.3%",
-    "up": false,
-    "absDiff": 1.0900000000000003
-  },
-  {
-    "name": "Seraphic Legions Descent 139B [Normal] (Radiant Origins)",
-    "oldPrice": "$4.28",
-    "newPrice": "$3.25",
-    "change": "-24.1%",
-    "up": false,
-    "absDiff": 1.0300000000000002
-  },
-  {
-    "name": "Spirit Blade Infusion [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$2.99",
-    "newPrice": "$3.99",
-    "change": "+33.4%",
+    "name": "Jianye Dawns Keep [Normal] (Abyssal Heaven)",
+    "oldPrice": "$5.37",
+    "newPrice": "$6.38",
+    "change": "+18.8%",
     "up": true,
-    "absDiff": 1.0
+    "absDiff": 1.0099999999999998
   }
 ]

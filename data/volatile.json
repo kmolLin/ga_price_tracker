@@ -1,42 +1,98 @@
 [
   {
-    "name": "Blood Dragons Pact Curio Foil [Foil] (Radiant Origins)",
-    "oldPrice": "$34.99",
-    "newPrice": "$14.99",
-    "change": "-57.2%",
-    "up": false,
-    "absDiff": 20.0
-  },
-  {
-    "name": "Sword Saints Vow [Foil] (Radiant Origins)",
-    "oldPrice": "$22.08",
-    "newPrice": "$17.35",
-    "change": "-21.4%",
-    "up": false,
-    "absDiff": 4.729999999999997
-  },
-  {
-    "name": "Triskit Guidance Angel [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$11.12",
-    "newPrice": "$6.49",
-    "change": "-41.6%",
-    "up": false,
-    "absDiff": 4.629999999999999
-  },
-  {
-    "name": "Devils Lifeline [Foil] (.asphodel/paradise)",
-    "oldPrice": "$18.80",
-    "newPrice": "$21.97",
-    "change": "+16.9%",
+    "name": "Spirit Blade Retribution CSR [CSR (Foil)] (Radiant Origins)",
+    "oldPrice": "$400.00",
+    "newPrice": "$549.61",
+    "change": "+37.4%",
     "up": true,
-    "absDiff": 3.169999999999998
+    "absDiff": 149.61
   },
   {
-    "name": "Jianye Dawns Keep [Normal] (Abyssal Heaven)",
-    "oldPrice": "$5.37",
-    "newPrice": "$6.38",
-    "change": "+18.8%",
+    "name": "arisanna astral zenith [Foil] (Alchemical Revolution)",
+    "oldPrice": "$29.99",
+    "newPrice": "$39.99",
+    "change": "+33.3%",
     "up": true,
-    "absDiff": 1.0099999999999998
+    "absDiff": 10.000000000000004
+  },
+  {
+    "name": "Cometary Vantage [Foil] (Distorted Reflections)",
+    "oldPrice": "$27.49",
+    "newPrice": "$19.99",
+    "change": "-27.3%",
+    "up": false,
+    "absDiff": 7.5
+  },
+  {
+    "name": "Cauterizing Seraphim [Foil] (Radiant Origins)",
+    "oldPrice": "$26.49",
+    "newPrice": "$20.32",
+    "change": "-23.3%",
+    "up": false,
+    "absDiff": 6.169999999999998
+  },
+  {
+    "name": "Sabela Gossamer Penance [Foil] (Radiant Origins)",
+    "oldPrice": "$25.99",
+    "newPrice": "$21.32",
+    "change": "-18.0%",
+    "up": false,
+    "absDiff": 4.669999999999998
+  },
+  {
+    "name": "Floral Arrangement [Foil] (Radiant Origins)",
+    "oldPrice": "$9.69",
+    "newPrice": "$6.33",
+    "change": "-34.7%",
+    "up": false,
+    "absDiff": 3.3599999999999994
+  },
+  {
+    "name": "Automaton Drone [Foil] (Mercurial Heart)",
+    "oldPrice": "$4.27",
+    "newPrice": "$7.43",
+    "change": "+74.0%",
+    "up": true,
+    "absDiff": 3.16
+  },
+  {
+    "name": "Hasty Messenger [Normal] (Promotional Cards)",
+    "oldPrice": "$18.95",
+    "newPrice": "$15.90",
+    "change": "-16.1%",
+    "up": false,
+    "absDiff": 3.049999999999999
+  },
+  {
+    "name": "Glowering Conflagration [Foil] (Abyssal Heaven)",
+    "oldPrice": "$6.99",
+    "newPrice": "$3.99",
+    "change": "-42.9%",
+    "up": false,
+    "absDiff": 3.0
+  },
+  {
+    "name": "Avatar of Genbu [Foil] (Radiant Origins)",
+    "oldPrice": "$11.49",
+    "newPrice": "$8.99",
+    "change": "-21.8%",
+    "up": false,
+    "absDiff": 2.5
+  },
+  {
+    "name": "Lesser Boon of Knox [Normal] (Radiant Origins: Pantheon)",
+    "oldPrice": "$4.90",
+    "newPrice": "$2.99",
+    "change": "-39.0%",
+    "up": false,
+    "absDiff": 1.9100000000000001
+  },
+  {
+    "name": "Cao Cao Aspirant of Chaos [Foil] (Mortal Ambition)",
+    "oldPrice": "$3.99",
+    "newPrice": "$2.99",
+    "change": "-25.1%",
+    "up": false,
+    "absDiff": 1.0
   }
 ]

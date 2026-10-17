@@ -1,82 +1,50 @@
 [
   {
-    "name": "Jin Undying Resolve CSR [CSR] (Mortal Ambition Starter Decks)",
-    "oldPrice": "$649.99",
-    "newPrice": "$499.99",
-    "change": "-23.1%",
-    "up": false,
-    "absDiff": 150.0
-  },
-  {
-    "name": "arisanna astral zenith [Foil] (Alchemical Revolution)",
-    "oldPrice": "$39.99",
-    "newPrice": "$29.99",
-    "change": "-25.0%",
-    "up": false,
-    "absDiff": 10.000000000000004
-  },
-  {
-    "name": "Guo Jia Heavens Favored [Foil] (Abyssal Heaven)",
-    "oldPrice": "$22.96",
-    "newPrice": "$32.50",
-    "change": "+41.6%",
+    "name": "Tristan ReCollection Shadowdancer Box [Normal] (Tristan Re:Collection, Shadowdancer)",
+    "oldPrice": "$222.39",
+    "newPrice": "$272.00",
+    "change": "+22.3%",
     "up": true,
-    "absDiff": 9.54
+    "absDiff": 49.610000000000014
   },
   {
-    "name": "Fractal of Duplication [Foil] (Radiant Origins)",
-    "oldPrice": "$16.66",
-    "newPrice": "$11.99",
-    "change": "-28.0%",
+    "name": "Legendary Saddle [Foil] (Radiant Origins)",
+    "oldPrice": "$23.49",
+    "newPrice": "$16.99",
+    "change": "-27.7%",
     "up": false,
-    "absDiff": 4.67
+    "absDiff": 6.5
   },
   {
-    "name": "Excalibur Cleansing Light [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$16.99",
-    "newPrice": "$12.47",
-    "change": "-26.6%",
-    "up": false,
-    "absDiff": 4.519999999999998
-  },
-  {
-    "name": "Uncover the Plot [Foil] (Phantom Monarchs Event Pack)",
-    "oldPrice": "$6.89",
-    "newPrice": "$4.92",
-    "change": "-28.6%",
-    "up": false,
-    "absDiff": 1.9699999999999998
-  },
-  {
-    "name": "Jianye Dawns Keep [Foil] (Abyssal Heaven)",
-    "oldPrice": "$4.98",
-    "newPrice": "$3.34",
-    "change": "-32.9%",
-    "up": false,
-    "absDiff": 1.6400000000000006
-  },
-  {
-    "name": "Cremation Ritual [Normal] (Radiant Origins: Pantheon)",
-    "oldPrice": "$3.99",
-    "newPrice": "$5.50",
-    "change": "+37.8%",
+    "name": "Orb of Regret [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$0.30",
+    "newPrice": "$2.99",
+    "change": "+896.7%",
     "up": true,
-    "absDiff": 1.5099999999999998
+    "absDiff": 2.6900000000000004
   },
   {
-    "name": "Cao Cao Aspirant of Chaos [Foil] (Mortal Ambition)",
-    "oldPrice": "$2.99",
-    "newPrice": "$3.99",
-    "change": "+33.4%",
-    "up": true,
-    "absDiff": 1.0
-  },
-  {
-    "name": "Ominous Shadow [Foil] (Mercurial Heart)",
-    "oldPrice": "$4.99",
-    "newPrice": "$3.99",
-    "change": "-20.0%",
+    "name": "Eight of Hearts [Foil] (Radiant Origins)",
+    "oldPrice": "$4.24",
+    "newPrice": "$2.66",
+    "change": "-37.3%",
     "up": false,
-    "absDiff": 1.0
+    "absDiff": 1.58
+  },
+  {
+    "name": "Carpsong Coda [Normal] (Abyssal Heaven)",
+    "oldPrice": "$3.47",
+    "newPrice": "$2.21",
+    "change": "-36.3%",
+    "up": false,
+    "absDiff": 1.2600000000000002
+  },
+  {
+    "name": "Flowerbud [Foil] (Abyssal Heaven)",
+    "oldPrice": "$5.24",
+    "newPrice": "$4.15",
+    "change": "-20.8%",
+    "up": false,
+    "absDiff": 1.0899999999999999
   }
 ]

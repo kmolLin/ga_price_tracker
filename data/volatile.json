@@ -1,50 +1,66 @@
 [
   {
-    "name": "Tristan ReCollection Shadowdancer Box [Normal] (Tristan Re:Collection, Shadowdancer)",
-    "oldPrice": "$222.39",
-    "newPrice": "$272.00",
-    "change": "+22.3%",
+    "name": "Silvie ReCollection Slime Sovereign Box [Normal] (Silvie Re:Collection, Slime Sovereign)",
+    "oldPrice": "$173.98",
+    "newPrice": "$219.99",
+    "change": "+26.4%",
     "up": true,
-    "absDiff": 49.610000000000014
+    "absDiff": 46.01000000000002
   },
   {
-    "name": "Legendary Saddle [Foil] (Radiant Origins)",
-    "oldPrice": "$23.49",
+    "name": "Chance Seven of Spades CSR [CSR (Foil)] (Phantom Monarchs)",
+    "oldPrice": "$138.38",
+    "newPrice": "$117.49",
+    "change": "-15.1%",
+    "up": false,
+    "absDiff": 20.89
+  },
+  {
+    "name": "Distorted Reflection Alter Edition Booster Box [Normal] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$83.97",
+    "newPrice": "$71.31",
+    "change": "-15.1%",
+    "up": false,
+    "absDiff": 12.659999999999997
+  },
+  {
+    "name": "Discover the Divine [Foil] (Radiant Origins)",
+    "oldPrice": "$20.99",
     "newPrice": "$16.99",
-    "change": "-27.7%",
+    "change": "-19.1%",
     "up": false,
-    "absDiff": 6.5
+    "absDiff": 4.0
   },
   {
-    "name": "Orb of Regret [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$0.30",
-    "newPrice": "$2.99",
-    "change": "+896.7%",
+    "name": "Twilight Slime [Foil] (Mercurial Heart)",
+    "oldPrice": "$10.59",
+    "newPrice": "$8.56",
+    "change": "-19.2%",
+    "up": false,
+    "absDiff": 2.0299999999999994
+  },
+  {
+    "name": "Thousand Refractions [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$2.49",
+    "newPrice": "$0.99",
+    "change": "-60.2%",
+    "up": false,
+    "absDiff": 1.5000000000000002
+  },
+  {
+    "name": "Auravolt Current [Foil] (Radiant Origins)",
+    "oldPrice": "$4.44",
+    "newPrice": "$3.31",
+    "change": "-25.5%",
+    "up": false,
+    "absDiff": 1.1300000000000003
+  },
+  {
+    "name": "Coruscation [Normal] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$4.99",
+    "newPrice": "$5.99",
+    "change": "+20.0%",
     "up": true,
-    "absDiff": 2.6900000000000004
-  },
-  {
-    "name": "Eight of Hearts [Foil] (Radiant Origins)",
-    "oldPrice": "$4.24",
-    "newPrice": "$2.66",
-    "change": "-37.3%",
-    "up": false,
-    "absDiff": 1.58
-  },
-  {
-    "name": "Carpsong Coda [Normal] (Abyssal Heaven)",
-    "oldPrice": "$3.47",
-    "newPrice": "$2.21",
-    "change": "-36.3%",
-    "up": false,
-    "absDiff": 1.2600000000000002
-  },
-  {
-    "name": "Flowerbud [Foil] (Abyssal Heaven)",
-    "oldPrice": "$5.24",
-    "newPrice": "$4.15",
-    "change": "-20.8%",
-    "up": false,
-    "absDiff": 1.0899999999999999
+    "absDiff": 1.0
   }
 ]

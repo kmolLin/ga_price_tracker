@@ -1,66 +1,42 @@
 [
   {
-    "name": "Silvie ReCollection Slime Sovereign Box [Normal] (Silvie Re:Collection, Slime Sovereign)",
-    "oldPrice": "$173.98",
-    "newPrice": "$219.99",
-    "change": "+26.4%",
-    "up": true,
-    "absDiff": 46.01000000000002
-  },
-  {
-    "name": "Chance Seven of Spades CSR [CSR (Foil)] (Phantom Monarchs)",
-    "oldPrice": "$138.38",
-    "newPrice": "$117.49",
-    "change": "-15.1%",
-    "up": false,
-    "absDiff": 20.89
-  },
-  {
-    "name": "Distorted Reflection Alter Edition Booster Box [Normal] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$83.97",
-    "newPrice": "$71.31",
-    "change": "-15.1%",
-    "up": false,
-    "absDiff": 12.659999999999997
-  },
-  {
-    "name": "Discover the Divine [Foil] (Radiant Origins)",
-    "oldPrice": "$20.99",
-    "newPrice": "$16.99",
-    "change": "-19.1%",
-    "up": false,
-    "absDiff": 4.0
-  },
-  {
-    "name": "Twilight Slime [Foil] (Mercurial Heart)",
-    "oldPrice": "$10.59",
-    "newPrice": "$8.56",
-    "change": "-19.2%",
-    "up": false,
-    "absDiff": 2.0299999999999994
-  },
-  {
-    "name": "Thousand Refractions [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$2.49",
-    "newPrice": "$0.99",
-    "change": "-60.2%",
-    "up": false,
-    "absDiff": 1.5000000000000002
-  },
-  {
-    "name": "Auravolt Current [Foil] (Radiant Origins)",
-    "oldPrice": "$4.44",
-    "newPrice": "$3.31",
-    "change": "-25.5%",
-    "up": false,
-    "absDiff": 1.1300000000000003
-  },
-  {
-    "name": "Coruscation [Normal] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$4.99",
+    "name": "Cone of Frost [Foil] (Promotional Cards)",
+    "oldPrice": "$11.49",
     "newPrice": "$5.99",
-    "change": "+20.0%",
+    "change": "-47.9%",
+    "up": false,
+    "absDiff": 5.5
+  },
+  {
+    "name": "Dissipation [Foil] (Radiant Origins)",
+    "oldPrice": "$10.74",
+    "newPrice": "$7.99",
+    "change": "-25.6%",
+    "up": false,
+    "absDiff": 2.75
+  },
+  {
+    "name": "Gaias Songbird [Normal] (Dawn of Ashes 1st Edition)",
+    "oldPrice": "$2.60",
+    "newPrice": "$5.00",
+    "change": "+92.3%",
     "up": true,
+    "absDiff": 2.4
+  },
+  {
+    "name": "Silence the Soul [Normal] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$3.49",
+    "newPrice": "$5.82",
+    "change": "+66.8%",
+    "up": true,
+    "absDiff": 2.33
+  },
+  {
+    "name": "Harrow the Saved [Foil] (Phantom Monarchs)",
+    "oldPrice": "$5.99",
+    "newPrice": "$4.99",
+    "change": "-16.7%",
+    "up": false,
     "absDiff": 1.0
   }
 ]

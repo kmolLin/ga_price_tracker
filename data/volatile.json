@@ -1,41 +1,121 @@
 [
   {
-    "name": "Cone of Frost [Foil] (Promotional Cards)",
-    "oldPrice": "$11.49",
-    "newPrice": "$5.99",
-    "change": "-47.9%",
+    "name": "Horn of Beastcalling [Foil] (Radiant Origins)",
+    "oldPrice": "$17.22",
+    "newPrice": "$7.96",
+    "change": "-53.8%",
     "up": false,
-    "absDiff": 5.5
+    "absDiff": 9.259999999999998
   },
   {
-    "name": "Dissipation [Foil] (Radiant Origins)",
-    "oldPrice": "$10.74",
-    "newPrice": "$7.99",
-    "change": "-25.6%",
+    "name": "Ignis Deus [Foil] (Distorted Reflections)",
+    "oldPrice": "$48.48",
+    "newPrice": "$56.98",
+    "change": "+17.5%",
+    "up": true,
+    "absDiff": 8.5
+  },
+  {
+    "name": "Poisonous Apple [Foil] (Distorted Reflections)",
+    "oldPrice": "$5.74",
+    "newPrice": "$12.59",
+    "change": "+119.3%",
+    "up": true,
+    "absDiff": 6.85
+  },
+  {
+    "name": "Ticket to the Afterlife [Foil] (Phantom Monarchs)",
+    "oldPrice": "$38.13",
+    "newPrice": "$44.50",
+    "change": "+16.7%",
+    "up": true,
+    "absDiff": 6.369999999999997
+  },
+  {
+    "name": "Astral Seal [Foil] (Supporter Pack 3)",
+    "oldPrice": "$26.39",
+    "newPrice": "$22.26",
+    "change": "-15.6%",
     "up": false,
-    "absDiff": 2.75
+    "absDiff": 4.129999999999999
   },
   {
-    "name": "Gaias Songbird [Normal] (Dawn of Ashes 1st Edition)",
-    "oldPrice": "$2.60",
-    "newPrice": "$5.00",
-    "change": "+92.3%",
+    "name": "Trained Hawk [Normal] (Supporter Pack 1)",
+    "oldPrice": "$12.32",
+    "newPrice": "$15.49",
+    "change": "+25.7%",
     "up": true,
-    "absDiff": 2.4
+    "absDiff": 3.17
   },
   {
-    "name": "Silence the Soul [Normal] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$3.49",
-    "newPrice": "$5.82",
-    "change": "+66.8%",
+    "name": "Arcane Blast [Foil] (Abyssal Heaven)",
+    "oldPrice": "$7.49",
+    "newPrice": "$10.50",
+    "change": "+40.2%",
     "up": true,
-    "absDiff": 2.33
+    "absDiff": 3.01
   },
   {
-    "name": "Harrow the Saved [Foil] (Phantom Monarchs)",
-    "oldPrice": "$5.99",
-    "newPrice": "$4.99",
-    "change": "-16.7%",
+    "name": "Slime Swarm [Foil] (Radiant Origins)",
+    "oldPrice": "$4.66",
+    "newPrice": "$1.99",
+    "change": "-57.3%",
+    "up": false,
+    "absDiff": 2.67
+  },
+  {
+    "name": "Memento Mori [Foil] (Radiant Origins)",
+    "oldPrice": "$13.40",
+    "newPrice": "$11.27",
+    "change": "-15.9%",
+    "up": false,
+    "absDiff": 2.130000000000001
+  },
+  {
+    "name": "Krustallan Longsword [Foil] (Radiant Origins)",
+    "oldPrice": "$9.69",
+    "newPrice": "$7.59",
+    "change": "-21.7%",
+    "up": false,
+    "absDiff": 2.0999999999999996
+  },
+  {
+    "name": "Majestic Spirits Crest [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$8.49",
+    "newPrice": "$6.99",
+    "change": "-17.7%",
+    "up": false,
+    "absDiff": 1.5
+  },
+  {
+    "name": "Veiling Breeze [Foil] (Phantom Monarchs)",
+    "oldPrice": "$7.63",
+    "newPrice": "$8.99",
+    "change": "+17.8%",
+    "up": true,
+    "absDiff": 1.3600000000000003
+  },
+  {
+    "name": "Tactful Sergeant [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$2.24",
+    "newPrice": "$0.99",
+    "change": "-55.8%",
+    "up": false,
+    "absDiff": 1.2500000000000002
+  },
+  {
+    "name": "Spring Cleaning [Foil] (Radiant Origins)",
+    "oldPrice": "$4.98",
+    "newPrice": "$3.98",
+    "change": "-20.1%",
+    "up": false,
+    "absDiff": 1.0000000000000004
+  },
+  {
+    "name": "Bestial Frenzy [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$5.43",
+    "newPrice": "$4.43",
+    "change": "-18.4%",
     "up": false,
     "absDiff": 1.0
   }

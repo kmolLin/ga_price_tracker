@@ -1,42 +1,42 @@
 [
   {
-    "name": "Spalling Cleanse [Foil] (Phantom Monarchs)",
-    "oldPrice": "$14.10",
-    "newPrice": "$19.99",
-    "change": "+41.8%",
-    "up": true,
-    "absDiff": 5.889999999999999
-  },
-  {
-    "name": "Proof of Life [Foil] (Mortal Ambition)",
-    "oldPrice": "$12.99",
-    "newPrice": "$10.65",
-    "change": "-18.0%",
+    "name": "Mercenarys Blade [Foil] (Radiant Origins)",
+    "oldPrice": "$22.24",
+    "newPrice": "$16.69",
+    "change": "-25.0%",
     "up": false,
-    "absDiff": 2.34
+    "absDiff": 5.549999999999997
   },
   {
-    "name": "Strike of Singularity [Foil] (Radiant Origins)",
-    "oldPrice": "$12.99",
-    "newPrice": "$10.99",
-    "change": "-15.4%",
+    "name": "Bloom Autumns Fall [Foil] (Abyssal Heaven)",
+    "oldPrice": "$6.54",
+    "newPrice": "$2.32",
+    "change": "-64.5%",
+    "up": false,
+    "absDiff": 4.220000000000001
+  },
+  {
+    "name": "Gaias Songbird [Normal] (Dawn of Ashes 1st Edition)",
+    "oldPrice": "$5.00",
+    "newPrice": "$3.00",
+    "change": "-40.0%",
     "up": false,
     "absDiff": 2.0
   },
   {
-    "name": "Fountain Bladehand [Foil] (.asphodel/paradise)",
-    "oldPrice": "$2.66",
-    "newPrice": "$4.26",
-    "change": "+60.2%",
-    "up": true,
-    "absDiff": 1.5999999999999996
+    "name": "cometfall [Foil] (Alchemical Revolution)",
+    "oldPrice": "$2.49",
+    "newPrice": "$0.99",
+    "change": "-60.2%",
+    "up": false,
+    "absDiff": 1.5000000000000002
   },
   {
-    "name": "Varuckan Acolyte [Foil] (Fractured Crown)",
-    "oldPrice": "$1.32",
-    "newPrice": "$2.74",
-    "change": "+107.6%",
-    "up": true,
-    "absDiff": 1.4200000000000002
+    "name": "Primordial Ritual [Foil] (Phantom Monarchs Event Pack)",
+    "oldPrice": "$6.95",
+    "newPrice": "$5.90",
+    "change": "-15.1%",
+    "up": false,
+    "absDiff": 1.0499999999999998
   }
 ]

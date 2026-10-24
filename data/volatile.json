@@ -1,122 +1,50 @@
 [
   {
-    "name": "Poitier Afterlifes Conductor CSR [CSR (Foil)] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$200.00",
-    "newPrice": "$350.00",
-    "change": "+75.0%",
+    "name": "Inundating Clash [Foil] (Mortal Ambition)",
+    "oldPrice": "$15.00",
+    "newPrice": "$6.99",
+    "change": "-53.4%",
+    "up": false,
+    "absDiff": 8.01
+  },
+  {
+    "name": "Floodborne Warrior Curio Foil [Foil] (Radiant Origins)",
+    "oldPrice": "$17.86",
+    "newPrice": "$13.82",
+    "change": "-22.6%",
+    "up": false,
+    "absDiff": 4.039999999999999
+  },
+  {
+    "name": "Flourishing Restoration [Foil] (Radiant Origins)",
+    "oldPrice": "$16.00",
+    "newPrice": "$12.00",
+    "change": "-25.0%",
+    "up": false,
+    "absDiff": 4.0
+  },
+  {
+    "name": "Diao Chan Enchantress [Foil] (Abyssal Heaven)",
+    "oldPrice": "$18.27",
+    "newPrice": "$21.49",
+    "change": "+17.6%",
     "up": true,
-    "absDiff": 150.0
+    "absDiff": 3.219999999999999
   },
   {
-    "name": "Grand Crusaders Ring [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$247.50",
-    "newPrice": "$198.54",
-    "change": "-19.8%",
-    "up": false,
-    "absDiff": 48.96000000000001
-  },
-  {
-    "name": "Umbra Sight [Foil] (Phantom Monarchs)",
-    "oldPrice": "$162.50",
-    "newPrice": "$200.00",
-    "change": "+23.1%",
+    "name": "Chibi Battle of Red Cliffs [Foil] (Abyssal Heaven)",
+    "oldPrice": "$0.99",
+    "newPrice": "$2.75",
+    "change": "+177.8%",
     "up": true,
-    "absDiff": 37.5
-  },
-  {
-    "name": "Distort Reality CSR [CSR (Foil)] (Radiant Origins)",
-    "oldPrice": "$235.55",
-    "newPrice": "$199.99",
-    "change": "-15.1%",
-    "up": false,
-    "absDiff": 35.56
-  },
-  {
-    "name": "Essence Crucible [Foil] (Radiant Origins)",
-    "oldPrice": "$33.99",
-    "newPrice": "$17.99",
-    "change": "-47.1%",
-    "up": false,
-    "absDiff": 16.000000000000004
-  },
-  {
-    "name": "Diana Keen Huntress [Foil] (Alchemical Revolution)",
-    "oldPrice": "$14.33",
-    "newPrice": "$7.67",
-    "change": "-46.5%",
-    "up": false,
-    "absDiff": 6.66
-  },
-  {
-    "name": "Fractured Crown [Foil] (Fractured Crown)",
-    "oldPrice": "$26.99",
-    "newPrice": "$20.49",
-    "change": "-24.1%",
-    "up": false,
-    "absDiff": 6.5
-  },
-  {
-    "name": "Accelerate [Foil] (Radiant Origins)",
-    "oldPrice": "$17.94",
-    "newPrice": "$13.62",
-    "change": "-24.1%",
-    "up": false,
-    "absDiff": 4.320000000000002
-  },
-  {
-    "name": "Wisdoms Reprise [Foil] (Mortal Ambition)",
-    "oldPrice": "$9.49",
-    "newPrice": "$5.99",
-    "change": "-36.9%",
-    "up": false,
-    "absDiff": 3.5
-  },
-  {
-    "name": "umbral tithe [Foil] (Alchemical Revolution)",
-    "oldPrice": "$17.73",
-    "newPrice": "$20.65",
-    "change": "+16.5%",
-    "up": true,
-    "absDiff": 2.919999999999998
+    "absDiff": 1.76
   },
   {
     "name": "Twilight Slime [Foil] (Mercurial Heart)",
-    "oldPrice": "$8.56",
-    "newPrice": "$5.99",
-    "change": "-30.0%",
-    "up": false,
-    "absDiff": 2.5700000000000003
-  },
-  {
-    "name": "Shackled Theurgist [Foil] (Distorted Reflections)",
-    "oldPrice": "$4.85",
-    "newPrice": "$2.70",
-    "change": "-44.3%",
-    "up": false,
-    "absDiff": 2.1499999999999995
-  },
-  {
-    "name": "Shademist Priestess [Foil] (Radiant Origins)",
-    "oldPrice": "$9.53",
-    "newPrice": "$11.36",
-    "change": "+19.2%",
+    "oldPrice": "$5.99",
+    "newPrice": "$7.74",
+    "change": "+29.2%",
     "up": true,
-    "absDiff": 1.83
-  },
-  {
-    "name": "Blightheart Adept [Foil] (.asphodel/paradise)",
-    "oldPrice": "$6.44",
-    "newPrice": "$5.26",
-    "change": "-18.3%",
-    "up": false,
-    "absDiff": 1.1800000000000006
-  },
-  {
-    "name": "Keep of the Golden Sashes [Foil] (Mortal Ambition)",
-    "oldPrice": "$1.99",
-    "newPrice": "$0.99",
-    "change": "-50.3%",
-    "up": false,
-    "absDiff": 1.0
+    "absDiff": 1.75
   }
 ]

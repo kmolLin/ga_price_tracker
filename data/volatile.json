@@ -1,122 +1,90 @@
 [
   {
-    "name": "Supernova Divination CSR [CSR (Foil)] (Radiant Origins)",
-    "oldPrice": "$300.00",
-    "newPrice": "$150.00",
-    "change": "-50.0%",
+    "name": "Meteoric Slime [Foil] (Radiant Origins)",
+    "oldPrice": "$9.75",
+    "newPrice": "$1.99",
+    "change": "-79.6%",
     "up": false,
-    "absDiff": 150.0
+    "absDiff": 7.76
   },
   {
-    "name": "Da Qiao Cinderbinder CSR [CSR (Foil)] (Abyssal Heaven)",
-    "oldPrice": "$259.99",
-    "newPrice": "$219.99",
-    "change": "-15.4%",
+    "name": "Heirloom of Libra [Foil] (Radiant Origins)",
+    "oldPrice": "$9.49",
+    "newPrice": "$3.99",
+    "change": "-58.0%",
     "up": false,
-    "absDiff": 40.0
+    "absDiff": 5.5
   },
   {
-    "name": "Yuan Shao Crown General CSR [CSR (Foil)] (Abyssal Heaven)",
-    "oldPrice": "$99.99",
-    "newPrice": "$79.99",
-    "change": "-20.0%",
+    "name": "Eye of Argus [Foil] (Radiant Origins)",
+    "oldPrice": "$12.62",
+    "newPrice": "$7.76",
+    "change": "-38.5%",
     "up": false,
-    "absDiff": 20.0
+    "absDiff": 4.859999999999999
   },
   {
-    "name": "Harness Lightning [Foil] (Radiant Origins Event Pack)",
-    "oldPrice": "$66.66",
-    "newPrice": "$78.99",
-    "change": "+18.5%",
-    "up": true,
-    "absDiff": 12.329999999999998
+    "name": "Safeguard Amulet [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$13.48",
+    "newPrice": "$9.99",
+    "change": "-25.9%",
+    "up": false,
+    "absDiff": 3.49
   },
   {
-    "name": "Bolt of Diamonds [Foil] (Radiant Origins)",
-    "oldPrice": "$30.73",
-    "newPrice": "$21.47",
+    "name": "Diamond in the Rough [Foil] (Radiant Origins)",
+    "oldPrice": "$7.90",
+    "newPrice": "$4.45",
+    "change": "-43.7%",
+    "up": false,
+    "absDiff": 3.45
+  },
+  {
+    "name": "Fabricator Slime [Foil] (Radiant Origins)",
+    "oldPrice": "$5.99",
+    "newPrice": "$2.99",
+    "change": "-50.1%",
+    "up": false,
+    "absDiff": 3.0
+  },
+  {
+    "name": "Sundering Moon [Normal] (Mortal Ambition Alter Edition)",
+    "oldPrice": "$4.99",
+    "newPrice": "$1.99",
+    "change": "-60.1%",
+    "up": false,
+    "absDiff": 3.0
+  },
+  {
+    "name": "Blinding Orb [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$10.37",
+    "newPrice": "$7.66",
+    "change": "-26.1%",
+    "up": false,
+    "absDiff": 2.709999999999999
+  },
+  {
+    "name": "Pyretic Prognosis [Foil] (Radiant Origins)",
+    "oldPrice": "$6.45",
+    "newPrice": "$3.99",
+    "change": "-38.1%",
+    "up": false,
+    "absDiff": 2.46
+  },
+  {
+    "name": "Wisps Protection [Foil] (Radiant Origins)",
+    "oldPrice": "$7.56",
+    "newPrice": "$6.19",
+    "change": "-18.1%",
+    "up": false,
+    "absDiff": 1.3699999999999992
+  },
+  {
+    "name": "Vampiric Slime [Normal] (Mercurial Heart Alter Edition)",
+    "oldPrice": "$3.49",
+    "newPrice": "$2.44",
     "change": "-30.1%",
     "up": false,
-    "absDiff": 9.260000000000002
-  },
-  {
-    "name": "Edelstein Queen of Diamonds [Foil] (Radiant Origins)",
-    "oldPrice": "$32.13",
-    "newPrice": "$38.22",
-    "change": "+19.0%",
-    "up": true,
-    "absDiff": 6.089999999999996
-  },
-  {
-    "name": "Scepter of Lumina 001B [Normal] (Proxia's Vault)",
-    "oldPrice": "$13.99",
-    "newPrice": "$7.99",
-    "change": "-42.9%",
-    "up": false,
-    "absDiff": 6.0
-  },
-  {
-    "name": "Erratic Bolt [Normal] (Phantom Monarchs Event Pack)",
-    "oldPrice": "$5.50",
-    "newPrice": "$0.48",
-    "change": "-91.3%",
-    "up": false,
-    "absDiff": 5.02
-  },
-  {
-    "name": "Swooping Talons [Foil] (Promotional Cards)",
-    "oldPrice": "$14.99",
-    "newPrice": "$19.99",
-    "change": "+33.4%",
-    "up": true,
-    "absDiff": 4.999999999999998
-  },
-  {
-    "name": "Accelerate [Foil] (Radiant Origins)",
-    "oldPrice": "$13.62",
-    "newPrice": "$17.94",
-    "change": "+31.7%",
-    "up": true,
-    "absDiff": 4.320000000000002
-  },
-  {
-    "name": "Languid Toadtroll [Foil] (Distorted Reflections)",
-    "oldPrice": "$5.12",
-    "newPrice": "$0.99",
-    "change": "-80.7%",
-    "up": false,
-    "absDiff": 4.13
-  },
-  {
-    "name": "Ciel Astral Projection [Normal] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$10.59",
-    "newPrice": "$7.77",
-    "change": "-26.6%",
-    "up": false,
-    "absDiff": 2.8200000000000003
-  },
-  {
-    "name": "Escharotomy [Foil] (.asphodel/paradise)",
-    "oldPrice": "$10.66",
-    "newPrice": "$8.84",
-    "change": "-17.1%",
-    "up": false,
-    "absDiff": 1.8200000000000003
-  },
-  {
-    "name": "Restorative Flame [Foil] (Abyssal Heaven)",
-    "oldPrice": "$3.99",
-    "newPrice": "$5.49",
-    "change": "+37.6%",
-    "up": true,
-    "absDiff": 1.5
-  },
-  {
-    "name": "Planted Explosive [Foil] (Mortal Ambition)",
-    "oldPrice": "$2.99",
-    "newPrice": "$1.99",
-    "change": "-33.4%",
-    "up": false,
-    "absDiff": 1.0000000000000002
+    "absDiff": 1.0500000000000003
   }
 ]

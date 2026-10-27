@@ -1,90 +1,66 @@
 [
   {
-    "name": "Meteoric Slime [Foil] (Radiant Origins)",
-    "oldPrice": "$9.75",
-    "newPrice": "$1.99",
-    "change": "-79.6%",
-    "up": false,
-    "absDiff": 7.76
+    "name": "Blanche Sheltering Saint CSR [CSR (Foil)] (Fractured Crown)",
+    "oldPrice": "$199.99",
+    "newPrice": "$250.34",
+    "change": "+25.2%",
+    "up": true,
+    "absDiff": 50.349999999999994
   },
   {
-    "name": "Heirloom of Libra [Foil] (Radiant Origins)",
-    "oldPrice": "$9.49",
-    "newPrice": "$3.99",
-    "change": "-58.0%",
+    "name": "Tribute Singer [Foil] (.asphodel/paradise)",
+    "oldPrice": "$24.20",
+    "newPrice": "$17.10",
+    "change": "-29.3%",
     "up": false,
-    "absDiff": 5.5
+    "absDiff": 7.099999999999998
   },
   {
-    "name": "Eye of Argus [Foil] (Radiant Origins)",
-    "oldPrice": "$12.62",
-    "newPrice": "$7.76",
-    "change": "-38.5%",
+    "name": "Clumsy Apprentice [Normal] (Promotional Cards)",
+    "oldPrice": "$15.65",
+    "newPrice": "$10.98",
+    "change": "-29.8%",
     "up": false,
-    "absDiff": 4.859999999999999
+    "absDiff": 4.67
   },
   {
-    "name": "Safeguard Amulet [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$13.48",
-    "newPrice": "$9.99",
-    "change": "-25.9%",
+    "name": "Stalwart Shieldmate [Foil] (Radiant Origins)",
+    "oldPrice": "$6.07",
+    "newPrice": "$3.82",
+    "change": "-37.1%",
     "up": false,
-    "absDiff": 3.49
+    "absDiff": 2.2500000000000004
   },
   {
-    "name": "Diamond in the Rough [Foil] (Radiant Origins)",
-    "oldPrice": "$7.90",
-    "newPrice": "$4.45",
-    "change": "-43.7%",
+    "name": "Ignis Deus [Normal] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$9.99",
+    "newPrice": "$8.40",
+    "change": "-15.9%",
     "up": false,
-    "absDiff": 3.45
+    "absDiff": 1.5899999999999999
   },
   {
-    "name": "Fabricator Slime [Foil] (Radiant Origins)",
-    "oldPrice": "$5.99",
-    "newPrice": "$2.99",
-    "change": "-50.1%",
+    "name": "Reprogram [Foil] (Mercurial Heart)",
+    "oldPrice": "$6.66",
+    "newPrice": "$5.16",
+    "change": "-22.5%",
     "up": false,
-    "absDiff": 3.0
+    "absDiff": 1.5
   },
   {
-    "name": "Sundering Moon [Normal] (Mortal Ambition Alter Edition)",
-    "oldPrice": "$4.99",
-    "newPrice": "$1.99",
-    "change": "-60.1%",
+    "name": "Three of Hearts [Normal] (Distorted Reflections)",
+    "oldPrice": "$6.43",
+    "newPrice": "$5.07",
+    "change": "-21.2%",
     "up": false,
-    "absDiff": 3.0
+    "absDiff": 1.3599999999999994
   },
   {
-    "name": "Blinding Orb [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$10.37",
-    "newPrice": "$7.66",
-    "change": "-26.1%",
-    "up": false,
-    "absDiff": 2.709999999999999
-  },
-  {
-    "name": "Pyretic Prognosis [Foil] (Radiant Origins)",
-    "oldPrice": "$6.45",
-    "newPrice": "$3.99",
-    "change": "-38.1%",
-    "up": false,
-    "absDiff": 2.46
-  },
-  {
-    "name": "Wisps Protection [Foil] (Radiant Origins)",
-    "oldPrice": "$7.56",
-    "newPrice": "$6.19",
-    "change": "-18.1%",
-    "up": false,
-    "absDiff": 1.3699999999999992
-  },
-  {
-    "name": "Vampiric Slime [Normal] (Mercurial Heart Alter Edition)",
-    "oldPrice": "$3.49",
-    "newPrice": "$2.44",
-    "change": "-30.1%",
-    "up": false,
-    "absDiff": 1.0500000000000003
+    "name": "Pawn Piece [Foil] (Phantom Monarchs)",
+    "oldPrice": "$1.36",
+    "newPrice": "$2.55",
+    "change": "+87.5%",
+    "up": true,
+    "absDiff": 1.1899999999999997
   }
 ]

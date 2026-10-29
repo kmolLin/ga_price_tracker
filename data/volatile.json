@@ -1,41 +1,105 @@
 [
   {
-    "name": "Weiss Pawn [Foil] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$12.00",
-    "newPrice": "$21.00",
-    "change": "+75.0%",
+    "name": "Safeguard Amulet [Foil] (Phantom Monarchs Event Pack)",
+    "oldPrice": "$205.26",
+    "newPrice": "$236.66",
+    "change": "+15.3%",
     "up": true,
-    "absDiff": 9.0
+    "absDiff": 31.400000000000006
   },
   {
-    "name": "Saprotrophy [Foil] (Radiant Origins)",
-    "oldPrice": "$11.66",
-    "newPrice": "$8.49",
-    "change": "-27.2%",
+    "name": "Exia Sight Interference Curio Foil [Foil] (.asphodel/paradise)",
+    "oldPrice": "$34.65",
+    "newPrice": "$22.32",
+    "change": "-35.6%",
     "up": false,
-    "absDiff": 3.17
+    "absDiff": 12.329999999999998
   },
   {
-    "name": "Avatar of Genbu [Foil] (Radiant Origins)",
-    "oldPrice": "$8.99",
-    "newPrice": "$5.92",
-    "change": "-34.1%",
+    "name": "Edelstein Queen of Diamonds [Foil] (Radiant Origins)",
+    "oldPrice": "$38.22",
+    "newPrice": "$30.14",
+    "change": "-21.1%",
     "up": false,
-    "absDiff": 3.0700000000000003
+    "absDiff": 8.079999999999998
   },
   {
-    "name": "Natures Appeal [Foil] (Mortal Ambition)",
-    "oldPrice": "$3.91",
-    "newPrice": "$5.35",
-    "change": "+36.8%",
+    "name": "Bleu Ace of Diamonds [Foil] (Radiant Origins)",
+    "oldPrice": "$29.99",
+    "newPrice": "$25.49",
+    "change": "-15.0%",
+    "up": false,
+    "absDiff": 4.5
+  },
+  {
+    "name": "Cremation Ritual [Normal] (Radiant Origins: Pantheon)",
+    "oldPrice": "$5.50",
+    "newPrice": "$9.99",
+    "change": "+81.6%",
     "up": true,
-    "absDiff": 1.4399999999999995
+    "absDiff": 4.49
   },
   {
-    "name": "Blue Slime [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$1.99",
-    "newPrice": "$0.99",
-    "change": "-50.3%",
+    "name": "Merlin Memory Thief [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$17.85",
+    "newPrice": "$13.83",
+    "change": "-22.5%",
+    "up": false,
+    "absDiff": 4.020000000000001
+  },
+  {
+    "name": "Entrancing Filigree [Foil] (Promotional Cards)",
+    "oldPrice": "$7.49",
+    "newPrice": "$9.99",
+    "change": "+33.4%",
+    "up": true,
+    "absDiff": 2.5
+  },
+  {
+    "name": "Exploit Vulnerability [Normal] (Radiant Origins: Pantheon)",
+    "oldPrice": "$3.00",
+    "newPrice": "$5.00",
+    "change": "+66.7%",
+    "up": true,
+    "absDiff": 2.0
+  },
+  {
+    "name": "Blights Ring [Foil] (Radiant Origins)",
+    "oldPrice": "$7.99",
+    "newPrice": "$6.39",
+    "change": "-20.0%",
+    "up": false,
+    "absDiff": 1.6000000000000005
+  },
+  {
+    "name": "Slimecall Cyclone [Foil] (Radiant Origins)",
+    "oldPrice": "$6.27",
+    "newPrice": "$4.69",
+    "change": "-25.2%",
+    "up": false,
+    "absDiff": 1.5799999999999992
+  },
+  {
+    "name": "Greater Boon of Connection [Normal] (.asphodel/paradise: Pantheon)",
+    "oldPrice": "$3.43",
+    "newPrice": "$2.09",
+    "change": "-39.1%",
+    "up": false,
+    "absDiff": 1.3400000000000003
+  },
+  {
+    "name": "Diamond in the Rough [Foil] (Radiant Origins)",
+    "oldPrice": "$4.45",
+    "newPrice": "$3.29",
+    "change": "-26.1%",
+    "up": false,
+    "absDiff": 1.1600000000000001
+  },
+  {
+    "name": "Awakened Frostguard [Foil] (Alchemical Revolution)",
+    "oldPrice": "$3.99",
+    "newPrice": "$2.99",
+    "change": "-25.1%",
     "up": false,
     "absDiff": 1.0
   }

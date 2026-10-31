@@ -1,42 +1,58 @@
 [
   {
-    "name": "Weiss Pawn [Foil] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$21.00",
-    "newPrice": "$25.50",
-    "change": "+21.4%",
+    "name": "Reactivate Drone Curio Foil [Foil] (Radiant Origins)",
+    "oldPrice": "$22.31",
+    "newPrice": "$10.99",
+    "change": "-50.7%",
+    "up": false,
+    "absDiff": 11.319999999999999
+  },
+  {
+    "name": "Blade of Creation [Foil] (Supporter Pack 3)",
+    "oldPrice": "$11.83",
+    "newPrice": "$20.00",
+    "change": "+69.1%",
     "up": true,
-    "absDiff": 4.5
+    "absDiff": 8.17
   },
   {
-    "name": "Gustmark Gauge [Foil] (Phantom Monarchs)",
-    "oldPrice": "$4.99",
-    "newPrice": "$0.99",
-    "change": "-80.2%",
-    "up": false,
-    "absDiff": 4.0
+    "name": "Silence the Soul [Foil] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$24.99",
+    "newPrice": "$32.49",
+    "change": "+30.0%",
+    "up": true,
+    "absDiff": 7.5000000000000036
   },
   {
-    "name": "Stellar Bloom [Foil] (Radiant Origins)",
-    "oldPrice": "$3.99",
-    "newPrice": "$2.45",
-    "change": "-38.6%",
-    "up": false,
-    "absDiff": 1.54
+    "name": "Tribute Singer [Foil] (.asphodel/paradise)",
+    "oldPrice": "$17.10",
+    "newPrice": "$21.47",
+    "change": "+25.6%",
+    "up": true,
+    "absDiff": 4.369999999999997
   },
   {
-    "name": "Luminous Surge [Foil] (Radiant Origins)",
-    "oldPrice": "$2.19",
-    "newPrice": "$0.99",
-    "change": "-54.8%",
-    "up": false,
-    "absDiff": 1.2
+    "name": "Coruscation [Foil] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$23.00",
+    "newPrice": "$27.25",
+    "change": "+18.5%",
+    "up": true,
+    "absDiff": 4.25
   },
   {
-    "name": "Gildas Chronicler of Aesa [Normal] (Dawn of Ashes 1st Edition)",
+    "name": "Expel the Departed [Foil] (Radiant Origins Event Pack)",
+    "oldPrice": "$8.50",
+    "newPrice": "$12.00",
+    "change": "+41.2%",
+    "up": true,
+    "absDiff": 3.5
+  },
+  {
+    "name": "False Tidings [Foil] (Radiant Origins)",
     "oldPrice": "$2.99",
-    "newPrice": "$1.99",
-    "change": "-33.4%",
+    "newPrice": "$0.99",
+    "change": "-66.9%",
     "up": false,
-    "absDiff": 1.0000000000000002
+    "absDiff": 2.0
   }
 ]

@@ -1,58 +1,82 @@
 [
   {
-    "name": "Reactivate Drone Curio Foil [Foil] (Radiant Origins)",
-    "oldPrice": "$22.31",
-    "newPrice": "$10.99",
-    "change": "-50.7%",
+    "name": "Gildas Faesworn Monarch CSR [CSR] (Mordred Re: Collection, Aurelian Regent)",
+    "oldPrice": "$206.37",
+    "newPrice": "$141.83",
+    "change": "-31.3%",
     "up": false,
-    "absDiff": 11.319999999999999
+    "absDiff": 64.53999999999999
   },
   {
-    "name": "Blade of Creation [Foil] (Supporter Pack 3)",
-    "oldPrice": "$11.83",
-    "newPrice": "$20.00",
-    "change": "+69.1%",
-    "up": true,
-    "absDiff": 8.17
-  },
-  {
-    "name": "Silence the Soul [Foil] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$24.99",
-    "newPrice": "$32.49",
-    "change": "+30.0%",
-    "up": true,
-    "absDiff": 7.5000000000000036
-  },
-  {
-    "name": "Tribute Singer [Foil] (.asphodel/paradise)",
-    "oldPrice": "$17.10",
-    "newPrice": "$21.47",
-    "change": "+25.6%",
-    "up": true,
-    "absDiff": 4.369999999999997
-  },
-  {
-    "name": "Coruscation [Foil] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$23.00",
-    "newPrice": "$27.25",
-    "change": "+18.5%",
-    "up": true,
-    "absDiff": 4.25
-  },
-  {
-    "name": "Expel the Departed [Foil] (Radiant Origins Event Pack)",
-    "oldPrice": "$8.50",
-    "newPrice": "$12.00",
-    "change": "+41.2%",
-    "up": true,
-    "absDiff": 3.5
-  },
-  {
-    "name": "False Tidings [Foil] (Radiant Origins)",
-    "oldPrice": "$2.99",
-    "newPrice": "$0.99",
-    "change": "-66.9%",
+    "name": "Celestial Navigation [Foil] (Radiant Origins)",
+    "oldPrice": "$13.66",
+    "newPrice": "$7.99",
+    "change": "-41.5%",
     "up": false,
-    "absDiff": 2.0
+    "absDiff": 5.67
+  },
+  {
+    "name": "Glacial Binding [Foil] (Radiant Origins)",
+    "oldPrice": "$18.39",
+    "newPrice": "$13.99",
+    "change": "-23.9%",
+    "up": false,
+    "absDiff": 4.4
+  },
+  {
+    "name": "Two of Clubs [Foil] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$12.00",
+    "newPrice": "$15.99",
+    "change": "+33.2%",
+    "up": true,
+    "absDiff": 3.99
+  },
+  {
+    "name": "Vampiric Slime [Foil] (Mercurial Heart Alter Edition)",
+    "oldPrice": "$18.99",
+    "newPrice": "$15.49",
+    "change": "-18.4%",
+    "up": false,
+    "absDiff": 3.4999999999999982
+  },
+  {
+    "name": "Ignis Deus [Normal] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$8.40",
+    "newPrice": "$6.44",
+    "change": "-23.3%",
+    "up": false,
+    "absDiff": 1.96
+  },
+  {
+    "name": "Forgelight Shieldmaiden [Foil] (Alchemical Revolution)",
+    "oldPrice": "$2.57",
+    "newPrice": "$4.50",
+    "change": "+75.1%",
+    "up": true,
+    "absDiff": 1.9300000000000002
+  },
+  {
+    "name": "Trine Recursion [Foil] (Radiant Origins)",
+    "oldPrice": "$3.84",
+    "newPrice": "$2.32",
+    "change": "-39.6%",
+    "up": false,
+    "absDiff": 1.52
+  },
+  {
+    "name": "Five of Diamonds [Foil] (Radiant Origins)",
+    "oldPrice": "$5.91",
+    "newPrice": "$4.69",
+    "change": "-20.6%",
+    "up": false,
+    "absDiff": 1.2199999999999998
+  },
+  {
+    "name": "Mercurial Heart [Normal] (Mercurial Heart Alter Edition)",
+    "oldPrice": "$6.37",
+    "newPrice": "$7.57",
+    "change": "+18.8%",
+    "up": true,
+    "absDiff": 1.2000000000000002
   }
 ]

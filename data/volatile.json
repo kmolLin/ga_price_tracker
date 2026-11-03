@@ -1,122 +1,82 @@
 [
   {
-    "name": "Haniel Archangel of Spectra [Foil] (Radiant Origins)",
-    "oldPrice": "$222.50",
-    "newPrice": "$119.99",
-    "change": "-46.1%",
+    "name": "Reclaim [Foil] (Supporter Pack 1)",
+    "oldPrice": "$34.99",
+    "newPrice": "$22.49",
+    "change": "-35.7%",
     "up": false,
-    "absDiff": 102.51
+    "absDiff": 12.500000000000004
   },
   {
-    "name": "Morgan Soul Guide CSR [CSR (Foil)] (Fractured Crown)",
-    "oldPrice": "$179.99",
-    "newPrice": "$215.00",
-    "change": "+19.5%",
+    "name": "Fulminating Storm [Foil] (Radiant Origins)",
+    "oldPrice": "$19.99",
+    "newPrice": "$10.99",
+    "change": "-45.0%",
+    "up": false,
+    "absDiff": 8.999999999999998
+  },
+  {
+    "name": "Fractured Memories [Normal] (Merlin Re: Collection, Brilliant Vestige)",
+    "oldPrice": "$6.94",
+    "newPrice": "$1.96",
+    "change": "-71.8%",
+    "up": false,
+    "absDiff": 4.98
+  },
+  {
+    "name": "Fractal of Duplication [Foil] (Radiant Origins)",
+    "oldPrice": "$11.99",
+    "newPrice": "$7.99",
+    "change": "-33.4%",
+    "up": false,
+    "absDiff": 4.0
+  },
+  {
+    "name": "Devouring Malice [Normal] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$17.50",
+    "newPrice": "$13.83",
+    "change": "-21.0%",
+    "up": false,
+    "absDiff": 3.67
+  },
+  {
+    "name": "assemble the ancients [Foil] (Alchemical Revolution)",
+    "oldPrice": "$0.99",
+    "newPrice": "$4.51",
+    "change": "+355.6%",
     "up": true,
-    "absDiff": 35.00999999999999
+    "absDiff": 3.5199999999999996
   },
   {
-    "name": "Azrael Archangel of Materia [Foil] (Radiant Origins)",
-    "oldPrice": "$72.65",
-    "newPrice": "$54.98",
-    "change": "-24.3%",
+    "name": "Poised Occlusion [Foil] (Supporter Pack 4)",
+    "oldPrice": "$13.33",
+    "newPrice": "$10.29",
+    "change": "-22.8%",
     "up": false,
-    "absDiff": 17.67000000000001
+    "absDiff": 3.040000000000001
   },
   {
-    "name": "Safeguard Amulet [Foil] (Fractured Crown)",
-    "oldPrice": "$59.95",
-    "newPrice": "$49.90",
-    "change": "-16.8%",
-    "up": false,
-    "absDiff": 10.050000000000004
-  },
-  {
-    "name": "Archon Broadsword [Foil] (Radiant Origins)",
-    "oldPrice": "$27.28",
-    "newPrice": "$19.71",
-    "change": "-27.7%",
-    "up": false,
-    "absDiff": 7.57
-  },
-  {
-    "name": "Shademist Priestess [Foil] (Radiant Origins)",
-    "oldPrice": "$13.03",
-    "newPrice": "$19.99",
-    "change": "+53.4%",
-    "up": true,
-    "absDiff": 6.959999999999999
-  },
-  {
-    "name": "Sempiternal Sage [Foil] (Mortal Ambition)",
-    "oldPrice": "$10.58",
-    "newPrice": "$15.77",
-    "change": "+49.1%",
-    "up": true,
-    "absDiff": 5.1899999999999995
-  },
-  {
-    "name": "Accelerate [Foil] (Radiant Origins)",
-    "oldPrice": "$17.94",
-    "newPrice": "$13.62",
-    "change": "-24.1%",
-    "up": false,
-    "absDiff": 4.320000000000002
-  },
-  {
-    "name": "Majestic Spirits Crest [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$6.99",
+    "name": "Blights Ring [Foil] (Radiant Origins)",
+    "oldPrice": "$6.39",
     "newPrice": "$3.99",
-    "change": "-42.9%",
+    "change": "-37.6%",
     "up": false,
-    "absDiff": 3.0
+    "absDiff": 2.3999999999999995
   },
   {
-    "name": "Scout the Land [Foil] (Radiant Origins Event Pack)",
-    "oldPrice": "$4.75",
-    "newPrice": "$2.49",
-    "change": "-47.6%",
-    "up": false,
-    "absDiff": 2.26
-  },
-  {
-    "name": "Slimecall Cyclone [Foil] (Radiant Origins)",
-    "oldPrice": "$4.69",
-    "newPrice": "$2.99",
-    "change": "-36.2%",
-    "up": false,
-    "absDiff": 1.7000000000000002
-  },
-  {
-    "name": "Revitalizing Cleanse [Normal] (Promotional Cards)",
-    "oldPrice": "$9.74",
-    "newPrice": "$8.16",
+    "name": "Scavenging Raccoon [Normal] (Promotional Cards)",
+    "oldPrice": "$12.99",
+    "newPrice": "$10.88",
     "change": "-16.2%",
     "up": false,
-    "absDiff": 1.58
+    "absDiff": 2.1099999999999994
   },
   {
-    "name": "Crux Sight [Foil] (Phantom Monarchs)",
-    "oldPrice": "$7.07",
-    "newPrice": "$8.36",
-    "change": "+18.2%",
-    "up": true,
-    "absDiff": 1.2899999999999991
-  },
-  {
-    "name": "Oath of the Sakura [Foil] (Mortal Ambition)",
-    "oldPrice": "$5.24",
-    "newPrice": "$3.99",
-    "change": "-23.9%",
+    "name": "Manufacture Cell [Foil] (.asphodel/paradise)",
+    "oldPrice": "$7.16",
+    "newPrice": "$6.01",
+    "change": "-16.1%",
     "up": false,
-    "absDiff": 1.25
-  },
-  {
-    "name": "Luminous Quartz [Normal] (Merlin Re: Collection, Brilliant Vestige)",
-    "oldPrice": "$2.23",
-    "newPrice": "$1.05",
-    "change": "-52.9%",
-    "up": false,
-    "absDiff": 1.18
+    "absDiff": 1.1500000000000004
   }
 ]

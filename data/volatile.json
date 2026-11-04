@@ -1,82 +1,58 @@
 [
   {
-    "name": "Reclaim [Foil] (Supporter Pack 1)",
-    "oldPrice": "$34.99",
-    "newPrice": "$22.49",
-    "change": "-35.7%",
-    "up": false,
-    "absDiff": 12.500000000000004
+    "name": "Trump Set [Foil] (Distorted Reflections)",
+    "oldPrice": "$7.78",
+    "newPrice": "$19.55",
+    "change": "+151.3%",
+    "up": true,
+    "absDiff": 11.77
   },
   {
     "name": "Fulminating Storm [Foil] (Radiant Origins)",
-    "oldPrice": "$19.99",
-    "newPrice": "$10.99",
-    "change": "-45.0%",
-    "up": false,
+    "oldPrice": "$10.99",
+    "newPrice": "$19.99",
+    "change": "+81.9%",
+    "up": true,
     "absDiff": 8.999999999999998
   },
   {
-    "name": "Fractured Memories [Normal] (Merlin Re: Collection, Brilliant Vestige)",
-    "oldPrice": "$6.94",
-    "newPrice": "$1.96",
-    "change": "-71.8%",
+    "name": "Slice and Dice [Foil] (Radiant Origins)",
+    "oldPrice": "$7.99",
+    "newPrice": "$0.98",
+    "change": "-87.7%",
     "up": false,
-    "absDiff": 4.98
+    "absDiff": 7.01
   },
   {
-    "name": "Fractal of Duplication [Foil] (Radiant Origins)",
-    "oldPrice": "$11.99",
-    "newPrice": "$7.99",
-    "change": "-33.4%",
-    "up": false,
-    "absDiff": 4.0
-  },
-  {
-    "name": "Devouring Malice [Normal] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$17.50",
-    "newPrice": "$13.83",
-    "change": "-21.0%",
-    "up": false,
-    "absDiff": 3.67
-  },
-  {
-    "name": "assemble the ancients [Foil] (Alchemical Revolution)",
-    "oldPrice": "$0.99",
-    "newPrice": "$4.51",
-    "change": "+355.6%",
+    "name": "Creeping Torment [Foil] (Supporter Pack 2)",
+    "oldPrice": "$7.66",
+    "newPrice": "$9.72",
+    "change": "+26.9%",
     "up": true,
-    "absDiff": 3.5199999999999996
+    "absDiff": 2.0600000000000005
   },
   {
-    "name": "Poised Occlusion [Foil] (Supporter Pack 4)",
-    "oldPrice": "$13.33",
-    "newPrice": "$10.29",
-    "change": "-22.8%",
+    "name": "Gentle Respite [Foil] (Abyssal Heaven)",
+    "oldPrice": "$11.99",
+    "newPrice": "$9.99",
+    "change": "-16.7%",
     "up": false,
-    "absDiff": 3.040000000000001
+    "absDiff": 2.0
   },
   {
-    "name": "Blights Ring [Foil] (Radiant Origins)",
-    "oldPrice": "$6.39",
-    "newPrice": "$3.99",
-    "change": "-37.6%",
-    "up": false,
-    "absDiff": 2.3999999999999995
+    "name": "Twilight Slime [Foil] (Mercurial Heart)",
+    "oldPrice": "$7.74",
+    "newPrice": "$9.50",
+    "change": "+22.7%",
+    "up": true,
+    "absDiff": 1.7599999999999998
   },
   {
-    "name": "Scavenging Raccoon [Normal] (Promotional Cards)",
-    "oldPrice": "$12.99",
-    "newPrice": "$10.88",
-    "change": "-16.2%",
+    "name": "Oneiric Key [Foil] (Phantom Monarchs)",
+    "oldPrice": "$3.38",
+    "newPrice": "$2.23",
+    "change": "-34.0%",
     "up": false,
-    "absDiff": 2.1099999999999994
-  },
-  {
-    "name": "Manufacture Cell [Foil] (.asphodel/paradise)",
-    "oldPrice": "$7.16",
-    "newPrice": "$6.01",
-    "change": "-16.1%",
-    "up": false,
-    "absDiff": 1.1500000000000004
+    "absDiff": 1.15
   }
 ]

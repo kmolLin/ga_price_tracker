@@ -1,50 +1,82 @@
 [
   {
-    "name": "Automata Genesis CSR [CSR (Foil)] (Radiant Origins)",
-    "oldPrice": "$249.99",
-    "newPrice": "$194.99",
-    "change": "-22.0%",
+    "name": "Advent of the Stormcaller [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$24.99",
+    "newPrice": "$15.99",
+    "change": "-36.0%",
     "up": false,
-    "absDiff": 55.0
+    "absDiff": 8.999999999999998
   },
   {
-    "name": "Reclaim [Foil] (Supporter Pack 1)",
-    "oldPrice": "$22.49",
-    "newPrice": "$34.99",
-    "change": "+55.6%",
+    "name": "Night Barker Curio Foil [Foil] (Phantom Monarchs)",
+    "oldPrice": "$6.99",
+    "newPrice": "$9.99",
+    "change": "+42.9%",
     "up": true,
-    "absDiff": 12.500000000000004
+    "absDiff": 3.0
   },
   {
-    "name": "Greater Boon of Shou [Normal] (Radiant Origins: Pantheon)",
-    "oldPrice": "$15.84",
-    "newPrice": "$19.34",
-    "change": "+22.1%",
-    "up": true,
-    "absDiff": 3.5
-  },
-  {
-    "name": "Four of Spades [Foil] (Distorted Reflections)",
-    "oldPrice": "$7.01",
-    "newPrice": "$8.85",
-    "change": "+26.2%",
-    "up": true,
-    "absDiff": 1.8399999999999999
-  },
-  {
-    "name": "Classical Opening [Foil] (Radiant Origins)",
-    "oldPrice": "$5.49",
-    "newPrice": "$3.99",
-    "change": "-27.3%",
+    "name": "creeping torment [Foil] (Alchemical Revolution)",
+    "oldPrice": "$3.78",
+    "newPrice": "$0.99",
+    "change": "-73.8%",
     "up": false,
-    "absDiff": 1.5
+    "absDiff": 2.79
   },
   {
-    "name": "Smoke Bombs [Foil] (Phantom Monarchs)",
-    "oldPrice": "$3.32",
-    "newPrice": "$1.99",
-    "change": "-40.1%",
+    "name": "Mercenarys Blade [Foil] (Mercurial Heart)",
+    "oldPrice": "$8.49",
+    "newPrice": "$5.98",
+    "change": "-29.6%",
     "up": false,
-    "absDiff": 1.3299999999999998
+    "absDiff": 2.51
+  },
+  {
+    "name": "Dredging Streams [Foil] (Supporter Pack 4)",
+    "oldPrice": "$11.97",
+    "newPrice": "$9.64",
+    "change": "-19.5%",
+    "up": false,
+    "absDiff": 2.33
+  },
+  {
+    "name": "Cyclical Breeze [Foil] (Mortal Ambition)",
+    "oldPrice": "$5.66",
+    "newPrice": "$7.44",
+    "change": "+31.4%",
+    "up": true,
+    "absDiff": 1.7800000000000002
+  },
+  {
+    "name": "Tide Diviner [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$4.32",
+    "newPrice": "$2.99",
+    "change": "-30.8%",
+    "up": false,
+    "absDiff": 1.33
+  },
+  {
+    "name": "Chilling Touch [Normal] (Promotional Cards)",
+    "oldPrice": "$4.32",
+    "newPrice": "$2.99",
+    "change": "-30.8%",
+    "up": false,
+    "absDiff": 1.33
+  },
+  {
+    "name": "Razorgale Calling [Foil] (Mortal Ambition)",
+    "oldPrice": "$5.71",
+    "newPrice": "$4.65",
+    "change": "-18.6%",
+    "up": false,
+    "absDiff": 1.0599999999999996
+  },
+  {
+    "name": "Peppered Chef [Foil] (Distorted Reflections)",
+    "oldPrice": "$6.95",
+    "newPrice": "$5.90",
+    "change": "-15.1%",
+    "up": false,
+    "absDiff": 1.0499999999999998
   }
 ]

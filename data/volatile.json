@@ -1,82 +1,58 @@
 [
   {
-    "name": "Advent of the Stormcaller [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$24.99",
-    "newPrice": "$15.99",
-    "change": "-36.0%",
+    "name": "Ariel Archangel of Natura [Foil] (Radiant Origins)",
+    "oldPrice": "$107.69",
+    "newPrice": "$79.66",
+    "change": "-26.0%",
     "up": false,
-    "absDiff": 8.999999999999998
+    "absDiff": 28.03
   },
   {
-    "name": "Night Barker Curio Foil [Foil] (Phantom Monarchs)",
-    "oldPrice": "$6.99",
-    "newPrice": "$9.99",
-    "change": "+42.9%",
+    "name": "Fragmented Spirit of Water [Foil] (Mercurial Heart)",
+    "oldPrice": "$47.49",
+    "newPrice": "$39.99",
+    "change": "-15.8%",
+    "up": false,
+    "absDiff": 7.5
+  },
+  {
+    "name": "Necklace of Foresight [Foil] (Radiant Origins)",
+    "oldPrice": "$36.07",
+    "newPrice": "$29.12",
+    "change": "-19.3%",
+    "up": false,
+    "absDiff": 6.949999999999999
+  },
+  {
+    "name": "Dissipation [Foil] (Radiant Origins)",
+    "oldPrice": "$7.99",
+    "newPrice": "$3.99",
+    "change": "-50.1%",
+    "up": false,
+    "absDiff": 4.0
+  },
+  {
+    "name": "Volcanic Crescendo [Foil] (Radiant Origins)",
+    "oldPrice": "$11.94",
+    "newPrice": "$15.13",
+    "change": "+26.7%",
     "up": true,
-    "absDiff": 3.0
+    "absDiff": 3.1900000000000013
   },
   {
-    "name": "creeping torment [Foil] (Alchemical Revolution)",
-    "oldPrice": "$3.78",
-    "newPrice": "$0.99",
-    "change": "-73.8%",
+    "name": "Bandit Gaze Leader [Foil] (Radiant Origins)",
+    "oldPrice": "$13.12",
+    "newPrice": "$10.01",
+    "change": "-23.7%",
     "up": false,
-    "absDiff": 2.79
+    "absDiff": 3.1099999999999994
   },
   {
-    "name": "Mercenarys Blade [Foil] (Mercurial Heart)",
-    "oldPrice": "$8.49",
-    "newPrice": "$5.98",
-    "change": "-29.6%",
-    "up": false,
-    "absDiff": 2.51
-  },
-  {
-    "name": "Dredging Streams [Foil] (Supporter Pack 4)",
-    "oldPrice": "$11.97",
-    "newPrice": "$9.64",
-    "change": "-19.5%",
-    "up": false,
-    "absDiff": 2.33
-  },
-  {
-    "name": "Cyclical Breeze [Foil] (Mortal Ambition)",
-    "oldPrice": "$5.66",
-    "newPrice": "$7.44",
-    "change": "+31.4%",
-    "up": true,
-    "absDiff": 1.7800000000000002
-  },
-  {
-    "name": "Tide Diviner [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$4.32",
-    "newPrice": "$2.99",
-    "change": "-30.8%",
-    "up": false,
-    "absDiff": 1.33
-  },
-  {
-    "name": "Chilling Touch [Normal] (Promotional Cards)",
-    "oldPrice": "$4.32",
-    "newPrice": "$2.99",
-    "change": "-30.8%",
-    "up": false,
-    "absDiff": 1.33
-  },
-  {
-    "name": "Razorgale Calling [Foil] (Mortal Ambition)",
-    "oldPrice": "$5.71",
-    "newPrice": "$4.65",
-    "change": "-18.6%",
-    "up": false,
-    "absDiff": 1.0599999999999996
-  },
-  {
-    "name": "Peppered Chef [Foil] (Distorted Reflections)",
-    "oldPrice": "$6.95",
-    "newPrice": "$5.90",
+    "name": "Psychopomps Gale [Foil] (Radiant Origins)",
+    "oldPrice": "$8.80",
+    "newPrice": "$7.47",
     "change": "-15.1%",
     "up": false,
-    "absDiff": 1.0499999999999998
+    "absDiff": 1.330000000000001
   }
 ]

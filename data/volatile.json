@@ -1,58 +1,50 @@
 [
   {
-    "name": "Ariel Archangel of Natura [Foil] (Radiant Origins)",
-    "oldPrice": "$107.69",
-    "newPrice": "$79.66",
-    "change": "-26.0%",
+    "name": "Zephyr [Foil] (Supporter Pack 1)",
+    "oldPrice": "$27.45",
+    "newPrice": "$20.72",
+    "change": "-24.5%",
     "up": false,
-    "absDiff": 28.03
+    "absDiff": 6.73
   },
   {
-    "name": "Fragmented Spirit of Water [Foil] (Mercurial Heart)",
-    "oldPrice": "$47.49",
-    "newPrice": "$39.99",
-    "change": "-15.8%",
+    "name": "Impact Hammer [Foil] (Radiant Origins)",
+    "oldPrice": "$38.32",
+    "newPrice": "$31.66",
+    "change": "-17.4%",
     "up": false,
-    "absDiff": 7.5
+    "absDiff": 6.66
   },
   {
-    "name": "Necklace of Foresight [Foil] (Radiant Origins)",
-    "oldPrice": "$36.07",
-    "newPrice": "$29.12",
-    "change": "-19.3%",
-    "up": false,
-    "absDiff": 6.949999999999999
+    "name": "Spurn to Ash [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$3.24",
+    "newPrice": "$5.98",
+    "change": "+84.6%",
+    "up": true,
+    "absDiff": 2.74
   },
   {
-    "name": "Dissipation [Foil] (Radiant Origins)",
-    "oldPrice": "$7.99",
-    "newPrice": "$3.99",
+    "name": "Infinite Scintillation [Foil] (Phantom Monarchs)",
+    "oldPrice": "$6.03",
+    "newPrice": "$3.32",
+    "change": "-44.9%",
+    "up": false,
+    "absDiff": 2.7100000000000004
+  },
+  {
+    "name": "Sudden Steel [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$3.99",
+    "newPrice": "$1.99",
     "change": "-50.1%",
     "up": false,
-    "absDiff": 4.0
+    "absDiff": 2.0
   },
   {
-    "name": "Volcanic Crescendo [Foil] (Radiant Origins)",
-    "oldPrice": "$11.94",
-    "newPrice": "$15.13",
-    "change": "+26.7%",
-    "up": true,
-    "absDiff": 3.1900000000000013
-  },
-  {
-    "name": "Bandit Gaze Leader [Foil] (Radiant Origins)",
-    "oldPrice": "$13.12",
-    "newPrice": "$10.01",
-    "change": "-23.7%",
+    "name": "Beastbond Paws [Foil] (Fractured Crown)",
+    "oldPrice": "$6.57",
+    "newPrice": "$5.38",
+    "change": "-18.1%",
     "up": false,
-    "absDiff": 3.1099999999999994
-  },
-  {
-    "name": "Psychopomps Gale [Foil] (Radiant Origins)",
-    "oldPrice": "$8.80",
-    "newPrice": "$7.47",
-    "change": "-15.1%",
-    "up": false,
-    "absDiff": 1.330000000000001
+    "absDiff": 1.1900000000000004
   }
 ]

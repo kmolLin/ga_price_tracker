@@ -1,50 +1,58 @@
 [
   {
-    "name": "Zephyr [Foil] (Supporter Pack 1)",
-    "oldPrice": "$27.45",
-    "newPrice": "$20.72",
-    "change": "-24.5%",
-    "up": false,
-    "absDiff": 6.73
-  },
-  {
     "name": "Impact Hammer [Foil] (Radiant Origins)",
-    "oldPrice": "$38.32",
-    "newPrice": "$31.66",
-    "change": "-17.4%",
-    "up": false,
-    "absDiff": 6.66
-  },
-  {
-    "name": "Spurn to Ash [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$3.24",
-    "newPrice": "$5.98",
-    "change": "+84.6%",
+    "oldPrice": "$31.66",
+    "newPrice": "$37.49",
+    "change": "+18.4%",
     "up": true,
-    "absDiff": 2.74
+    "absDiff": 5.830000000000002
   },
   {
-    "name": "Infinite Scintillation [Foil] (Phantom Monarchs)",
-    "oldPrice": "$6.03",
-    "newPrice": "$3.32",
-    "change": "-44.9%",
-    "up": false,
-    "absDiff": 2.7100000000000004
+    "name": "Byakkos Command [Foil] (Abyssal Heaven)",
+    "oldPrice": "$18.03",
+    "newPrice": "$21.99",
+    "change": "+22.0%",
+    "up": true,
+    "absDiff": 3.9599999999999973
   },
   {
-    "name": "Sudden Steel [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$3.99",
-    "newPrice": "$1.99",
-    "change": "-50.1%",
+    "name": "Spirit of Serene Water [Foil] (Fractured Crown)",
+    "oldPrice": "$22.94",
+    "newPrice": "$18.99",
+    "change": "-17.2%",
     "up": false,
-    "absDiff": 2.0
+    "absDiff": 3.950000000000003
+  },
+  {
+    "name": "Dungeon Guide [Normal] (Dawn of Ashes Prelude)",
+    "oldPrice": "$13.27",
+    "newPrice": "$10.14",
+    "change": "-23.6%",
+    "up": false,
+    "absDiff": 3.129999999999999
+  },
+  {
+    "name": "Summon Retinue [Foil] (Radiant Origins)",
+    "oldPrice": "$2.29",
+    "newPrice": "$0.99",
+    "change": "-56.8%",
+    "up": false,
+    "absDiff": 1.3
+  },
+  {
+    "name": "Blood Dragons Pact [Foil] (Radiant Origins)",
+    "oldPrice": "$4.74",
+    "newPrice": "$3.49",
+    "change": "-26.4%",
+    "up": false,
+    "absDiff": 1.25
   },
   {
     "name": "Beastbond Paws [Foil] (Fractured Crown)",
-    "oldPrice": "$6.57",
-    "newPrice": "$5.38",
-    "change": "-18.1%",
-    "up": false,
+    "oldPrice": "$5.38",
+    "newPrice": "$6.57",
+    "change": "+22.1%",
+    "up": true,
     "absDiff": 1.1900000000000004
   }
 ]

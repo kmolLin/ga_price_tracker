@@ -1,58 +1,106 @@
 [
   {
-    "name": "Impact Hammer [Foil] (Radiant Origins)",
-    "oldPrice": "$31.66",
-    "newPrice": "$37.49",
-    "change": "+18.4%",
+    "name": "Accelerate [Foil] (Radiant Origins)",
+    "oldPrice": "$13.62",
+    "newPrice": "$6.49",
+    "change": "-52.3%",
+    "up": false,
+    "absDiff": 7.129999999999999
+  },
+  {
+    "name": "Dwarf Stars Glow [Foil] (Radiant Origins)",
+    "oldPrice": "$23.99",
+    "newPrice": "$17.99",
+    "change": "-25.0%",
+    "up": false,
+    "absDiff": 6.0
+  },
+  {
+    "name": "Astral Seal [Foil] (Supporter Pack 3)",
+    "oldPrice": "$22.26",
+    "newPrice": "$16.81",
+    "change": "-24.5%",
+    "up": false,
+    "absDiff": 5.450000000000003
+  },
+  {
+    "name": "Frostbind [Foil] (Promotional Cards)",
+    "oldPrice": "$24.32",
+    "newPrice": "$29.46",
+    "change": "+21.1%",
     "up": true,
-    "absDiff": 5.830000000000002
+    "absDiff": 5.140000000000001
   },
   {
-    "name": "Byakkos Command [Foil] (Abyssal Heaven)",
-    "oldPrice": "$18.03",
-    "newPrice": "$21.99",
-    "change": "+22.0%",
-    "up": true,
-    "absDiff": 3.9599999999999973
-  },
-  {
-    "name": "Spirit of Serene Water [Foil] (Fractured Crown)",
-    "oldPrice": "$22.94",
-    "newPrice": "$18.99",
-    "change": "-17.2%",
+    "name": "Heated Vengeance [Foil] (Mortal Ambition)",
+    "oldPrice": "$25.00",
+    "newPrice": "$19.99",
+    "change": "-20.0%",
     "up": false,
-    "absDiff": 3.950000000000003
+    "absDiff": 5.010000000000002
   },
   {
-    "name": "Dungeon Guide [Normal] (Dawn of Ashes Prelude)",
-    "oldPrice": "$13.27",
-    "newPrice": "$10.14",
-    "change": "-23.6%",
+    "name": "Stellar Cosmos [Foil] (Radiant Origins)",
+    "oldPrice": "$11.99",
+    "newPrice": "$8.99",
+    "change": "-25.0%",
     "up": false,
-    "absDiff": 3.129999999999999
+    "absDiff": 3.0
   },
   {
-    "name": "Summon Retinue [Foil] (Radiant Origins)",
-    "oldPrice": "$2.29",
-    "newPrice": "$0.99",
-    "change": "-56.8%",
+    "name": "spellshield astra [Foil] (Alchemical Revolution)",
+    "oldPrice": "$6.73",
+    "newPrice": "$4.88",
+    "change": "-27.5%",
     "up": false,
-    "absDiff": 1.3
+    "absDiff": 1.8500000000000005
   },
   {
-    "name": "Blood Dragons Pact [Foil] (Radiant Origins)",
-    "oldPrice": "$4.74",
-    "newPrice": "$3.49",
-    "change": "-26.4%",
+    "name": "Dawn of Ashes [Foil] (Fractured Crown)",
+    "oldPrice": "$7.71",
+    "newPrice": "$6.13",
+    "change": "-20.5%",
+    "up": false,
+    "absDiff": 1.58
+  },
+  {
+    "name": "Alpha Philterbeast [Foil] (Radiant Origins)",
+    "oldPrice": "$4.49",
+    "newPrice": "$3.24",
+    "change": "-27.8%",
     "up": false,
     "absDiff": 1.25
   },
   {
-    "name": "Beastbond Paws [Foil] (Fractured Crown)",
-    "oldPrice": "$5.38",
-    "newPrice": "$6.57",
-    "change": "+22.1%",
+    "name": "Devised Conspiracy [Foil] (Radiant Origins)",
+    "oldPrice": "$4.99",
+    "newPrice": "$3.74",
+    "change": "-25.1%",
+    "up": false,
+    "absDiff": 1.25
+  },
+  {
+    "name": "Vampiric Slime [Normal] (Mercurial Heart)",
+    "oldPrice": "$5.92",
+    "newPrice": "$7.14",
+    "change": "+20.6%",
     "up": true,
-    "absDiff": 1.1900000000000004
+    "absDiff": 1.2199999999999998
+  },
+  {
+    "name": "Fiery Interference [Foil] (Supporter Pack 4)",
+    "oldPrice": "$6.23",
+    "newPrice": "$5.08",
+    "change": "-18.5%",
+    "up": false,
+    "absDiff": 1.1500000000000004
+  },
+  {
+    "name": "Entrenched Fortress [Foil] (Radiant Origins)",
+    "oldPrice": "$3.99",
+    "newPrice": "$2.99",
+    "change": "-25.1%",
+    "up": false,
+    "absDiff": 1.0
   }
 ]

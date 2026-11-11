@@ -1,106 +1,106 @@
 [
   {
-    "name": "Accelerate [Foil] (Radiant Origins)",
-    "oldPrice": "$13.62",
-    "newPrice": "$6.49",
-    "change": "-52.3%",
+    "name": "Sword of Seeking [Foil] (Fractured Crown)",
+    "oldPrice": "$40.39",
+    "newPrice": "$24.99",
+    "change": "-38.1%",
     "up": false,
-    "absDiff": 7.129999999999999
+    "absDiff": 15.400000000000002
   },
   {
-    "name": "Dwarf Stars Glow [Foil] (Radiant Origins)",
-    "oldPrice": "$23.99",
-    "newPrice": "$17.99",
-    "change": "-25.0%",
+    "name": "Crystal of Argus [Foil] (Radiant Origins)",
+    "oldPrice": "$25.16",
+    "newPrice": "$15.60",
+    "change": "-38.0%",
     "up": false,
-    "absDiff": 6.0
+    "absDiff": 9.56
   },
   {
-    "name": "Astral Seal [Foil] (Supporter Pack 3)",
-    "oldPrice": "$22.26",
-    "newPrice": "$16.81",
-    "change": "-24.5%",
+    "name": "Tabula of Salvage [Foil] (Radiant Origins)",
+    "oldPrice": "$22.76",
+    "newPrice": "$18.45",
+    "change": "-18.9%",
     "up": false,
-    "absDiff": 5.450000000000003
+    "absDiff": 4.310000000000002
   },
   {
-    "name": "Frostbind [Foil] (Promotional Cards)",
-    "oldPrice": "$24.32",
-    "newPrice": "$29.46",
-    "change": "+21.1%",
+    "name": "umbral tithe [Foil] (Alchemical Revolution)",
+    "oldPrice": "$20.00",
+    "newPrice": "$23.33",
+    "change": "+16.6%",
     "up": true,
-    "absDiff": 5.140000000000001
+    "absDiff": 3.3299999999999983
   },
   {
-    "name": "Heated Vengeance [Foil] (Mortal Ambition)",
-    "oldPrice": "$25.00",
-    "newPrice": "$19.99",
-    "change": "-20.0%",
+    "name": "Luxem Sight [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$17.99",
+    "newPrice": "$14.99",
+    "change": "-16.7%",
     "up": false,
-    "absDiff": 5.010000000000002
+    "absDiff": 2.9999999999999982
   },
   {
-    "name": "Stellar Cosmos [Foil] (Radiant Origins)",
-    "oldPrice": "$11.99",
-    "newPrice": "$8.99",
-    "change": "-25.0%",
+    "name": "Uncover the Plot [Foil] (Phantom Monarchs Event Pack)",
+    "oldPrice": "$3.94",
+    "newPrice": "$0.99",
+    "change": "-74.9%",
     "up": false,
-    "absDiff": 3.0
+    "absDiff": 2.95
   },
   {
-    "name": "spellshield astra [Foil] (Alchemical Revolution)",
-    "oldPrice": "$6.73",
-    "newPrice": "$4.88",
-    "change": "-27.5%",
+    "name": "Excalibur Cleansing Light [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$12.47",
+    "newPrice": "$10.21",
+    "change": "-18.1%",
     "up": false,
-    "absDiff": 1.8500000000000005
+    "absDiff": 2.26
   },
   {
-    "name": "Dawn of Ashes [Foil] (Fractured Crown)",
-    "oldPrice": "$7.71",
-    "newPrice": "$6.13",
-    "change": "-20.5%",
+    "name": "Krustallan Longsword [Foil] (Radiant Origins)",
+    "oldPrice": "$7.59",
+    "newPrice": "$5.39",
+    "change": "-29.0%",
     "up": false,
-    "absDiff": 1.58
+    "absDiff": 2.2
   },
   {
-    "name": "Alpha Philterbeast [Foil] (Radiant Origins)",
-    "oldPrice": "$4.49",
-    "newPrice": "$3.24",
-    "change": "-27.8%",
-    "up": false,
-    "absDiff": 1.25
-  },
-  {
-    "name": "Devised Conspiracy [Foil] (Radiant Origins)",
-    "oldPrice": "$4.99",
-    "newPrice": "$3.74",
-    "change": "-25.1%",
-    "up": false,
-    "absDiff": 1.25
-  },
-  {
-    "name": "Vampiric Slime [Normal] (Mercurial Heart)",
-    "oldPrice": "$5.92",
-    "newPrice": "$7.14",
-    "change": "+20.6%",
+    "name": "Excalibur Cleansing Light [Normal] (Dawn of Ashes 1st Edition)",
+    "oldPrice": "$7.88",
+    "newPrice": "$9.21",
+    "change": "+16.9%",
     "up": true,
-    "absDiff": 1.2199999999999998
+    "absDiff": 1.330000000000001
   },
   {
-    "name": "Fiery Interference [Foil] (Supporter Pack 4)",
-    "oldPrice": "$6.23",
-    "newPrice": "$5.08",
-    "change": "-18.5%",
-    "up": false,
-    "absDiff": 1.1500000000000004
+    "name": "Tide Diviner [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$2.99",
+    "newPrice": "$4.25",
+    "change": "+42.1%",
+    "up": true,
+    "absDiff": 1.2599999999999998
   },
   {
-    "name": "Entrenched Fortress [Foil] (Radiant Origins)",
-    "oldPrice": "$3.99",
-    "newPrice": "$2.99",
-    "change": "-25.1%",
-    "up": false,
+    "name": "Restorative Flame [Foil] (Abyssal Heaven)",
+    "oldPrice": "$5.49",
+    "newPrice": "$6.70",
+    "change": "+22.0%",
+    "up": true,
+    "absDiff": 1.21
+  },
+  {
+    "name": "Hemorrhaging Rend [Foil] (Mortal Ambition)",
+    "oldPrice": "$6.93",
+    "newPrice": "$8.10",
+    "change": "+16.9%",
+    "up": true,
+    "absDiff": 1.17
+  },
+  {
+    "name": "Sword of Avarice [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$6.00",
+    "newPrice": "$7.00",
+    "change": "+16.7%",
+    "up": true,
     "absDiff": 1.0
   }
 ]

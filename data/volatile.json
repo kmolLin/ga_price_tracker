@@ -1,106 +1,66 @@
 [
   {
-    "name": "Sword of Seeking [Foil] (Fractured Crown)",
-    "oldPrice": "$40.39",
-    "newPrice": "$24.99",
-    "change": "-38.1%",
+    "name": "Polkhawk Boisterous Riot [Foil] (Alchemical Revolution Alter Edition)",
+    "oldPrice": "$19.49",
+    "newPrice": "$9.25",
+    "change": "-52.5%",
     "up": false,
-    "absDiff": 15.400000000000002
+    "absDiff": 10.239999999999998
   },
   {
-    "name": "Crystal of Argus [Foil] (Radiant Origins)",
-    "oldPrice": "$25.16",
-    "newPrice": "$15.60",
-    "change": "-38.0%",
-    "up": false,
-    "absDiff": 9.56
-  },
-  {
-    "name": "Tabula of Salvage [Foil] (Radiant Origins)",
-    "oldPrice": "$22.76",
-    "newPrice": "$18.45",
-    "change": "-18.9%",
-    "up": false,
-    "absDiff": 4.310000000000002
-  },
-  {
-    "name": "umbral tithe [Foil] (Alchemical Revolution)",
-    "oldPrice": "$20.00",
-    "newPrice": "$23.33",
-    "change": "+16.6%",
+    "name": "Possessed Reaping [Foil] (Promotional Cards)",
+    "oldPrice": "$0.90",
+    "newPrice": "$5.95",
+    "change": "+561.1%",
     "up": true,
-    "absDiff": 3.3299999999999983
-  },
-  {
-    "name": "Luxem Sight [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$17.99",
-    "newPrice": "$14.99",
-    "change": "-16.7%",
-    "up": false,
-    "absDiff": 2.9999999999999982
-  },
-  {
-    "name": "Uncover the Plot [Foil] (Phantom Monarchs Event Pack)",
-    "oldPrice": "$3.94",
-    "newPrice": "$0.99",
-    "change": "-74.9%",
-    "up": false,
-    "absDiff": 2.95
-  },
-  {
-    "name": "Excalibur Cleansing Light [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$12.47",
-    "newPrice": "$10.21",
-    "change": "-18.1%",
-    "up": false,
-    "absDiff": 2.26
-  },
-  {
-    "name": "Krustallan Longsword [Foil] (Radiant Origins)",
-    "oldPrice": "$7.59",
-    "newPrice": "$5.39",
-    "change": "-29.0%",
-    "up": false,
-    "absDiff": 2.2
+    "absDiff": 5.05
   },
   {
     "name": "Excalibur Cleansing Light [Normal] (Dawn of Ashes 1st Edition)",
-    "oldPrice": "$7.88",
-    "newPrice": "$9.21",
-    "change": "+16.9%",
+    "oldPrice": "$9.21",
+    "newPrice": "$13.70",
+    "change": "+48.8%",
     "up": true,
-    "absDiff": 1.330000000000001
+    "absDiff": 4.489999999999998
   },
   {
-    "name": "Tide Diviner [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$2.99",
-    "newPrice": "$4.25",
-    "change": "+42.1%",
-    "up": true,
-    "absDiff": 1.2599999999999998
+    "name": "Aesan Protector [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$19.40",
+    "newPrice": "$16.00",
+    "change": "-17.5%",
+    "up": false,
+    "absDiff": 3.3999999999999986
   },
   {
-    "name": "Restorative Flame [Foil] (Abyssal Heaven)",
-    "oldPrice": "$5.49",
-    "newPrice": "$6.70",
-    "change": "+22.0%",
-    "up": true,
-    "absDiff": 1.21
+    "name": "Verte Ace of Clubs [Foil] (Distorted Reflections Alter Edition)",
+    "oldPrice": "$17.79",
+    "newPrice": "$14.64",
+    "change": "-17.7%",
+    "up": false,
+    "absDiff": 3.1499999999999986
   },
   {
-    "name": "Hemorrhaging Rend [Foil] (Mortal Ambition)",
-    "oldPrice": "$6.93",
-    "newPrice": "$8.10",
-    "change": "+16.9%",
+    "name": "Varuckan Acolyte [Foil] (Fractured Crown)",
+    "oldPrice": "$4.24",
+    "newPrice": "$6.99",
+    "change": "+64.9%",
     "up": true,
-    "absDiff": 1.17
+    "absDiff": 2.75
   },
   {
-    "name": "Sword of Avarice [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$6.00",
-    "newPrice": "$7.00",
-    "change": "+16.7%",
-    "up": true,
-    "absDiff": 1.0
+    "name": "Zhang Fei Spirited Steel [Foil] (Mortal Ambition)",
+    "oldPrice": "$2.49",
+    "newPrice": "$0.99",
+    "change": "-60.2%",
+    "up": false,
+    "absDiff": 1.5000000000000002
+  },
+  {
+    "name": "Wisdoms Reprise [Foil] (Mortal Ambition)",
+    "oldPrice": "$5.99",
+    "newPrice": "$4.49",
+    "change": "-25.0%",
+    "up": false,
+    "absDiff": 1.5
   }
 ]

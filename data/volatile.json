@@ -1,66 +1,66 @@
 [
   {
-    "name": "Polkhawk Boisterous Riot [Foil] (Alchemical Revolution Alter Edition)",
-    "oldPrice": "$19.49",
-    "newPrice": "$9.25",
-    "change": "-52.5%",
+    "name": "Lotor Trinket [Foil] (Radiant Origins)",
+    "oldPrice": "$75.98",
+    "newPrice": "$3.99",
+    "change": "-94.7%",
     "up": false,
-    "absDiff": 10.239999999999998
+    "absDiff": 71.99000000000001
   },
   {
-    "name": "Possessed Reaping [Foil] (Promotional Cards)",
-    "oldPrice": "$0.90",
-    "newPrice": "$5.95",
-    "change": "+561.1%",
+    "name": "Spalling Cleanse Curio Foil [Foil] (Phantom Monarchs)",
+    "oldPrice": "$66.68",
+    "newPrice": "$89.99",
+    "change": "+35.0%",
     "up": true,
-    "absDiff": 5.05
+    "absDiff": 23.309999999999988
   },
   {
-    "name": "Excalibur Cleansing Light [Normal] (Dawn of Ashes 1st Edition)",
-    "oldPrice": "$9.21",
-    "newPrice": "$13.70",
-    "change": "+48.8%",
-    "up": true,
-    "absDiff": 4.489999999999998
-  },
-  {
-    "name": "Aesan Protector [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$19.40",
-    "newPrice": "$16.00",
-    "change": "-17.5%",
+    "name": "Cauterizing Seraphim [Foil] (Radiant Origins)",
+    "oldPrice": "$20.32",
+    "newPrice": "$17.24",
+    "change": "-15.2%",
     "up": false,
-    "absDiff": 3.3999999999999986
+    "absDiff": 3.080000000000002
   },
   {
-    "name": "Verte Ace of Clubs [Foil] (Distorted Reflections Alter Edition)",
-    "oldPrice": "$17.79",
-    "newPrice": "$14.64",
-    "change": "-17.7%",
-    "up": false,
-    "absDiff": 3.1499999999999986
-  },
-  {
-    "name": "Varuckan Acolyte [Foil] (Fractured Crown)",
-    "oldPrice": "$4.24",
-    "newPrice": "$6.99",
-    "change": "+64.9%",
-    "up": true,
-    "absDiff": 2.75
-  },
-  {
-    "name": "Zhang Fei Spirited Steel [Foil] (Mortal Ambition)",
-    "oldPrice": "$2.49",
-    "newPrice": "$0.99",
-    "change": "-60.2%",
-    "up": false,
-    "absDiff": 1.5000000000000002
-  },
-  {
-    "name": "Wisdoms Reprise [Foil] (Mortal Ambition)",
+    "name": "Convergent Beam [Foil] (.asphodel/paradise)",
     "oldPrice": "$5.99",
-    "newPrice": "$4.49",
-    "change": "-25.0%",
+    "newPrice": "$3.49",
+    "change": "-41.7%",
     "up": false,
-    "absDiff": 1.5
+    "absDiff": 2.5
+  },
+  {
+    "name": "Brisk Windtrotter [Foil] (Mortal Ambition)",
+    "oldPrice": "$5.98",
+    "newPrice": "$3.97",
+    "change": "-33.6%",
+    "up": false,
+    "absDiff": 2.0100000000000002
+  },
+  {
+    "name": "Springleaf [Foil] (Alchemical Revolution)",
+    "oldPrice": "$3.52",
+    "newPrice": "$1.99",
+    "change": "-43.5%",
+    "up": false,
+    "absDiff": 1.53
+  },
+  {
+    "name": "Buddy Raccoon [Foil] (Radiant Origins)",
+    "oldPrice": "$1.99",
+    "newPrice": "$0.99",
+    "change": "-50.3%",
+    "up": false,
+    "absDiff": 1.0
+  },
+  {
+    "name": "Excitable Raccoon [Foil] (Radiant Origins)",
+    "oldPrice": "$1.99",
+    "newPrice": "$0.99",
+    "change": "-50.3%",
+    "up": false,
+    "absDiff": 1.0
   }
 ]

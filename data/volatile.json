@@ -1,34 +1,98 @@
 [
   {
-    "name": "Orb of Sealing [Foil] (Mortal Ambition)",
-    "oldPrice": "$59.00",
-    "newPrice": "$70.00",
-    "change": "+18.6%",
+    "name": "Spirit of Fortuitous Fire 003C [CSR (Foil)] (Radiant Origins)",
+    "oldPrice": "$464.19",
+    "newPrice": "$549.99",
+    "change": "+18.5%",
     "up": true,
-    "absDiff": 11.0
+    "absDiff": 85.80000000000001
   },
   {
-    "name": "Censer of Restful Peace [Foil] (Abyssal Heaven)",
-    "oldPrice": "$50.99",
-    "newPrice": "$41.33",
-    "change": "-18.9%",
+    "name": "Fulminating Storm [Foil] (Radiant Origins)",
+    "oldPrice": "$19.99",
+    "newPrice": "$1.00",
+    "change": "-95.0%",
     "up": false,
-    "absDiff": 9.660000000000004
+    "absDiff": 18.99
   },
   {
-    "name": "Expel the Departed [Foil] (Radiant Origins Event Pack)",
-    "oldPrice": "$12.00",
-    "newPrice": "$9.20",
-    "change": "-23.3%",
+    "name": "Seekers Aetherwing [Foil] (Radiant Origins)",
+    "oldPrice": "$34.99",
+    "newPrice": "$19.99",
+    "change": "-42.9%",
     "up": false,
-    "absDiff": 2.8000000000000007
+    "absDiff": 15.000000000000004
   },
   {
-    "name": "Atmos Shield [Foil] (Mercurial Heart)",
-    "oldPrice": "$3.59",
-    "newPrice": "$1.99",
-    "change": "-44.6%",
+    "name": "Merlin Memory Thief [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$13.83",
+    "newPrice": "$25.47",
+    "change": "+84.2%",
+    "up": true,
+    "absDiff": 11.639999999999999
+  },
+  {
+    "name": "Dungeon Guide [Normal] (Dawn of Ashes Prelude)",
+    "oldPrice": "$10.14",
+    "newPrice": "$7.00",
+    "change": "-31.0%",
     "up": false,
-    "absDiff": 1.5999999999999999
+    "absDiff": 3.1400000000000006
+  },
+  {
+    "name": "Avatar of Genbu [Foil] (Radiant Origins)",
+    "oldPrice": "$5.92",
+    "newPrice": "$2.84",
+    "change": "-52.0%",
+    "up": false,
+    "absDiff": 3.08
+  },
+  {
+    "name": "Break the Line [Foil] (.asphodel/paradise)",
+    "oldPrice": "$10.80",
+    "newPrice": "$7.80",
+    "change": "-27.8%",
+    "up": false,
+    "absDiff": 3.000000000000001
+  },
+  {
+    "name": "Scout the Land [Foil] (Mercurial Heart)",
+    "oldPrice": "$6.99",
+    "newPrice": "$4.47",
+    "change": "-36.1%",
+    "up": false,
+    "absDiff": 2.5200000000000005
+  },
+  {
+    "name": "Shimmercloak Assassin [Foil] (Supporter Pack 2)",
+    "oldPrice": "$5.99",
+    "newPrice": "$3.49",
+    "change": "-41.7%",
+    "up": false,
+    "absDiff": 2.5
+  },
+  {
+    "name": "orb of hubris [Foil] (Alchemical Revolution)",
+    "oldPrice": "$2.49",
+    "newPrice": "$0.99",
+    "change": "-60.2%",
+    "up": false,
+    "absDiff": 1.5000000000000002
+  },
+  {
+    "name": "Bauble of Abundance [Foil] (Fractured Crown)",
+    "oldPrice": "$4.99",
+    "newPrice": "$3.49",
+    "change": "-30.1%",
+    "up": false,
+    "absDiff": 1.5
+  },
+  {
+    "name": "Bise Blade [Foil] (Radiant Origins)",
+    "oldPrice": "$5.99",
+    "newPrice": "$4.99",
+    "change": "-16.7%",
+    "up": false,
+    "absDiff": 1.0
   }
 ]

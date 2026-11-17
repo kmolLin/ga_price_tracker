@@ -1,18 +1,58 @@
 [
   {
-    "name": "Jin Undying Resolve CSR [CSR] (Mortal Ambition Starter Decks)",
+    "name": "Diana Deadly Duelist CSR 009A ALC1E [CSR (Foil)] (Alchemical Revolution)",
     "oldPrice": "$499.99",
-    "newPrice": "$411.30",
-    "change": "-17.7%",
+    "newPrice": "$277.98",
+    "change": "-44.4%",
     "up": false,
-    "absDiff": 88.69
+    "absDiff": 222.01
   },
   {
-    "name": "Devised Conspiracy [Foil] (Radiant Origins)",
-    "oldPrice": "$3.74",
-    "newPrice": "$1.99",
-    "change": "-46.8%",
+    "name": "Safeguard Amulet [Foil] (Phantom Monarchs Event Pack)",
+    "oldPrice": "$236.66",
+    "newPrice": "$293.33",
+    "change": "+23.9%",
+    "up": true,
+    "absDiff": 56.66999999999999
+  },
+  {
+    "name": "Snow White Weiss Queen [Foil] (Distorted Reflections)",
+    "oldPrice": "$47.00",
+    "newPrice": "$34.00",
+    "change": "-27.7%",
     "up": false,
-    "absDiff": 1.7500000000000002
+    "absDiff": 13.0
+  },
+  {
+    "name": "Spirit of Purity [Foil] (Phantom Monarchs)",
+    "oldPrice": "$14.99",
+    "newPrice": "$12.35",
+    "change": "-17.6%",
+    "up": false,
+    "absDiff": 2.6400000000000006
+  },
+  {
+    "name": "Scout the Land [Foil] (Mercurial Heart)",
+    "oldPrice": "$4.47",
+    "newPrice": "$1.95",
+    "change": "-56.4%",
+    "up": false,
+    "absDiff": 2.5199999999999996
+  },
+  {
+    "name": "Inundating Clash [Foil] (Mortal Ambition)",
+    "oldPrice": "$6.99",
+    "newPrice": "$9.39",
+    "change": "+34.3%",
+    "up": true,
+    "absDiff": 2.4000000000000004
+  },
+  {
+    "name": "Jueying Shadowmare [Foil] (Mortal Ambition)",
+    "oldPrice": "$10.13",
+    "newPrice": "$11.85",
+    "change": "+17.0%",
+    "up": true,
+    "absDiff": 1.7199999999999989
   }
 ]

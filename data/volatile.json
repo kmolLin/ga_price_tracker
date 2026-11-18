@@ -1,58 +1,90 @@
 [
   {
-    "name": "Diana Deadly Duelist CSR 009A ALC1E [CSR (Foil)] (Alchemical Revolution)",
-    "oldPrice": "$499.99",
-    "newPrice": "$277.98",
-    "change": "-44.4%",
+    "name": "Ariel Archangel of Natura [Foil] (Radiant Origins)",
+    "oldPrice": "$79.66",
+    "newPrice": "$49.99",
+    "change": "-37.2%",
     "up": false,
-    "absDiff": 222.01
+    "absDiff": 29.669999999999995
   },
   {
-    "name": "Safeguard Amulet [Foil] (Phantom Monarchs Event Pack)",
-    "oldPrice": "$236.66",
-    "newPrice": "$293.33",
-    "change": "+23.9%",
-    "up": true,
-    "absDiff": 56.66999999999999
-  },
-  {
-    "name": "Snow White Weiss Queen [Foil] (Distorted Reflections)",
-    "oldPrice": "$47.00",
-    "newPrice": "$34.00",
-    "change": "-27.7%",
+    "name": "Necklace of Foresight [Foil] (Radiant Origins)",
+    "oldPrice": "$29.12",
+    "newPrice": "$23.74",
+    "change": "-18.5%",
     "up": false,
-    "absDiff": 13.0
+    "absDiff": 5.380000000000003
   },
   {
-    "name": "Spirit of Purity [Foil] (Phantom Monarchs)",
-    "oldPrice": "$14.99",
-    "newPrice": "$12.35",
-    "change": "-17.6%",
+    "name": "PlasmaTech Blaster [Foil] (.asphodel/paradise)",
+    "oldPrice": "$9.99",
+    "newPrice": "$5.49",
+    "change": "-45.0%",
     "up": false,
-    "absDiff": 2.6400000000000006
+    "absDiff": 4.5
   },
   {
-    "name": "Scout the Land [Foil] (Mercurial Heart)",
-    "oldPrice": "$4.47",
-    "newPrice": "$1.95",
-    "change": "-56.4%",
+    "name": "SignalTech One [Foil] (.asphodel/paradise)",
+    "oldPrice": "$10.99",
+    "newPrice": "$8.00",
+    "change": "-27.2%",
     "up": false,
-    "absDiff": 2.5199999999999996
+    "absDiff": 2.99
   },
   {
-    "name": "Inundating Clash [Foil] (Mortal Ambition)",
+    "name": "Signal Gunner [Foil] (.asphodel/paradise)",
     "oldPrice": "$6.99",
-    "newPrice": "$9.39",
-    "change": "+34.3%",
-    "up": true,
-    "absDiff": 2.4000000000000004
+    "newPrice": "$4.71",
+    "change": "-32.6%",
+    "up": false,
+    "absDiff": 2.2800000000000002
   },
   {
-    "name": "Jueying Shadowmare [Foil] (Mortal Ambition)",
-    "oldPrice": "$10.13",
-    "newPrice": "$11.85",
-    "change": "+17.0%",
+    "name": "Poisonous Apple [Foil] (Distorted Reflections)",
+    "oldPrice": "$12.59",
+    "newPrice": "$10.66",
+    "change": "-15.3%",
+    "up": false,
+    "absDiff": 1.9299999999999997
+  },
+  {
+    "name": "Proof of Life [Foil] (Mortal Ambition)",
+    "oldPrice": "$9.49",
+    "newPrice": "$7.59",
+    "change": "-20.0%",
+    "up": false,
+    "absDiff": 1.9000000000000004
+  },
+  {
+    "name": "Dematerialize [Foil] (.asphodel/paradise Grimoire)",
+    "oldPrice": "$4.99",
+    "newPrice": "$3.19",
+    "change": "-36.1%",
+    "up": false,
+    "absDiff": 1.8000000000000003
+  },
+  {
+    "name": "tonoris genesis aegis [Foil] (Alchemical Revolution)",
+    "oldPrice": "$10.85",
+    "newPrice": "$12.59",
+    "change": "+16.0%",
     "up": true,
-    "absDiff": 1.7199999999999989
+    "absDiff": 1.7400000000000002
+  },
+  {
+    "name": "Fairy Whispers [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$6.99",
+    "newPrice": "$5.66",
+    "change": "-19.0%",
+    "up": false,
+    "absDiff": 1.33
+  },
+  {
+    "name": "Under Fire [Foil] (Supporter Pack 3)",
+    "oldPrice": "$3.99",
+    "newPrice": "$2.99",
+    "change": "-25.1%",
+    "up": false,
+    "absDiff": 1.0
   }
 ]

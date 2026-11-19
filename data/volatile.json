@@ -1,86 +1,30 @@
 [
   {
-    "name": "Ariel Archangel of Natura [Foil] (Radiant Origins)",
-    "oldPrice": "$79.66",
-    "newPrice": "$49.99",
-    "change": "-37.2%",
+    "name": "Cometary Vantage [Foil] (Distorted Reflections)",
+    "oldPrice": "$19.99",
+    "newPrice": "$13.83",
+    "change": "-30.8%",
     "up": false,
-    "absDiff": 29.669999999999995
+    "absDiff": 6.159999999999998
   },
   {
-    "name": "Necklace of Foresight [Foil] (Radiant Origins)",
-    "oldPrice": "$29.12",
-    "newPrice": "$23.74",
-    "change": "-18.5%",
-    "up": false,
-    "absDiff": 5.380000000000003
-  },
-  {
-    "name": "PlasmaTech Blaster [Foil] (.asphodel/paradise)",
-    "oldPrice": "$9.99",
-    "newPrice": "$5.49",
-    "change": "-45.0%",
-    "up": false,
-    "absDiff": 4.5
-  },
-  {
-    "name": "SignalTech One [Foil] (.asphodel/paradise)",
-    "oldPrice": "$10.99",
-    "newPrice": "$8.00",
-    "change": "-27.2%",
-    "up": false,
-    "absDiff": 2.99
-  },
-  {
-    "name": "Signal Gunner [Foil] (.asphodel/paradise)",
-    "oldPrice": "$6.99",
-    "newPrice": "$4.71",
-    "change": "-32.6%",
-    "up": false,
-    "absDiff": 2.2800000000000002
-  },
-  {
-    "name": "Poisonous Apple [Foil] (Distorted Reflections)",
-    "oldPrice": "$12.59",
-    "newPrice": "$10.66",
-    "change": "-15.3%",
-    "up": false,
-    "absDiff": 1.9299999999999997
-  },
-  {
-    "name": "Proof of Life [Foil] (Mortal Ambition)",
-    "oldPrice": "$9.49",
-    "newPrice": "$7.59",
-    "change": "-20.0%",
-    "up": false,
-    "absDiff": 1.9000000000000004
-  },
-  {
-    "name": "Dematerialize [Foil] (.asphodel/paradise Grimoire)",
-    "oldPrice": "$4.99",
-    "newPrice": "$3.19",
-    "change": "-36.1%",
-    "up": false,
-    "absDiff": 1.8000000000000003
-  },
-  {
-    "name": "tonoris genesis aegis [Foil] (Alchemical Revolution)",
-    "oldPrice": "$10.85",
-    "newPrice": "$12.59",
-    "change": "+16.0%",
+    "name": "Spirit of Purity [Foil] (Phantom Monarchs)",
+    "oldPrice": "$12.35",
+    "newPrice": "$14.99",
+    "change": "+21.4%",
     "up": true,
-    "absDiff": 1.7400000000000002
+    "absDiff": 2.6400000000000006
   },
   {
-    "name": "Fairy Whispers [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$6.99",
-    "newPrice": "$5.66",
-    "change": "-19.0%",
+    "name": "Tabula of Salvage [Normal] (Promotional Cards)",
+    "oldPrice": "$14.67",
+    "newPrice": "$12.28",
+    "change": "-16.3%",
     "up": false,
-    "absDiff": 1.33
+    "absDiff": 2.3900000000000006
   },
   {
-    "name": "Under Fire [Foil] (Supporter Pack 3)",
+    "name": "aurousteel greatsword [Foil] (Alchemical Revolution)",
     "oldPrice": "$3.99",
     "newPrice": "$2.99",
     "change": "-25.1%",

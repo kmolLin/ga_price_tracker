@@ -1,34 +1,98 @@
 [
   {
-    "name": "Cometary Vantage [Foil] (Distorted Reflections)",
-    "oldPrice": "$19.99",
-    "newPrice": "$13.83",
-    "change": "-30.8%",
+    "name": "Mordred Flawless Blade CSR [CSR (Foil)] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$399.99",
+    "newPrice": "$200.00",
+    "change": "-50.0%",
     "up": false,
-    "absDiff": 6.159999999999998
+    "absDiff": 199.99
   },
   {
-    "name": "Spirit of Purity [Foil] (Phantom Monarchs)",
-    "oldPrice": "$12.35",
-    "newPrice": "$14.99",
-    "change": "+21.4%",
+    "name": "Windmill Engineer [Foil] (Promotional Cards)",
+    "oldPrice": "$109.99",
+    "newPrice": "$140.00",
+    "change": "+27.3%",
     "up": true,
-    "absDiff": 2.6400000000000006
+    "absDiff": 30.010000000000005
   },
   {
-    "name": "Tabula of Salvage [Normal] (Promotional Cards)",
-    "oldPrice": "$14.67",
-    "newPrice": "$12.28",
-    "change": "-16.3%",
+    "name": "Edelstein Queen of Diamonds [Foil] (Radiant Origins)",
+    "oldPrice": "$30.14",
+    "newPrice": "$13.99",
+    "change": "-53.6%",
     "up": false,
-    "absDiff": 2.3900000000000006
+    "absDiff": 16.15
   },
   {
-    "name": "aurousteel greatsword [Foil] (Alchemical Revolution)",
-    "oldPrice": "$3.99",
-    "newPrice": "$2.99",
-    "change": "-25.1%",
+    "name": "Radiant Origin of Assassin [Foil] (Radiant Origins)",
+    "oldPrice": "$14.99",
+    "newPrice": "$2.98",
+    "change": "-80.1%",
     "up": false,
-    "absDiff": 1.0
+    "absDiff": 12.01
+  },
+  {
+    "name": "Safeguard Amulet [Foil] (Fractured Crown)",
+    "oldPrice": "$49.90",
+    "newPrice": "$59.95",
+    "change": "+20.1%",
+    "up": true,
+    "absDiff": 10.050000000000004
+  },
+  {
+    "name": "Radiant Origin of Ranger [Foil] (Radiant Origins)",
+    "oldPrice": "$14.99",
+    "newPrice": "$6.99",
+    "change": "-53.4%",
+    "up": false,
+    "absDiff": 8.0
+  },
+  {
+    "name": "Bleu Ace of Diamonds [Foil] (Radiant Origins)",
+    "oldPrice": "$25.49",
+    "newPrice": "$20.99",
+    "change": "-17.7%",
+    "up": false,
+    "absDiff": 4.5
+  },
+  {
+    "name": "Radiant Origin of Cleric [Foil] (Radiant Origins)",
+    "oldPrice": "$10.99",
+    "newPrice": "$7.13",
+    "change": "-35.1%",
+    "up": false,
+    "absDiff": 3.8600000000000003
+  },
+  {
+    "name": "Radiant Origin of Mage [Foil] (Radiant Origins)",
+    "oldPrice": "$8.99",
+    "newPrice": "$5.66",
+    "change": "-37.0%",
+    "up": false,
+    "absDiff": 3.33
+  },
+  {
+    "name": "Dualitys Convergence [Foil] (Promotional Cards)",
+    "oldPrice": "$4.31",
+    "newPrice": "$6.65",
+    "change": "+54.3%",
+    "up": true,
+    "absDiff": 2.3400000000000007
+  },
+  {
+    "name": "Dawn of Ashes [Foil] (Fractured Crown)",
+    "oldPrice": "$6.13",
+    "newPrice": "$8.41",
+    "change": "+37.2%",
+    "up": true,
+    "absDiff": 2.2800000000000002
+  },
+  {
+    "name": "Razorvine [Normal] (Supporter Pack 2)",
+    "oldPrice": "$2.54",
+    "newPrice": "$4.09",
+    "change": "+61.0%",
+    "up": true,
+    "absDiff": 1.5499999999999998
   }
 ]

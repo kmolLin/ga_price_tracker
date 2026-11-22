@@ -1,26 +1,26 @@
 [
   {
-    "name": "Library Witch [Foil] (Supporter Pack 3)",
-    "oldPrice": "$23.47",
-    "newPrice": "$27.29",
-    "change": "+16.3%",
-    "up": true,
-    "absDiff": 3.8200000000000003
+    "name": "Lesser Boon of Knox [Normal] (Radiant Origins: Pantheon)",
+    "oldPrice": "$2.99",
+    "newPrice": "$0.99",
+    "change": "-66.9%",
+    "up": false,
+    "absDiff": 2.0
   },
   {
-    "name": "Sempiternal Sage [Foil] (Mortal Ambition)",
-    "oldPrice": "$15.77",
-    "newPrice": "$12.86",
-    "change": "-18.5%",
+    "name": "Memento Mori [Foil] (Radiant Origins)",
+    "oldPrice": "$8.33",
+    "newPrice": "$6.70",
+    "change": "-19.6%",
     "up": false,
-    "absDiff": 2.91
+    "absDiff": 1.63
   },
   {
-    "name": "Wisps Protection [Foil] (Radiant Origins)",
-    "oldPrice": "$4.99",
-    "newPrice": "$3.49",
-    "change": "-30.1%",
+    "name": "Lightweavers Assault [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$6.61",
+    "newPrice": "$5.49",
+    "change": "-16.9%",
     "up": false,
-    "absDiff": 1.5
+    "absDiff": 1.12
   }
 ]

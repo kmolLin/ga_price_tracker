@@ -1,6 +1,38 @@
 [
   {
-    "name": "Lesser Boon of Knox [Normal] (Radiant Origins: Pantheon)",
+    "name": "Spirit of Chess [Foil] (Radiant Origins)",
+    "oldPrice": "$39.99",
+    "newPrice": "$29.39",
+    "change": "-26.5%",
+    "up": false,
+    "absDiff": 10.600000000000001
+  },
+  {
+    "name": "Slimecall Cyclone Curio Foil [Foil] (Radiant Origins)",
+    "oldPrice": "$29.99",
+    "newPrice": "$20.09",
+    "change": "-33.0%",
+    "up": false,
+    "absDiff": 9.899999999999999
+  },
+  {
+    "name": "Varuckan Acolyte [Foil] (Fractured Crown)",
+    "oldPrice": "$6.99",
+    "newPrice": "$3.99",
+    "change": "-42.9%",
+    "up": false,
+    "absDiff": 3.0
+  },
+  {
+    "name": "Elysian Aspirant [Foil] (.asphodel/paradise)",
+    "oldPrice": "$7.77",
+    "newPrice": "$5.52",
+    "change": "-29.0%",
+    "up": false,
+    "absDiff": 2.25
+  },
+  {
+    "name": "exorcise curses [Foil] (Alchemical Revolution)",
     "oldPrice": "$2.99",
     "newPrice": "$0.99",
     "change": "-66.9%",
@@ -8,19 +40,19 @@
     "absDiff": 2.0
   },
   {
-    "name": "Memento Mori [Foil] (Radiant Origins)",
-    "oldPrice": "$8.33",
-    "newPrice": "$6.70",
-    "change": "-19.6%",
+    "name": "Hypothermia [Foil] (.asphodel/paradise Grimoire)",
+    "oldPrice": "$8.99",
+    "newPrice": "$7.24",
+    "change": "-19.5%",
     "up": false,
-    "absDiff": 1.63
+    "absDiff": 1.75
   },
   {
-    "name": "Lightweavers Assault [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$6.61",
-    "newPrice": "$5.49",
-    "change": "-16.9%",
+    "name": "Aenean Frostlance [Foil] (.asphodel/paradise)",
+    "oldPrice": "$6.50",
+    "newPrice": "$5.19",
+    "change": "-20.2%",
     "up": false,
-    "absDiff": 1.12
+    "absDiff": 1.3099999999999996
   }
 ]

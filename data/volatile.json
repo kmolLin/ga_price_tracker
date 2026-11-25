@@ -1,50 +1,58 @@
 [
   {
-    "name": "Protect Her At All Costs [Foil] (Promotional Cards)",
-    "oldPrice": "$39.99",
-    "newPrice": "$29.99",
-    "change": "-25.0%",
+    "name": "Mortal Ambition 1st Edition Booster Box Case [Normal] (Mortal Ambition)",
+    "oldPrice": "$475.99",
+    "newPrice": "$368.03",
+    "change": "-22.7%",
     "up": false,
-    "absDiff": 10.000000000000004
+    "absDiff": 107.96000000000004
   },
   {
-    "name": "Trained Hawk [Normal] (Supporter Pack 1)",
-    "oldPrice": "$16.98",
-    "newPrice": "$22.47",
-    "change": "+32.3%",
+    "name": "Fracturing Slash [Foil] (Phantom Monarchs)",
+    "oldPrice": "$5.23",
+    "newPrice": "$1.90",
+    "change": "-63.7%",
+    "up": false,
+    "absDiff": 3.3300000000000005
+  },
+  {
+    "name": "Cometary Vantage [Foil] (Distorted Reflections)",
+    "oldPrice": "$13.83",
+    "newPrice": "$10.75",
+    "change": "-22.3%",
+    "up": false,
+    "absDiff": 3.08
+  },
+  {
+    "name": "Memento Mori [Foil] (Radiant Origins)",
+    "oldPrice": "$6.70",
+    "newPrice": "$3.99",
+    "change": "-40.4%",
+    "up": false,
+    "absDiff": 2.71
+  },
+  {
+    "name": "Heirloom of Natura [Foil] (Radiant Origins)",
+    "oldPrice": "$4.99",
+    "newPrice": "$2.99",
+    "change": "-40.1%",
+    "up": false,
+    "absDiff": 2.0
+  },
+  {
+    "name": "Mercurial Heart [Normal] (Mercurial Heart Alter Edition)",
+    "oldPrice": "$8.68",
+    "newPrice": "$10.44",
+    "change": "+20.3%",
     "up": true,
-    "absDiff": 5.489999999999998
+    "absDiff": 1.7599999999999998
   },
   {
-    "name": "Unyielding Wraithguard [Foil] (Distorted Reflections)",
-    "oldPrice": "$12.60",
-    "newPrice": "$8.99",
-    "change": "-28.7%",
+    "name": "Crystalvein Awakening [Foil] (Phantom Monarchs)",
+    "oldPrice": "$2.73",
+    "newPrice": "$1.47",
+    "change": "-46.2%",
     "up": false,
-    "absDiff": 3.6099999999999994
-  },
-  {
-    "name": "Divining Streams [Foil] (Radiant Origins)",
-    "oldPrice": "$9.01",
-    "newPrice": "$5.99",
-    "change": "-33.5%",
-    "up": false,
-    "absDiff": 3.0199999999999996
-  },
-  {
-    "name": "Expel the Departed [Foil] (Radiant Origins Event Pack)",
-    "oldPrice": "$9.20",
-    "newPrice": "$6.39",
-    "change": "-30.5%",
-    "up": false,
-    "absDiff": 2.8099999999999996
-  },
-  {
-    "name": "Honorable Vanguard Interference Curio Foil [Foil] (.asphodel/paradise)",
-    "oldPrice": "$9.49",
-    "newPrice": "$10.99",
-    "change": "+15.8%",
-    "up": true,
-    "absDiff": 1.5
+    "absDiff": 1.26
   }
 ]

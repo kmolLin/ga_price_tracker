@@ -1,58 +1,50 @@
 [
   {
-    "name": "Mortal Ambition 1st Edition Booster Box Case [Normal] (Mortal Ambition)",
-    "oldPrice": "$475.99",
-    "newPrice": "$368.03",
-    "change": "-22.7%",
+    "name": "Orb of Sealing [Foil] (Mortal Ambition)",
+    "oldPrice": "$70.00",
+    "newPrice": "$54.98",
+    "change": "-21.5%",
     "up": false,
-    "absDiff": 107.96000000000004
+    "absDiff": 15.020000000000003
   },
   {
-    "name": "Fracturing Slash [Foil] (Phantom Monarchs)",
-    "oldPrice": "$5.23",
-    "newPrice": "$1.90",
-    "change": "-63.7%",
+    "name": "Beacon Knight [Foil] (Radiant Origins)",
+    "oldPrice": "$9.99",
+    "newPrice": "$6.49",
+    "change": "-35.0%",
     "up": false,
-    "absDiff": 3.3300000000000005
+    "absDiff": 3.5
   },
   {
-    "name": "Cometary Vantage [Foil] (Distorted Reflections)",
-    "oldPrice": "$13.83",
-    "newPrice": "$10.75",
-    "change": "-22.3%",
+    "name": "Business Card [Foil] (.asphodel/paradise)",
+    "oldPrice": "$14.47",
+    "newPrice": "$11.99",
+    "change": "-17.1%",
     "up": false,
-    "absDiff": 3.08
+    "absDiff": 2.4800000000000004
   },
   {
-    "name": "Memento Mori [Foil] (Radiant Origins)",
-    "oldPrice": "$6.70",
-    "newPrice": "$3.99",
-    "change": "-40.4%",
-    "up": false,
-    "absDiff": 2.71
-  },
-  {
-    "name": "Heirloom of Natura [Foil] (Radiant Origins)",
-    "oldPrice": "$4.99",
-    "newPrice": "$2.99",
-    "change": "-40.1%",
-    "up": false,
-    "absDiff": 2.0
-  },
-  {
-    "name": "Mercurial Heart [Normal] (Mercurial Heart Alter Edition)",
-    "oldPrice": "$8.68",
-    "newPrice": "$10.44",
-    "change": "+20.3%",
+    "name": "Bandit Gaze Leader [Foil] (Radiant Origins)",
+    "oldPrice": "$10.01",
+    "newPrice": "$11.71",
+    "change": "+17.0%",
     "up": true,
-    "absDiff": 1.7599999999999998
+    "absDiff": 1.700000000000001
   },
   {
-    "name": "Crystalvein Awakening [Foil] (Phantom Monarchs)",
-    "oldPrice": "$2.73",
-    "newPrice": "$1.47",
-    "change": "-46.2%",
+    "name": "PlasmaTech Blaster [Foil] (.asphodel/paradise)",
+    "oldPrice": "$5.49",
+    "newPrice": "$4.19",
+    "change": "-23.7%",
     "up": false,
-    "absDiff": 1.26
+    "absDiff": 1.2999999999999998
+  },
+  {
+    "name": "conjure downpour [Foil] (Alchemical Revolution)",
+    "oldPrice": "$2.81",
+    "newPrice": "$3.83",
+    "change": "+36.3%",
+    "up": true,
+    "absDiff": 1.02
   }
 ]

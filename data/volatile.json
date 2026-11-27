@@ -1,50 +1,90 @@
 [
   {
-    "name": "Orb of Sealing [Foil] (Mortal Ambition)",
-    "oldPrice": "$70.00",
-    "newPrice": "$54.98",
-    "change": "-21.5%",
+    "name": "Tabula of Salvage [Foil] (Radiant Origins)",
+    "oldPrice": "$18.45",
+    "newPrice": "$11.41",
+    "change": "-38.2%",
     "up": false,
-    "absDiff": 15.020000000000003
+    "absDiff": 7.039999999999999
   },
   {
-    "name": "Beacon Knight [Foil] (Radiant Origins)",
-    "oldPrice": "$9.99",
-    "newPrice": "$6.49",
-    "change": "-35.0%",
+    "name": "Alchemists Cauldron [Foil] (Radiant Origins)",
+    "oldPrice": "$18.95",
+    "newPrice": "$12.99",
+    "change": "-31.5%",
     "up": false,
-    "absDiff": 3.5
+    "absDiff": 5.959999999999999
   },
   {
-    "name": "Business Card [Foil] (.asphodel/paradise)",
-    "oldPrice": "$14.47",
-    "newPrice": "$11.99",
-    "change": "-17.1%",
+    "name": "Diamond Ribbon [Foil] (Radiant Origins)",
+    "oldPrice": "$21.78",
+    "newPrice": "$17.99",
+    "change": "-17.4%",
     "up": false,
-    "absDiff": 2.4800000000000004
+    "absDiff": 3.7900000000000027
   },
   {
-    "name": "Bandit Gaze Leader [Foil] (Radiant Origins)",
-    "oldPrice": "$10.01",
-    "newPrice": "$11.71",
-    "change": "+17.0%",
-    "up": true,
-    "absDiff": 1.700000000000001
-  },
-  {
-    "name": "PlasmaTech Blaster [Foil] (.asphodel/paradise)",
-    "oldPrice": "$5.49",
-    "newPrice": "$4.19",
-    "change": "-23.7%",
+    "name": "Disenchant [Foil] (.asphodel/paradise)",
+    "oldPrice": "$5.00",
+    "newPrice": "$3.00",
+    "change": "-40.0%",
     "up": false,
-    "absDiff": 1.2999999999999998
+    "absDiff": 2.0
   },
   {
-    "name": "conjure downpour [Foil] (Alchemical Revolution)",
-    "oldPrice": "$2.81",
-    "newPrice": "$3.83",
-    "change": "+36.3%",
-    "up": true,
-    "absDiff": 1.02
+    "name": "Twinstar Tonic [Foil] (Radiant Origins)",
+    "oldPrice": "$2.99",
+    "newPrice": "$0.99",
+    "change": "-66.9%",
+    "up": false,
+    "absDiff": 2.0
+  },
+  {
+    "name": "Proof of Life [Foil] (Mortal Ambition)",
+    "oldPrice": "$7.59",
+    "newPrice": "$5.72",
+    "change": "-24.6%",
+    "up": false,
+    "absDiff": 1.87
+  },
+  {
+    "name": "Distilled Water [Foil] (Radiant Origins)",
+    "oldPrice": "$4.56",
+    "newPrice": "$2.79",
+    "change": "-38.8%",
+    "up": false,
+    "absDiff": 1.7699999999999996
+  },
+  {
+    "name": "Unmake Duality [Foil] (Phantom Monarchs)",
+    "oldPrice": "$3.49",
+    "newPrice": "$1.99",
+    "change": "-43.0%",
+    "up": false,
+    "absDiff": 1.5000000000000002
+  },
+  {
+    "name": "Smoke Bombs [Foil] (Dawn of Ashes Alter Edition)",
+    "oldPrice": "$3.32",
+    "newPrice": "$1.99",
+    "change": "-40.1%",
+    "up": false,
+    "absDiff": 1.3299999999999998
+  },
+  {
+    "name": "Deflecting Advantage [Foil] (Radiant Origins)",
+    "oldPrice": "$7.25",
+    "newPrice": "$5.99",
+    "change": "-17.4%",
+    "up": false,
+    "absDiff": 1.2599999999999998
+  },
+  {
+    "name": "Blood Surge [Foil] (.asphodel/paradise)",
+    "oldPrice": "$6.79",
+    "newPrice": "$5.74",
+    "change": "-15.5%",
+    "up": false,
+    "absDiff": 1.0499999999999998
   }
 ]

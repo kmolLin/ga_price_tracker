@@ -1,90 +1,42 @@
 [
   {
-    "name": "Tabula of Salvage [Foil] (Radiant Origins)",
-    "oldPrice": "$18.45",
-    "newPrice": "$11.41",
-    "change": "-38.2%",
+    "name": "Ciel Omenbringer CSR [CSR (Foil)] (Distorted Reflections)",
+    "oldPrice": "$425.00",
+    "newPrice": "$350.00",
+    "change": "-17.6%",
     "up": false,
-    "absDiff": 7.039999999999999
+    "absDiff": 75.0
   },
   {
-    "name": "Alchemists Cauldron [Foil] (Radiant Origins)",
-    "oldPrice": "$18.95",
-    "newPrice": "$12.99",
-    "change": "-31.5%",
+    "name": "Zinn Volnia Abbess [Foil] (Radiant Origins)",
+    "oldPrice": "$7.24",
+    "newPrice": "$4.62",
+    "change": "-36.2%",
     "up": false,
-    "absDiff": 5.959999999999999
+    "absDiff": 2.62
   },
   {
-    "name": "Diamond Ribbon [Foil] (Radiant Origins)",
-    "oldPrice": "$21.78",
-    "newPrice": "$17.99",
-    "change": "-17.4%",
-    "up": false,
-    "absDiff": 3.7900000000000027
-  },
-  {
-    "name": "Disenchant [Foil] (.asphodel/paradise)",
-    "oldPrice": "$5.00",
-    "newPrice": "$3.00",
-    "change": "-40.0%",
-    "up": false,
-    "absDiff": 2.0
-  },
-  {
-    "name": "Twinstar Tonic [Foil] (Radiant Origins)",
-    "oldPrice": "$2.99",
-    "newPrice": "$0.99",
-    "change": "-66.9%",
-    "up": false,
-    "absDiff": 2.0
-  },
-  {
-    "name": "Proof of Life [Foil] (Mortal Ambition)",
-    "oldPrice": "$7.59",
-    "newPrice": "$5.72",
-    "change": "-24.6%",
-    "up": false,
-    "absDiff": 1.87
-  },
-  {
-    "name": "Distilled Water [Foil] (Radiant Origins)",
-    "oldPrice": "$4.56",
-    "newPrice": "$2.79",
-    "change": "-38.8%",
-    "up": false,
-    "absDiff": 1.7699999999999996
-  },
-  {
-    "name": "Unmake Duality [Foil] (Phantom Monarchs)",
-    "oldPrice": "$3.49",
+    "name": "Classical Opening [Foil] (Radiant Origins)",
+    "oldPrice": "$4.32",
     "newPrice": "$1.99",
-    "change": "-43.0%",
+    "change": "-53.9%",
     "up": false,
-    "absDiff": 1.5000000000000002
+    "absDiff": 2.33
   },
   {
-    "name": "Smoke Bombs [Foil] (Dawn of Ashes Alter Edition)",
-    "oldPrice": "$3.32",
-    "newPrice": "$1.99",
-    "change": "-40.1%",
+    "name": "Castling Boon [Foil] (Distorted Reflections)",
+    "oldPrice": "$5.99",
+    "newPrice": "$4.49",
+    "change": "-25.0%",
     "up": false,
-    "absDiff": 1.3299999999999998
+    "absDiff": 1.5
   },
   {
-    "name": "Deflecting Advantage [Foil] (Radiant Origins)",
-    "oldPrice": "$7.25",
-    "newPrice": "$5.99",
-    "change": "-17.4%",
-    "up": false,
-    "absDiff": 1.2599999999999998
-  },
-  {
-    "name": "Blood Surge [Foil] (.asphodel/paradise)",
-    "oldPrice": "$6.79",
-    "newPrice": "$5.74",
-    "change": "-15.5%",
-    "up": false,
-    "absDiff": 1.0499999999999998
+    "name": "Cyclonic Fatestone Windstalker Wolf [Foil] (Abyssal Heaven)",
+    "oldPrice": "$1.10",
+    "newPrice": "$2.21",
+    "change": "+100.9%",
+    "up": true,
+    "absDiff": 1.1099999999999999
   }
 ]
